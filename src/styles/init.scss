@@ -1,9 +1,9 @@
 @import-normalize;
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import "variables";
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
