@@ -1,0 +1,9 @@
+@import-normalize;
+@import url('https://rsms.me/inter/inter.css');
+@import "variables";
+
+html {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
