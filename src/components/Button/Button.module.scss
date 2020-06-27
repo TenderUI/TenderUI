@@ -1,17 +1,45 @@
 @import "../../styles/variables";
 
 .button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
 
-}
+  background: linear-gradient(165.78deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
+  box-shadow: 10px 10px 20px rgba(166, 180, 200, 0.7), -12px -12px 20px rgba(255, 255, 255, 0.8);
+  
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  
+  // line-height: 34px;
+  
+  color: #686868;
 
-.normal {
-
+  &:hover, &:focus {
+    margin-top: 3px;
+    margin-left: 3px;
+  }
 }
 
 .small {
+  padding: 6px 20px;
+  font-size: 12px;
+  border-radius: 15px;
+}
 
+.normal {
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 20px;
 }
 
 .big {
-
+  padding: 20px 60px;
+  font-size: 28px;
+  border-radius: 40px;
 }

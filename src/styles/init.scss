@@ -7,3 +7,13 @@ html {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
+
+body {
+  background-color: #E9EDF0;
+  background: linear-gradient(124.73deg, #E9EDF0 0.61%, #E9EDF0 100%);
+  display:flex;
+  flex:column;
+  justify-content:center;
+  align-items:center;
+  height: 100vh;
+}
