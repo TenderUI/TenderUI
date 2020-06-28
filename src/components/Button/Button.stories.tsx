@@ -10,17 +10,17 @@ export default {
 
 export const sizes = () => (
   <>
-    <div style={{marginBottom: "2rem", textAlign: 'center'}}>
+    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} size='small'>
         Small
       </Button>
     </div>
-    <div style={{marginBottom: "2rem", textAlign: 'center'}}>
+    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} size='normal'>
         Normal
       </Button>
     </div>
-    <div style={{marginBottom: "2rem", textAlign: 'center'}}>
+    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} size='big'>
         Big
       </Button>
@@ -30,17 +30,17 @@ export const sizes = () => (
 
 export const disabled = () => (
   <>
-    <div style={{marginBottom: "2rem", textAlign: 'center'}}>
+    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} disabled size='small'>
         Small Disabled
       </Button>
     </div>
-    <div style={{marginBottom: "2rem", textAlign: 'center'}}>
+    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} disabled size='normal'>
         Normal Disabled
       </Button>
     </div>
-    <div style={{marginBottom: "2rem", textAlign: 'center'}}>
+    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} disabled size='big'>
         Big Disabled
       </Button>
