@@ -11,6 +11,8 @@
     "**/__snapshots__", 
     "**/*.d.ts", 
     "**/*.test.*", 
-    "./src/setupTests.ts"
+    "./src/setupTests.ts",
+    "./src/setupTests.d.ts",
+    "./src/react-app-env.d.ts"
   ]
 }

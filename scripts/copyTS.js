@@ -6,11 +6,15 @@ const fse = require('fs-extra');
 
 const srcDir = path.join('./src');
 const distDir = path.join('./dist/js');
+const ignore = [
+  "react-app-env.d.ts"
+];
 const files = glob.sync('**/*.d.ts', {
-  cwd: srcDir
+  cwd: srcDir,
+  ignore: ignore
 });
+
 files.forEach(file => {
-  console.log(file)
   const from = path.join(srcDir, file);
   const to = path.join(distDir, file);
   fse.copySync(from, to);
