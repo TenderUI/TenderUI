@@ -28,7 +28,7 @@ export const sizes = () => (
   </>
 );
 
-export const disabled = () => (
+const disabled = () => (
   <>
     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
       <Button onClick={action('clicked')} disabled size='small'>
