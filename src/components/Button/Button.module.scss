@@ -28,9 +28,14 @@
 }
 
 .small {
-  padding: 6px 20px;
-  font-size: 12px;
+  // padding: 6px 20px;
+  // font-size: 12px;
   border-radius: 15px;
+  height: 1.5rem;
+  min-width: 1.5rem;
+  font-size: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .normal {
