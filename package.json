@@ -25,7 +25,7 @@
     "build": "yarn build:lib",
     "clear": "rimraf dist",
     "dev": "yarn build:types && yarn build:babel:esm --skip-initial-build --watch --verbose",
-    "storybook": "start-storybook -p 9009 -s public",
+    "storybook": "start-storybook -p 9009",
     "build-storybook": "build-storybook -c .storybook -o docs",
     "start": "yarn storybook",
     "test": "react-scripts test"
