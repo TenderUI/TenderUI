@@ -1,0 +1,16 @@
+{
+  "presets": ["@babel/react"],
+  "plugins": [
+    "@babel/plugin-transform-typescript",
+    "babel-plugin-typescript-to-proptypes",
+    "@babel/plugin-proposal-export-default-from",
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
+  ],
+  "ignore": [
+    "**/__snapshots__", 
+    "**/*.d.ts", 
+    "**/*.test.*", 
+    "./src/setupTests.ts"
+  ]
+}
