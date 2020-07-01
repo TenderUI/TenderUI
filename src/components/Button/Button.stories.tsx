@@ -21,8 +21,8 @@ export const sizes = () => (
       </Button>
     </div>
     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} size='big'>
-        Big
+      <Button onClick={action('clicked')} size='large'>
+        Large
       </Button>
     </div>
   </>

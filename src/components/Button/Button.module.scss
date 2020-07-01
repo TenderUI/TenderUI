@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "../../styles/prerequisites";
 
 .button {
   padding: 0;
@@ -7,10 +7,12 @@
   font: inherit;
   color: inherit;
   background: none;
+  
   cursor: pointer;
 
   background: linear-gradient(165.78deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
-  box-shadow: 10px 10px 20px rgba(166, 180, 200, 0.7), -12px -12px 20px rgba(255, 255, 255, 0.8);
+  box-shadow: 10px 10px 20px 0 rgba(166, 180, 200, 0.7), 
+              -12px -12px 20px 0 rgba(255, 255, 255, 0.8);
   
   font-family: 'Lato', sans-serif;
   font-style: normal;
@@ -22,30 +24,19 @@
   color: #686868;
 
   &:hover, &:focus {
-    margin-top: 3px;
-    margin-left: 3px;
+    box-shadow: 8px 8px 15px 0 rgba(166, 180, 200, 0.7), 
+              -10px -10px 15px 0 rgba(255, 255, 255, 0.8);
   }
 }
 
-.small {
-  // padding: 6px 20px;
-  // font-size: 12px;
-  border-radius: 15px;
-  height: 1.5rem;
-  min-width: 1.5rem;
-  font-size: 0.75rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .normal {
-  padding: 12px 28px;
-  font-size: 16px;
-  border-radius: 20px;
+  @include button-sizes($font-size-normal);
 }
 
-.big {
-  padding: 20px 60px;
-  font-size: 28px;
-  border-radius: 40px;
+.small {  
+  @include button-sizes($font-size-small);
+}
+
+.large {
+  @include button-sizes($font-size-large);
 }
