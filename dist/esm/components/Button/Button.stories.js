@@ -30,34 +30,23 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: "large"
-}, "Large")));
-
-const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginBottom: '2rem',
-    textAlign: 'center'
-  }
-}, /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  disabled: true,
-  size: "small"
-}, "Small Disabled")), /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginBottom: '2rem',
-    textAlign: 'center'
-  }
-}, /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  disabled: true,
-  size: "normal"
-}, "Normal Disabled")), /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginBottom: '2rem',
-    textAlign: 'center'
-  }
-}, /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  disabled: true,
-  size: "big"
-}, "Big Disabled")));
+}, "Large"))); // const disabled = () => (
+//   <>
+//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+//       <Button onClick={action('clicked')} disabled size='small'>
+//         Small Disabled
+//       </Button>
+//     </div>
+//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+//       <Button onClick={action('clicked')} disabled size='normal'>
+//         Normal Disabled
+//       </Button>
+//     </div>
+//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+//       <Button onClick={action('clicked')} disabled size='large'>
+//         Big Disabled
+//       </Button>
+//     </div>
+//   </>
+// );
 //# sourceMappingURL=Button.stories.js.map

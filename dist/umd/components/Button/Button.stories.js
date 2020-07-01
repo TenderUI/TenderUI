@@ -57,35 +57,25 @@
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: "large"
-  }, "Large")));
+  }, "Large"))); // const disabled = () => (
+  //   <>
+  //     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+  //       <Button onClick={action('clicked')} disabled size='small'>
+  //         Small Disabled
+  //       </Button>
+  //     </div>
+  //     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+  //       <Button onClick={action('clicked')} disabled size='normal'>
+  //         Normal Disabled
+  //       </Button>
+  //     </div>
+  //     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+  //       <Button onClick={action('clicked')} disabled size='large'>
+  //         Big Disabled
+  //       </Button>
+  //     </div>
+  //   </>
+  // );
 
-  const disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginBottom: '2rem',
-      textAlign: 'center'
-    }
-  }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    disabled: true,
-    size: "small"
-  }, "Small Disabled")), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginBottom: '2rem',
-      textAlign: 'center'
-    }
-  }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    disabled: true,
-    size: "normal"
-  }, "Normal Disabled")), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginBottom: '2rem',
-      textAlign: 'center'
-    }
-  }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    disabled: true,
-    size: "big"
-  }, "Big Disabled")));
 });
 //# sourceMappingURL=Button.stories.js.map

@@ -28,22 +28,22 @@ export const sizes = () => (
   </>
 );
 
-const disabled = () => (
-  <>
-    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} disabled size='small'>
-        Small Disabled
-      </Button>
-    </div>
-    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} disabled size='normal'>
-        Normal Disabled
-      </Button>
-    </div>
-    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} disabled size='big'>
-        Big Disabled
-      </Button>
-    </div>
-  </>
-);
+// const disabled = () => (
+//   <>
+//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+//       <Button onClick={action('clicked')} disabled size='small'>
+//         Small Disabled
+//       </Button>
+//     </div>
+//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+//       <Button onClick={action('clicked')} disabled size='normal'>
+//         Normal Disabled
+//       </Button>
+//     </div>
+//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
+//       <Button onClick={action('clicked')} disabled size='large'>
+//         Big Disabled
+//       </Button>
+//     </div>
+//   </>
+// );
