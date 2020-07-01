@@ -14,7 +14,7 @@ type ButtonPropsType = {
   size?: 'normal' | 'small' | 'large';
 
   /**
-   * Disable button and display the button in gray. Default: false
+   * Disable button. Default: false
    */
   disabled?: boolean;
 

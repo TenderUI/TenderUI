@@ -7,9 +7,9 @@ declare type ButtonPropsType = {
     /**
      * Define button size. Default: normal
      */
-    size?: 'normal' | 'small' | 'big';
+    size?: 'normal' | 'small' | 'large';
     /**
-     * Disable button and display the button in gray. Default: false
+     * Disable button. Default: false
      */
     disabled?: boolean;
     /**

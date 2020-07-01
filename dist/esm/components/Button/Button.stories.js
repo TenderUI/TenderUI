@@ -29,9 +29,10 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
   }
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
-  size: "big"
-}, "Big")));
-export const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+  size: "large"
+}, "Large")));
+
+const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
   style: {
     marginBottom: '2rem',
     textAlign: 'center'

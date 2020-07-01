@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.disabled = exports.sizes = exports.default = void 0;
+exports.sizes = exports.default = void 0;
 
 var _addonActions = require("@storybook/addon-actions");
 
@@ -45,8 +45,8 @@ var sizes = function sizes() {
     }
   }, /*#__PURE__*/_react.default.createElement(_Button.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "big"
-  }, "Big")));
+    size: "large"
+  }, "Large")));
 };
 
 exports.sizes = sizes;
@@ -81,6 +81,4 @@ var disabled = function disabled() {
     size: "big"
   }, "Big Disabled")));
 };
-
-exports.disabled = disabled;
 //# sourceMappingURL=Button.stories.js.map

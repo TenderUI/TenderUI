@@ -16,7 +16,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.disabled = exports.sizes = undefined;
+  exports.sizes = undefined;
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -56,10 +56,10 @@
     }
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "big"
-  }, "Big")));
+    size: "large"
+  }, "Large")));
 
-  const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, /*#__PURE__*/_react2.default.createElement("div", {
+  const disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
       marginBottom: '2rem',
       textAlign: 'center'
