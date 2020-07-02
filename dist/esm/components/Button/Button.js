@@ -3,16 +3,17 @@ import React from 'react';
 import styles from './Button.module.scss';
 
 /**
- * Simple Button encapsulating all design variations
+ * A simple button.
  */
 const Button = ({
   onClick,
   disabled = false,
   type = 'button',
   size = 'normal',
-  children
+  children,
+  className
 }) => {
-  const classes = classNames(styles.button, styles[size]);
+  const classes = classNames(styles.button, styles[size], className);
   return /*#__PURE__*/React.createElement("button", {
     className: classes,
     type: type,

@@ -30,16 +30,17 @@
   }
 
   /**
-   * Simple Button encapsulating all design variations
+   * A simple button.
    */
   const Button = ({
     onClick,
     disabled = false,
     type = 'button',
     size = 'normal',
-    children
+    children,
+    className
   }) => {
-    const classes = (0, _classnames2.default)(_ButtonModule2.default.button, _ButtonModule2.default[size]);
+    const classes = (0, _classnames2.default)(_ButtonModule2.default.button, _ButtonModule2.default[size], className);
     return /*#__PURE__*/_react2.default.createElement("button", {
       className: classes,
       type: type,

@@ -1,0 +1,29 @@
+@import "../../styles/prerequisites";
+
+.icon {
+  flex-direction: column;
+  svg {
+    margin-right: 0;
+  }
+}
+
+.normal {
+  @include icon-button-sizes($font-size-normal);
+}
+
+.small {
+  @include icon-button-sizes($font-size-small);
+}
+
+.large {
+  @include icon-button-sizes($font-size-large);
+}
+
+.rounded {
+  // Just to keep this class for TS.
+  flex-direction: column;
+}
+
+.circle {
+  border-radius: 50% !important;
+}

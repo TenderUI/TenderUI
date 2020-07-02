@@ -22,23 +22,30 @@ type ButtonPropsType = {
    * Register click event handler.
    */
   onClick?: MouseEventHandler;
+
+  /**
+   * Add a class name. Default: undefined.
+   */
+  className?: string
 }
 
 type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>
 
 /**
- * Simple Button encapsulating all design variations
+ * A simple button.
  */
 const Button: FC<ButtonPropsTypeWithChildren> = ({
   onClick,
   disabled = false,
   type = 'button',
   size = 'normal',
-  children
+  children,
+  className
 }) => {
   const classes = classNames(
     styles.button,
-    styles[size]
+    styles[size],
+    className
   );
 
   return (

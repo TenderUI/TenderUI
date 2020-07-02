@@ -1,27 +1,7 @@
 @import "../../styles/prerequisites";
 
 .button {
-  @extend %styleless-button;
-
-  cursor: pointer;
-
-  background: linear-gradient(165.78deg, #EEF0F5 4.98%, #E6E9EF 94.88%);
-  box-shadow: 10px 10px 20px 0 rgba(166, 180, 200, 0.7), 
-              -12px -12px 20px 0 rgba(255, 255, 255, 0.8);
-  
-  font-family: 'Lato', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: 0.02em;
-  
-  // line-height: 34px;
-  
-  color: #686868;
-
-  &:hover, &:focus {
-    box-shadow: 8px 8px 15px 0 rgba(166, 180, 200, 0.7), 
-              -10px -10px 15px 0 rgba(255, 255, 255, 0.8);
-  }
+  @extend %button;  
 }
 
 .normal {

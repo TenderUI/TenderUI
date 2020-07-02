@@ -21,7 +21,7 @@
     "build:babel:cjs": "BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/js --presets=@babel/env",
     "build:babel:esm": "BABEL_ENV=esm babel --source-maps --extensions \".js,.ts,.tsx\" src --out-dir dist/esm",
     "build:babel:umd": "BABEL_ENV=umd babel --source-maps --extensions \".js\" dist/esm --out-dir dist/umd --plugins=transform-es2015-modules-umd",
-    "build:types": "concurrently \"tsc -p tsconfig.gen-dts.json && yarn build:types:scss\"",
+    "build:types": "yarn build:types:scss && tsc -p tsconfig.gen-dts.json",
     "build:types:scss": "tsm src --includePaths src/components",
     "clear": "rimraf dist",
     "dev": "yarn build:types && yarn build:babel:esm --skip-initial-build --watch --verbose",

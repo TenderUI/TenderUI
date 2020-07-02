@@ -14,7 +14,7 @@ var _ButtonModule = _interopRequireDefault(require("./Button.module.scss"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * Simple Button encapsulating all design variations
+ * A simple button.
  */
 var Button = function Button(_ref) {
   var onClick = _ref.onClick,
@@ -24,8 +24,9 @@ var Button = function Button(_ref) {
       type = _ref$type === void 0 ? 'button' : _ref$type,
       _ref$size = _ref.size,
       size = _ref$size === void 0 ? 'normal' : _ref$size,
-      children = _ref.children;
-  var classes = (0, _classnames.default)(_ButtonModule.default.button, _ButtonModule.default[size]);
+      children = _ref.children,
+      className = _ref.className;
+  var classes = (0, _classnames.default)(_ButtonModule.default.button, _ButtonModule.default[size], className);
   return /*#__PURE__*/_react.default.createElement("button", {
     className: classes,
     type: type,

@@ -16,10 +16,14 @@ declare type ButtonPropsType = {
      * Register click event handler.
      */
     onClick?: MouseEventHandler;
+    /**
+     * Add a class name. Default: undefined.
+     */
+    className?: string;
 };
 declare type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>;
 /**
- * Simple Button encapsulating all design variations
+ * A simple button.
  */
 declare const Button: FC<ButtonPropsTypeWithChildren>;
 export default Button;
