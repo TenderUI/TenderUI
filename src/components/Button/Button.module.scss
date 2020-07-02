@@ -1,13 +1,8 @@
 @import "../../styles/prerequisites";
 
 .button {
-  padding: 0;
-  border: none;
-  outline: none;
-  font: inherit;
-  color: inherit;
-  background: none;
-  
+  @extend %styleless-button;
+
   cursor: pointer;
 
   background: linear-gradient(165.78deg, #EEF0F5 4.98%, #E6E9EF 94.88%);

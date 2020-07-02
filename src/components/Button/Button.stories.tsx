@@ -5,45 +5,19 @@ import Button from './Button';
 
 export default {
   component: Button,
-  title: 'Button',
+  title: 'Button'
 };
+
+const sizeVariants = ['small', 'normal', 'large'];
 
 export const sizes = () => (
   <>
-    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} size='small'>
-        Small
-      </Button>
-    </div>
-    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} size='normal'>
-        Normal
-      </Button>
-    </div>
-    <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-      <Button onClick={action('clicked')} size='large'>
-        Large
-      </Button>
-    </div>
+    {sizeVariants.map((size: any) => (
+      <div key={size} style={{marginBottom: '2rem', textAlign: 'center'}}>
+        <Button onClick={action('clicked')} size={size}>
+          {`Button ${size}`}
+        </Button>
+      </div>
+    ))}
   </>
 );
-
-// const disabled = () => (
-//   <>
-//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-//       <Button onClick={action('clicked')} disabled size='small'>
-//         Small Disabled
-//       </Button>
-//     </div>
-//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-//       <Button onClick={action('clicked')} disabled size='normal'>
-//         Normal Disabled
-//       </Button>
-//     </div>
-//     <div style={{marginBottom: '2rem', textAlign: 'center'}}>
-//       <Button onClick={action('clicked')} disabled size='large'>
-//         Big Disabled
-//       </Button>
-//     </div>
-//   </>
-// );

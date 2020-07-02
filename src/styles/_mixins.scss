@@ -6,3 +6,12 @@
   border-radius: $size * 1.5;
   padding: $size $size * 3;
 }
+
+%styleless-button {
+  padding: 0;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
