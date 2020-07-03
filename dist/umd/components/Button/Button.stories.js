@@ -28,17 +28,10 @@
     };
   }
 
-  const environment = process.env.NODE_ENV || 'development';
-  const decorators = [];
-
-  if (environment === 'development') {
-    decorators.push(_addonA11y.withA11y);
-  }
-
   exports.default = {
     component: _Button2.default,
     title: 'Button',
-    decorators
+    decorators: [_addonA11y.withA11y]
   };
   const sizeVariants = ['small', 'normal', 'large'];
 

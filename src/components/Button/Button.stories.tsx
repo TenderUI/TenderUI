@@ -5,17 +5,10 @@ import { ReactComponent as ShareIcon } from '../../img/icons/icon-share.svg';
 import '../../styles/init.scss';
 import Button from './Button';
 
-const environment = process.env.NODE_ENV || 'development';
-
-const decorators = [];
-if (environment === 'development') {
-  decorators.push(withA11y);
-}
-
 export default {
   component: Button,
   title: 'Button',
-  decorators
+  decorators: [withA11y]
 };
 
 const sizeVariants = ['small', 'normal', 'large'];

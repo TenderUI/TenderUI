@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.shapes = exports.sizes = exports.default = void 0;
 
+var _addonA11y = require("@storybook/addon-a11y");
+
 var _addonActions = require("@storybook/addon-actions");
 
 var _react = _interopRequireDefault(require("react"));
@@ -25,7 +27,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _default = {
   component: _IconButton.default,
-  title: 'IconButton'
+  title: 'IconButton',
+  decorators: [_addonA11y.withA11y]
 };
 exports.default = _default;
 
