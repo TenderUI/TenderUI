@@ -1,45 +1,49 @@
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import React from 'react';
-import Button from './IconButton';
+import { ReactComponent as Icon } from '../../img/icons/icon-flag.svg';
+import IconButton from './IconButton';
 
-const testLabel = 'A button';
+// @fixme Review tests and adapt them to IconButton.
 
-describe('Button', () => {
+const testLabel = <Icon />;
+
+describe('IconButton', () => {
   afterEach(cleanup);
 
   it('displays the label', () => {
-    const { getByText } = render(<Button>{testLabel}</Button>);
-    const element = getByText(testLabel);
-    expect(element).toBeInTheDocument();
+    const { container } = render(<IconButton>{testLabel}</IconButton>);
+    // const element = getByText(testLabel);
+    expect(container.firstChild).toMatch('testLabel');
+    // expect(element).toBeInTheDocument();
   });
 
   it('can be of the type submit', () => {
-    const { getByText } = render(<Button type='submit'>{testLabel}</Button>);
+    const { getByText } = render(<IconButton type='submit'>{testLabel}</IconButton>);
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'submit');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'submit');
   });
 
   it('can be of the type reset', () => {
-    const { getByText } = render(<Button type='reset'>{testLabel}</Button>);
+    const { getByText } = render(<IconButton type='reset'>{testLabel}</IconButton>);
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'reset');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'reset');
   });
 
-  it('can be of the type button', () => {
-    const { getByText } = render(<Button type='button'>{testLabel}</Button>);
+  it('can be of the type IconButton', () => {
+    const { getByText } = render(<IconButton type='IconButton'>{testLabel}</IconButton>);
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'button');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'IconButton');
   });
 
-  it('is of the type button by default', () => {
-    const { getByText } = render(<Button>{testLabel}</Button>);
+  it('is of the type IconButton by default', () => {
+    const { getByText } = render(<IconButton>{testLabel}</IconButton>);
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'button');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'IconButton');
   });
 
   it('handles clicks', () => {
     const handleClick = jest.fn();
-    const { getByText } = render(<Button onClick={handleClick}>{testLabel}</Button>);
+    const { getByText } = render(<IconButton onClick={handleClick}>{testLabel}</IconButton>);
     const element = getByText(testLabel);
     fireEvent.click(element);
     expect(handleClick).toHaveBeenCalled();
@@ -47,15 +51,15 @@ describe('Button', () => {
 
   it('ignores clicks when disabled', () => {
     const handleClick = jest.fn();
-    const { getByText } = render(<Button onClick={handleClick} disabled>{testLabel}</Button>);
+    const { getByText } = render(<IconButton onClick={handleClick} disabled>{testLabel}</IconButton>);
     const element = getByText(testLabel);
     fireEvent.click(element);
     expect(handleClick).not.toHaveBeenCalled();
   });
 
   it('supports small size', () => {
-    const { getByText } = render(<Button size='small'>{testLabel}</Button>);
+    const { getByText } = render(<IconButton size='small'>{testLabel}</IconButton>);
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveClass('small');
+    expect(element.closest('IconButton')).toHaveClass('small');
   });
 });

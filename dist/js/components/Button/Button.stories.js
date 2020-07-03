@@ -5,21 +5,25 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.withIcon = exports.sizes = exports.default = void 0;
 
+var _addonA11y = require("@storybook/addon-a11y");
+
 var _addonActions = require("@storybook/addon-actions");
 
 var _react = _interopRequireDefault(require("react"));
+
+var _iconShare = require("../../img/icons/icon-share.svg");
 
 require("../../styles/init.scss");
 
 var _Button = _interopRequireDefault(require("./Button"));
 
-var _iconShare = require("../../img/icons/icon-share.svg");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var environment = process.env.NODE_ENV;
 var _default = {
   component: _Button.default,
-  title: 'Button'
+  title: 'Button',
+  decorators: [environment === 'development' ? _addonA11y.withA11y : null]
 };
 exports.default = _default;
 var sizeVariants = ['small', 'normal', 'large'];

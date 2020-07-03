@@ -4,19 +4,23 @@ var _react = require("@testing-library/react");
 
 var _react2 = _interopRequireDefault(require("react"));
 
+var _iconFlag = require("../../img/icons/icon-flag.svg");
+
 var _IconButton = _interopRequireDefault(require("./IconButton"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var testLabel = 'A button';
-describe('Button', function () {
+// @fixme Review tests and adapt them to IconButton.
+var testLabel = /*#__PURE__*/_react2.default.createElement(_iconFlag.ReactComponent, null);
+
+describe('IconButton', function () {
   afterEach(_react.cleanup);
   it('displays the label', function () {
     var _render = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, null, testLabel)),
-        getByText = _render.getByText;
+        container = _render.container; // const element = getByText(testLabel);
 
-    var element = getByText(testLabel);
-    expect(element).toBeInTheDocument();
+
+    expect(container.firstChild).toMatch('testLabel'); // expect(element).toBeInTheDocument();
   });
   it('can be of the type submit', function () {
     var _render2 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -25,7 +29,7 @@ describe('Button', function () {
         getByText = _render2.getByText;
 
     var element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'submit');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'submit');
   });
   it('can be of the type reset', function () {
     var _render3 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -34,23 +38,23 @@ describe('Button', function () {
         getByText = _render3.getByText;
 
     var element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'reset');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'reset');
   });
-  it('can be of the type button', function () {
+  it('can be of the type IconButton', function () {
     var _render4 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
-      type: "button"
+      type: "IconButton"
     }, testLabel)),
         getByText = _render4.getByText;
 
     var element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'button');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'IconButton');
   });
-  it('is of the type button by default', function () {
+  it('is of the type IconButton by default', function () {
     var _render5 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, null, testLabel)),
         getByText = _render5.getByText;
 
     var element = getByText(testLabel);
-    expect(element.closest('button')).toHaveAttribute('type', 'button');
+    expect(element.closest('IconButton')).toHaveAttribute('type', 'IconButton');
   });
   it('handles clicks', function () {
     var handleClick = jest.fn();
@@ -88,7 +92,7 @@ describe('Button', function () {
         getByText = _render8.getByText;
 
     var element = getByText(testLabel);
-    expect(element.closest('button')).toHaveClass('small');
+    expect(element.closest('IconButton')).toHaveClass('small');
   });
 });
 //# sourceMappingURL=IconButton.test.js.map
