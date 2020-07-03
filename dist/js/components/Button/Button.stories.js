@@ -19,11 +19,17 @@ var _Button = _interopRequireDefault(require("./Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var environment = process.env.NODE_ENV;
+var environment = process.env.NODE_ENV || 'development';
+var decorators = [];
+
+if (environment === 'development') {
+  decorators.push(_addonA11y.withA11y);
+}
+
 var _default = {
   component: _Button.default,
   title: 'Button',
-  decorators: [environment === 'development' ? _addonA11y.withA11y : null]
+  decorators: decorators
 };
 exports.default = _default;
 var sizeVariants = ['small', 'normal', 'large'];

@@ -4,11 +4,17 @@ import React from 'react';
 import { ReactComponent as ShareIcon } from '../../img/icons/icon-share.svg';
 import '../../styles/init.scss';
 import Button from './Button';
-const environment = process.env.NODE_ENV;
+const environment = process.env.NODE_ENV || 'development';
+const decorators = [];
+
+if (environment === 'development') {
+  decorators.push(withA11y);
+}
+
 export default {
   component: Button,
   title: 'Button',
-  decorators: [environment === 'development' ? withA11y : null]
+  decorators
 };
 const sizeVariants = ['small', 'normal', 'large'];
 export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
