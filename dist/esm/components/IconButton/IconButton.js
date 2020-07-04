@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React from 'react';
+import React, { cloneElement, isValidElement } from 'react';
 import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
 import { a11yIconHiddenProps } from '../../lib/helpers';
@@ -19,6 +19,7 @@ const IconButton = ({
   children
 }) => {
   const classes = classNames(styles.icon, styles[size], styles[shape]);
+  const icon = /*#__PURE__*/isValidElement(children) ? /*#__PURE__*/cloneElement(children, a11yIconHiddenProps) : null;
   return /*#__PURE__*/React.createElement(Button, {
     size: size,
     type: type,
@@ -26,7 +27,7 @@ const IconButton = ({
     onClick: onClick,
     disabled: disabled,
     ariaLabel: ariaLabel
-  }, /*#__PURE__*/React.isValidElement(children) ? /*#__PURE__*/React.cloneElement(children, a11yIconHiddenProps) : null);
+  }, icon);
 };
 
 export default IconButton;

@@ -1,3 +1,5 @@
 import Button from "./components/Button/Button";
-export { Button };
+import IconButton from "./components/IconButton/IconButton";
+import Input from "./components/Input/Input";
+export { Button, IconButton, Input };
 //# sourceMappingURL=index.js.map

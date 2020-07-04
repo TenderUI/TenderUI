@@ -46,6 +46,7 @@
     children
   }) => {
     const classes = (0, _classnames2.default)(_IconButtonModule2.default.icon, _IconButtonModule2.default[size], _IconButtonModule2.default[shape]);
+    const icon = /*#__PURE__*/ /*#__PURE__*/(0, _react.isValidElement)(children) ? /*#__PURE__*/(0, _react.cloneElement)(children, _helpers.a11yIconHiddenProps) : null;
     return /*#__PURE__*/_react2.default.createElement(_Button2.default, {
       size: size,
       type: type,
@@ -53,7 +54,7 @@
       onClick: onClick,
       disabled: disabled,
       ariaLabel: ariaLabel
-    }, /*#__PURE__*/ /*#__PURE__*/_react2.default.isValidElement(children) ? /*#__PURE__*/_react2.default.cloneElement(children, _helpers.a11yIconHiddenProps) : null);
+    }, icon);
   };
 
   exports.default = IconButton;

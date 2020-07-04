@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { FC, MouseEventHandler, PropsWithChildren } from 'react';
+import React, { FC, MouseEventHandler, PropsWithChildren, cloneElement, isValidElement } from 'react';
 import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
 import { a11yIconHiddenProps } from '../../lib/helpers';
@@ -59,6 +59,10 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
     styles[shape]
   );
 
+  const icon = isValidElement(children) ? 
+    cloneElement(children, a11yIconHiddenProps) : 
+    null
+
   return (
     <Button 
       size={size} 
@@ -68,9 +72,7 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
       disabled={disabled}
       ariaLabel={ariaLabel}
     >
-      {React.isValidElement(children)
-        ? React.cloneElement(children, a11yIconHiddenProps)
-        : null}
+      {icon}
     </Button>
   );
 };
