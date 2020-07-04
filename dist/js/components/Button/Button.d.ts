@@ -17,9 +17,13 @@ declare type ButtonPropsType = {
      */
     onClick?: MouseEventHandler;
     /**
-     * Add a class name. Default: undefined.
+     * Add a class name. Optional.
      */
     className?: string;
+    /**
+     * Define 'aria-label' attribute for screen readers. Optional.
+     */
+    ariaLabel?: string;
 };
 declare type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>;
 /**

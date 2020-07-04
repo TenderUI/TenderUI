@@ -32,7 +32,9 @@
   }
 
   /**
-   * A button with an icon.
+   * A square button with an icon.
+   * Please note the children should be a single icon. In any other cases, 
+   * use Button instead.
    */
   const IconButton = ({
     onClick,
@@ -40,6 +42,7 @@
     type = 'button',
     size = 'normal',
     shape = 'rounded',
+    ariaLabel,
     children
   }) => {
     const classes = (0, _classnames2.default)(_IconButtonModule2.default.icon, _IconButtonModule2.default[size], _IconButtonModule2.default[shape]);
@@ -48,7 +51,8 @@
       type: type,
       className: classes,
       onClick: onClick,
-      disabled: disabled
+      disabled: disabled,
+      ariaLabel: ariaLabel
     }, children);
   };
 

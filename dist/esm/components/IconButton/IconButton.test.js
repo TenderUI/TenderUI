@@ -1,83 +1,94 @@
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, render, fireEvent } from '@testing-library/react';
 import React from 'react';
 import { ReactComponent as Icon } from '../../img/icons/icon-flag.svg';
-import IconButton from './IconButton'; // @fixme Review tests and adapt them to IconButton.
+import IconButton from './IconButton'; // @fixme Review tests and fix issues.
 
-const testLabel = /*#__PURE__*/React.createElement(Icon, null);
+const childIcon = /*#__PURE__*/React.createElement(Icon, null);
+const ariaLabel = 'Test label';
 describe('IconButton', () => {
-  afterEach(cleanup);
-  it('displays the label', () => {
-    const {
-      container
-    } = render( /*#__PURE__*/React.createElement(IconButton, null, testLabel)); // const element = getByText(testLabel);
+  afterEach(cleanup); // it('displays the label', () => {
+  //   const { container } = render(<IconButton ariaLabel="Submit">{childIcon}</IconButton>);
+  //   // const element = container.firstChild;
+  //   expect(container.firstChild).toMatch(childIcon);
+  //   // expect(element).toBeInTheDocument();
+  // });
 
-    expect(container.firstChild).toMatch('testLabel'); // expect(element).toBeInTheDocument();
-  });
   it('can be of the type submit', () => {
     const {
-      getByText
+      container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
-      type: "submit"
-    }, testLabel));
-    const element = getByText(testLabel);
-    expect(element.closest('IconButton')).toHaveAttribute('type', 'submit');
+      type: "submit",
+      ariaLabel: "Submit"
+    }, childIcon));
+    expect(container.firstChild).toHaveAttribute('type', 'submit');
   });
   it('can be of the type reset', () => {
     const {
-      getByText
+      container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
-      type: "reset"
-    }, testLabel));
-    const element = getByText(testLabel);
-    expect(element.closest('IconButton')).toHaveAttribute('type', 'reset');
+      type: "reset",
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild).toHaveAttribute('type', 'reset');
   });
-  it('can be of the type IconButton', () => {
+  it('can be of the type button', () => {
     const {
-      getByText
+      container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
-      type: "IconButton"
-    }, testLabel));
-    const element = getByText(testLabel);
-    expect(element.closest('IconButton')).toHaveAttribute('type', 'IconButton');
+      type: "button",
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild).toHaveAttribute('type', 'button');
   });
-  it('is of the type IconButton by default', () => {
+  it('is of the type button by default', () => {
     const {
-      getByText
-    } = render( /*#__PURE__*/React.createElement(IconButton, null, testLabel));
-    const element = getByText(testLabel);
-    expect(element.closest('IconButton')).toHaveAttribute('type', 'IconButton');
+      container
+    } = render( /*#__PURE__*/React.createElement(IconButton, {
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild).toHaveAttribute('type', 'button');
   });
   it('handles clicks', () => {
     const handleClick = jest.fn();
     const {
-      getByText
+      container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
-      onClick: handleClick
-    }, testLabel));
-    const element = getByText(testLabel);
+      onClick: handleClick,
+      ariaLabel: ariaLabel
+    }, childIcon));
+    const element = container.firstChild;
     fireEvent.click(element);
     expect(handleClick).toHaveBeenCalled();
   });
   it('ignores clicks when disabled', () => {
     const handleClick = jest.fn();
     const {
-      getByText
+      container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
       onClick: handleClick,
+      ariaLabel: ariaLabel,
       disabled: true
-    }, testLabel));
-    const element = getByText(testLabel);
+    }, childIcon));
+    const element = container.firstChild;
     fireEvent.click(element);
     expect(handleClick).not.toHaveBeenCalled();
   });
   it('supports small size', () => {
     const {
-      getByText
+      container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
-      size: "small"
-    }, testLabel));
-    const element = getByText(testLabel);
-    expect(element.closest('IconButton')).toHaveClass('small');
+      size: "small",
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild).toHaveClass('small');
+  });
+  it('supports aria-label attribute', () => {
+    const {
+      container
+    } = render( /*#__PURE__*/React.createElement(IconButton, {
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild).toHaveAttribute('aria-label', ariaLabel);
   });
 });
 //# sourceMappingURL=IconButton.test.js.map

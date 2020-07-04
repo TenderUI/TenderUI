@@ -103,6 +103,14 @@
       const element = getByText(testLabel);
       expect(element.closest('button')).toHaveClass('small');
     });
+    it('supports aria-label attribute', () => {
+      const {
+        container
+      } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_Button2.default, {
+        ariaLabel: testLabel
+      }));
+      expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+    });
   });
 });
 //# sourceMappingURL=Button.test.js.map

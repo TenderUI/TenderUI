@@ -13,6 +13,8 @@ var _react = _interopRequireDefault(require("react"));
 
 var _iconShare = require("../../img/icons/icon-share.svg");
 
+var _helpers = require("../../lib/helpers");
+
 require("../../styles/init.scss");
 
 var _Button = _interopRequireDefault(require("./Button"));
@@ -57,7 +59,7 @@ var withIcon = function withIcon() {
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
       size: size
-    }, /*#__PURE__*/_react.default.createElement(_iconShare.ReactComponent, null), " ", "Button ".concat(size)));
+    }, /*#__PURE__*/_react.default.createElement(_iconShare.ReactComponent, _helpers.a11yIconHiddenProps), " ", "Button ".concat(size)));
   }));
 };
 

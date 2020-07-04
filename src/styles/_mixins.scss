@@ -46,11 +46,12 @@
               -10px -10px 15px 0 rgba(255, 255, 255, 0.8);
   }
 
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  vertical-align: middle;
 }
 
 %styleless-button {

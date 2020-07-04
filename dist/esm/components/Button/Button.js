@@ -1,3 +1,5 @@
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 import classNames from 'classnames';
 import React from 'react';
 import styles from './Button.module.scss';
@@ -11,15 +13,19 @@ const Button = ({
   type = 'button',
   size = 'normal',
   children,
-  className
+  className,
+  ariaLabel
 }) => {
   const classes = classNames(styles.button, styles[size], className);
-  return /*#__PURE__*/React.createElement("button", {
+  const a11yProps = ariaLabel ? {
+    "aria-label": ariaLabel
+  } : null;
+  return /*#__PURE__*/React.createElement("button", _extends({
     className: classes,
     type: type,
     onClick: onClick,
     disabled: disabled
-  }, children);
+  }, a11yProps), children);
 };
 
 export default Button;

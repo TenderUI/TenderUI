@@ -90,5 +90,13 @@ describe('Button', function () {
     var element = getByText(testLabel);
     expect(element.closest('button')).toHaveClass('small');
   });
+  it('supports aria-label attribute', function () {
+    var _render9 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_Button.default, {
+      ariaLabel: testLabel
+    })),
+        container = _render9.container;
+
+    expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+  });
 });
 //# sourceMappingURL=Button.test.js.map

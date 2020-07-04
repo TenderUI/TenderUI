@@ -28,12 +28,20 @@ type IconButtonPropsType = {
    * Define the shape of the button (border radius). Default: rounded.
    */
   shape?: 'rounded' | 'circle';
+
+  /**
+   * Define 'aria-label' attribute for screen readers. 
+   * Required for icon buttons because they don't have any other descriptive text.
+   */
+  ariaLabel: string;
 }
 
 type IconButtonPropsTypeWithChildren = PropsWithChildren<IconButtonPropsType>
 
 /**
- * A button with an icon.
+ * A square button with an icon.
+ * Please note the children should be a single icon. In any other cases, 
+ * use Button instead.
  */
 const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
   onClick,
@@ -41,6 +49,7 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
   type = 'button',
   size = 'normal',
   shape = 'rounded',
+  ariaLabel,
   children
 }) => {
   const classes = classNames(
@@ -56,6 +65,7 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
       className={classes}
       onClick={onClick}
       disabled={disabled}
+      ariaLabel={ariaLabel}
     >
       {children}
     </Button>

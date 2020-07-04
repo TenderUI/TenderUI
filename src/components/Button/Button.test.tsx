@@ -58,4 +58,9 @@ describe('Button', () => {
     const element = getByText(testLabel);
     expect(element.closest('button')).toHaveClass('small');
   });
+
+  it('supports aria-label attribute', () => {
+    const { container } = render(<Button ariaLabel={testLabel}></Button>);
+    expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+  });
 });

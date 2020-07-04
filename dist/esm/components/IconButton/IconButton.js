@@ -4,7 +4,9 @@ import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
 
 /**
- * A button with an icon.
+ * A square button with an icon.
+ * Please note the children should be a single icon. In any other cases, 
+ * use Button instead.
  */
 const IconButton = ({
   onClick,
@@ -12,6 +14,7 @@ const IconButton = ({
   type = 'button',
   size = 'normal',
   shape = 'rounded',
+  ariaLabel,
   children
 }) => {
   const classes = classNames(styles.icon, styles[size], styles[shape]);
@@ -20,7 +23,8 @@ const IconButton = ({
     type: type,
     className: classes,
     onClick: onClick,
-    disabled: disabled
+    disabled: disabled,
+    ariaLabel: ariaLabel
   }, children);
 };
 

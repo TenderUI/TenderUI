@@ -24,9 +24,14 @@ type ButtonPropsType = {
   onClick?: MouseEventHandler;
 
   /**
-   * Add a class name. Default: undefined.
+   * Add a class name. Optional.
    */
-  className?: string
+  className?: string;
+
+  /**
+   * Define 'aria-label' attribute for screen readers. Optional.
+   */
+  ariaLabel?: string;
 }
 
 type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>
@@ -40,7 +45,8 @@ const Button: FC<ButtonPropsTypeWithChildren> = ({
   type = 'button',
   size = 'normal',
   children,
-  className
+  className,
+  ariaLabel
 }) => {
   const classes = classNames(
     styles.button,
@@ -48,12 +54,17 @@ const Button: FC<ButtonPropsTypeWithChildren> = ({
     className
   );
 
+  const a11yProps = ariaLabel ? 
+    { "aria-label": ariaLabel } : 
+    null;
+
   return (
     <button
       className={classes}
       type={type}
       onClick={onClick}
       disabled={disabled}
+      {... a11yProps}
     >
       {children}
     </button>

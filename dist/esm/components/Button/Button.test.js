@@ -77,5 +77,13 @@ describe('Button', () => {
     const element = getByText(testLabel);
     expect(element.closest('button')).toHaveClass('small');
   });
+  it('supports aria-label attribute', () => {
+    const {
+      container
+    } = render( /*#__PURE__*/React.createElement(Button, {
+      ariaLabel: testLabel
+    }));
+    expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+  });
 });
 //# sourceMappingURL=Button.test.js.map

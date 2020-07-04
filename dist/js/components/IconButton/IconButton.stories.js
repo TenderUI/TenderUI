@@ -23,7 +23,11 @@ require("../../styles/init.scss");
 
 var _IconButton = _interopRequireDefault(require("./IconButton"));
 
+var _helpers = require("../../lib/helpers");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 var _default = {
   component: _IconButton.default,
@@ -46,30 +50,33 @@ var sizes = function sizes() {
     }
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "small"
-  }, /*#__PURE__*/_react.default.createElement(_iconHeart.ReactComponent, {
+    size: "small",
+    ariaLabel: "Like it"
+  }, /*#__PURE__*/_react.default.createElement(_iconHeart.ReactComponent, _extends({
     color: "#EC7CDA"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
+  }, _helpers.a11yIconHiddenProps)))), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       margin: '1rem',
       textAlign: 'center'
     }
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "normal"
-  }, /*#__PURE__*/_react.default.createElement(_iconMessage.ReactComponent, {
+    size: "normal",
+    ariaLabel: "Send a message"
+  }, /*#__PURE__*/_react.default.createElement(_iconMessage.ReactComponent, _extends({
     color: "#77BEFF"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
+  }, _helpers.a11yIconHiddenProps)))), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       margin: '1rem',
       textAlign: 'center'
     }
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "large"
-  }, /*#__PURE__*/_react.default.createElement(_iconFlag.ReactComponent, {
+    size: "large",
+    ariaLabel: "Mark as favorite"
+  }, /*#__PURE__*/_react.default.createElement(_iconFlag.ReactComponent, _extends({
     color: "#5081FF"
-  }))));
+  }, _helpers.a11yIconHiddenProps)))));
 };
 
 exports.sizes = sizes;
@@ -88,16 +95,18 @@ var shapes = function shapes() {
     }
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    shape: "rounded"
-  }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, null))), /*#__PURE__*/_react.default.createElement("div", {
+    shape: "rounded",
+    ariaLabel: "Add something"
+  }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, _helpers.a11yIconHiddenProps))), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       margin: '1rem',
       textAlign: 'center'
     }
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    shape: "circle"
-  }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, null))));
+    shape: "circle",
+    ariaLabel: "Add something"
+  }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, _helpers.a11yIconHiddenProps))));
 };
 
 exports.shapes = shapes;

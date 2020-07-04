@@ -2,6 +2,7 @@ import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import { ReactComponent as ShareIcon } from '../../img/icons/icon-share.svg';
+import { a11yIconHiddenProps } from '../../lib/helpers';
 import '../../styles/init.scss';
 import Button from './Button';
 export default {
@@ -31,5 +32,5 @@ export const withIcon = () => /*#__PURE__*/React.createElement(React.Fragment, n
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: size
-}, /*#__PURE__*/React.createElement(ShareIcon, null), " ", `Button ${size}`))));
+}, /*#__PURE__*/React.createElement(ShareIcon, a11yIconHiddenProps), " ", `Button ${size}`))));
 //# sourceMappingURL=Button.stories.js.map
