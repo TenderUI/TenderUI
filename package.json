@@ -29,7 +29,8 @@
     "build:storybook": "build-storybook -c .storybook -o docs",
     "start": "yarn storybook",
     "test": "react-scripts test",
-    "build": "concurrently \"yarn build:lib && yarn build:storybook\""
+    "build": "concurrently \"yarn build:lib && yarn build:storybook\"",
+    "lint": "eslint --ext js,ts,tsx src"
   },
   "repository": {
     "type": "git",
