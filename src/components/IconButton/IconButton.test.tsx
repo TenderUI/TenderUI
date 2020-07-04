@@ -3,23 +3,31 @@ import React from 'react';
 import { ReactComponent as Icon } from '../../img/icons/icon-flag.svg';
 import IconButton from './IconButton';
 
-// @fixme Review tests and fix issues.
-
 const childIcon = <Icon />;
 const ariaLabel = 'Test label';
 
 describe('IconButton', () => {
   afterEach(cleanup);
 
-  // it('displays the label', () => {
-  //   const { container } = render(<IconButton ariaLabel="Submit">{childIcon}</IconButton>);
-  //   // const element = container.firstChild;
-  //   expect(container.firstChild).toMatch(childIcon);
-  //   // expect(element).toBeInTheDocument();
-  // });
+  it('displays the icon', () => {
+    const { container } = render(<IconButton ariaLabel={ariaLabel}>{childIcon}</IconButton>);
+    expect(container.firstChild).toContainHTML("icon-flag.svg")
+  });
+
+  it('cannot include text', () => {
+    const { container } = render(<IconButton ariaLabel={ariaLabel}>{ariaLabel}</IconButton>);
+    expect(container.firstChild.firstChild).toBeNull();
+  });
+
+  it('adds accessibility attributes to the child icon', () => {
+    const { container } = render(<IconButton ariaLabel={ariaLabel}>{childIcon}</IconButton>);
+
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
+    expect(container.firstChild.firstChild).toHaveAttribute('focusable', 'false');
+  });
 
   it('can be of the type submit', () => {
-    const { container } = render(<IconButton type='submit' ariaLabel="Submit">{childIcon}</IconButton>);
+    const { container } = render(<IconButton type='submit' ariaLabel={ariaLabel}>{childIcon}</IconButton>);
     expect(container.firstChild).toHaveAttribute('type', 'submit');
   });
 

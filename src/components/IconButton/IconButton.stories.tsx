@@ -7,7 +7,6 @@ import { ReactComponent as MessageIcon } from '../../img/icons/icon-message.svg'
 import { ReactComponent as PlusIcon } from '../../img/icons/icon-plus.svg';
 import '../../styles/init.scss';
 import IconButton from './IconButton';
-import { a11yIconHiddenProps } from '../../lib/helpers';
 
 export default {
   component: IconButton,
@@ -23,7 +22,7 @@ export const sizes = () => (
         size="small"
         ariaLabel="Like it"
       >
-        <HeartIcon color="#EC7CDA" {...a11yIconHiddenProps} />
+        <HeartIcon color="#EC7CDA" />
       </IconButton>
     </div>
     <div style={{margin: '1rem', textAlign: 'center'}}>
@@ -32,7 +31,7 @@ export const sizes = () => (
         size="normal"
         ariaLabel="Send a message"
       >
-        <MessageIcon color="#77BEFF" {...a11yIconHiddenProps} />
+        <MessageIcon color="#77BEFF" />
       </IconButton>
     </div>
     <div style={{margin: '1rem', textAlign: 'center'}}>
@@ -41,7 +40,7 @@ export const sizes = () => (
         size="large"
         ariaLabel="Mark as favorite"
       >
-        <FlagIcon color="#5081FF" {...a11yIconHiddenProps} />
+        <FlagIcon color="#5081FF" />
       </IconButton>
     </div>
   </div>
@@ -55,7 +54,7 @@ export const shapes = () => (
         shape="rounded"
         ariaLabel="Add something"
       >
-        <PlusIcon {...a11yIconHiddenProps} />
+        <PlusIcon />
       </IconButton>
     </div>
     <div style={{margin: '1rem', textAlign: 'center'}}>
@@ -64,7 +63,7 @@ export const shapes = () => (
         shape="circle"
         ariaLabel="Add something"
       >
-        <PlusIcon {...a11yIconHiddenProps} />
+        <PlusIcon />
       </IconButton>
     </div>
   </div>

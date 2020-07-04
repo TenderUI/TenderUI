@@ -1,16 +1,16 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "classnames", "react", "../Button/Button", "./IconButton.module.scss"], factory);
+    define(["exports", "classnames", "react", "../Button/Button", "./IconButton.module.scss", "../../lib/helpers"], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("classnames"), require("react"), require("../Button/Button"), require("./IconButton.module.scss"));
+    factory(exports, require("classnames"), require("react"), require("../Button/Button"), require("./IconButton.module.scss"), require("../../lib/helpers"));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.classnames, global.react, global.Button, global.IconButtonModule);
+    factory(mod.exports, global.classnames, global.react, global.Button, global.IconButtonModule, global.helpers);
     global.undefined = mod.exports;
   }
-})(this, function (exports, _classnames, _react, _Button, _IconButtonModule) {
+})(this, function (exports, _classnames, _react, _Button, _IconButtonModule, _helpers) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
@@ -53,7 +53,7 @@
       onClick: onClick,
       disabled: disabled,
       ariaLabel: ariaLabel
-    }, children);
+    }, /*#__PURE__*/ /*#__PURE__*/_react2.default.isValidElement(children) ? /*#__PURE__*/_react2.default.cloneElement(children, _helpers.a11yIconHiddenProps) : null);
   };
 
   exports.default = IconButton;

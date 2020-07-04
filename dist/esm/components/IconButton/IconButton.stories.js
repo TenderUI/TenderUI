@@ -1,5 +1,3 @@
-function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
-
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
@@ -9,7 +7,6 @@ import { ReactComponent as MessageIcon } from '../../img/icons/icon-message.svg'
 import { ReactComponent as PlusIcon } from '../../img/icons/icon-plus.svg';
 import '../../styles/init.scss';
 import IconButton from './IconButton';
-import { a11yIconHiddenProps } from '../../lib/helpers';
 export default {
   component: IconButton,
   title: 'IconButton',
@@ -30,9 +27,9 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
   onClick: action('clicked'),
   size: "small",
   ariaLabel: "Like it"
-}, /*#__PURE__*/React.createElement(HeartIcon, _extends({
+}, /*#__PURE__*/React.createElement(HeartIcon, {
   color: "#EC7CDA"
-}, a11yIconHiddenProps)))), /*#__PURE__*/React.createElement("div", {
+}))), /*#__PURE__*/React.createElement("div", {
   style: {
     margin: '1rem',
     textAlign: 'center'
@@ -41,9 +38,9 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
   onClick: action('clicked'),
   size: "normal",
   ariaLabel: "Send a message"
-}, /*#__PURE__*/React.createElement(MessageIcon, _extends({
+}, /*#__PURE__*/React.createElement(MessageIcon, {
   color: "#77BEFF"
-}, a11yIconHiddenProps)))), /*#__PURE__*/React.createElement("div", {
+}))), /*#__PURE__*/React.createElement("div", {
   style: {
     margin: '1rem',
     textAlign: 'center'
@@ -52,9 +49,9 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
   onClick: action('clicked'),
   size: "large",
   ariaLabel: "Mark as favorite"
-}, /*#__PURE__*/React.createElement(FlagIcon, _extends({
+}, /*#__PURE__*/React.createElement(FlagIcon, {
   color: "#5081FF"
-}, a11yIconHiddenProps)))));
+}))));
 export const shapes = () => /*#__PURE__*/React.createElement("div", {
   style: {
     display: 'flex',
@@ -70,7 +67,7 @@ export const shapes = () => /*#__PURE__*/React.createElement("div", {
   onClick: action('clicked'),
   shape: "rounded",
   ariaLabel: "Add something"
-}, /*#__PURE__*/React.createElement(PlusIcon, a11yIconHiddenProps))), /*#__PURE__*/React.createElement("div", {
+}, /*#__PURE__*/React.createElement(PlusIcon, null))), /*#__PURE__*/React.createElement("div", {
   style: {
     margin: '1rem',
     textAlign: 'center'
@@ -79,5 +76,5 @@ export const shapes = () => /*#__PURE__*/React.createElement("div", {
   onClick: action('clicked'),
   shape: "circle",
   ariaLabel: "Add something"
-}, /*#__PURE__*/React.createElement(PlusIcon, a11yIconHiddenProps))));
+}, /*#__PURE__*/React.createElement(PlusIcon, null))));
 //# sourceMappingURL=IconButton.stories.js.map

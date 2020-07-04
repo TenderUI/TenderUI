@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React from 'react';
 import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
+import { a11yIconHiddenProps } from '../../lib/helpers';
 
 /**
  * A square button with an icon.
@@ -25,7 +26,7 @@ const IconButton = ({
     onClick: onClick,
     disabled: disabled,
     ariaLabel: ariaLabel
-  }, children);
+  }, /*#__PURE__*/React.isValidElement(children) ? /*#__PURE__*/React.cloneElement(children, a11yIconHiddenProps) : null);
 };
 
 export default IconButton;

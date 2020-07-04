@@ -13,6 +13,8 @@ var _Button = _interopRequireDefault(require("../Button/Button"));
 
 var _IconButtonModule = _interopRequireDefault(require("./IconButton.module.scss"));
 
+var _helpers = require("../../lib/helpers");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
@@ -40,7 +42,7 @@ var IconButton = function IconButton(_ref) {
     onClick: onClick,
     disabled: disabled,
     ariaLabel: ariaLabel
-  }, children);
+  }, /*#__PURE__*/_react.default.isValidElement(children) ? /*#__PURE__*/_react.default.cloneElement(children, _helpers.a11yIconHiddenProps) : null);
 };
 
 var _default = IconButton;

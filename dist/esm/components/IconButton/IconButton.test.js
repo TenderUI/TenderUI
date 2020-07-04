@@ -1,24 +1,42 @@
 import { cleanup, render, fireEvent } from '@testing-library/react';
 import React from 'react';
 import { ReactComponent as Icon } from '../../img/icons/icon-flag.svg';
-import IconButton from './IconButton'; // @fixme Review tests and fix issues.
-
+import IconButton from './IconButton';
 const childIcon = /*#__PURE__*/React.createElement(Icon, null);
 const ariaLabel = 'Test label';
 describe('IconButton', () => {
-  afterEach(cleanup); // it('displays the label', () => {
-  //   const { container } = render(<IconButton ariaLabel="Submit">{childIcon}</IconButton>);
-  //   // const element = container.firstChild;
-  //   expect(container.firstChild).toMatch(childIcon);
-  //   // expect(element).toBeInTheDocument();
-  // });
-
+  afterEach(cleanup);
+  it('displays the icon', () => {
+    const {
+      container
+    } = render( /*#__PURE__*/React.createElement(IconButton, {
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild).toContainHTML("icon-flag.svg");
+  });
+  it('cannot include text', () => {
+    const {
+      container
+    } = render( /*#__PURE__*/React.createElement(IconButton, {
+      ariaLabel: ariaLabel
+    }, ariaLabel));
+    expect(container.firstChild.firstChild).toBeNull();
+  });
+  it('adds accessibility attributes to the child icon', () => {
+    const {
+      container
+    } = render( /*#__PURE__*/React.createElement(IconButton, {
+      ariaLabel: ariaLabel
+    }, childIcon));
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
+    expect(container.firstChild.firstChild).toHaveAttribute('focusable', 'false');
+  });
   it('can be of the type submit', () => {
     const {
       container
     } = render( /*#__PURE__*/React.createElement(IconButton, {
       type: "submit",
-      ariaLabel: "Submit"
+      ariaLabel: ariaLabel
     }, childIcon));
     expect(container.firstChild).toHaveAttribute('type', 'submit');
   });

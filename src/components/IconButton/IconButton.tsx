@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import React, { FC, MouseEventHandler, PropsWithChildren } from 'react';
 import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
+import { a11yIconHiddenProps } from '../../lib/helpers';
 
 type IconButtonPropsType = {
   /**
@@ -67,7 +68,9 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
       disabled={disabled}
       ariaLabel={ariaLabel}
     >
-      {children}
+      {React.isValidElement(children)
+        ? React.cloneElement(children, a11yIconHiddenProps)
+        : null}
     </Button>
   );
 };
