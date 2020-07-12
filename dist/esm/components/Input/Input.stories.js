@@ -18,6 +18,19 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
   }
 }, /*#__PURE__*/React.createElement(Input, {
   onChange: action('change'),
-  size: size
-}, `Button ${size}`))));
+  size: size,
+  placeholder: `Button ${size}`,
+  "aria-label": `Button ${size}`
+}))));
+export const disabled = () => /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: '2rem',
+    display: 'flex',
+    justifyContent: 'center'
+  }
+}, /*#__PURE__*/React.createElement(Input, {
+  placeholder: "Disabled text input",
+  "aria-label": "Disabled text input",
+  disabled: true
+}));
 //# sourceMappingURL=Input.stories.js.map

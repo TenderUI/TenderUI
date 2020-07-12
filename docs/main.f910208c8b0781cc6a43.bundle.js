@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{1306:function(n,t,e){e(431),e(578),e(1319),e(1290),e(1255),e(1287),n.exports=e(1307)},1319:function(n,t,e){"use strict";e.r(t);var o=e(83),i=e(430),s=Object(i.create)({base:"light",brandTitle:"Nia Components",brandUrl:"https://github.com/kkomelin/nia"});o.addons.setConfig({theme:s})},495:function(n,t){}},[[1306,1,2]]]);

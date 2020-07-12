@@ -34,7 +34,7 @@ const Input: FC<InputPropsType> = ({
 }) => {
   const classes = classNames(
     styles.input,
-    styles[size],
+    (styles as any)[size],
     className
   );
 

@@ -1,4 +1,4 @@
-import { ChangeEventHandler, FC } from 'react';
+import { AllHTMLAttributes, FC } from 'react';
 declare type InputPropsType = {
     /**
      * Define button behavior. Default: text
@@ -9,18 +9,10 @@ declare type InputPropsType = {
      */
     size?: 'normal' | 'small' | 'large';
     /**
-     * Disable button. Default: false
-     */
-    disabled?: boolean;
-    /**
-     * Register change event handler.
-     */
-    onChange?: ChangeEventHandler;
-    /**
      * Add a class name. Optional.
      */
     className?: string;
-};
+} & AllHTMLAttributes<HTMLInputElement>;
 /**
  * An input element.
  */
