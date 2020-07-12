@@ -16,10 +16,23 @@ export const sizes = () => (
   <>
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
-        <Input onChange={action('change')} size={size}>
-          {`Button ${size}`}
-        </Input>
+        <Input 
+          onChange={action('change')} 
+          size={size} 
+          placeholder={`Button ${size}`} 
+          aria-label={`Button ${size}`} 
+        />
       </div>
     ))}
   </>
+);
+
+export const disabled = () => (
+  <div style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
+    <Input 
+      placeholder="Disabled text input" 
+      aria-label="Disabled text input" 
+      disabled={true} 
+    />
+  </div>
 );

@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { ChangeEventHandler, FC } from 'react';
+import React, { AllHTMLAttributes, FC } from 'react';
 import styles from './Input.module.scss';
 
 type InputPropsType = {
@@ -17,30 +17,20 @@ type InputPropsType = {
   size?: 'normal' | 'small' | 'large';
 
   /**
-   * Disable button. Default: false
-   */
-  disabled?: boolean;
-
-  /**
-   * Register change event handler.
-   */
-  onChange?: ChangeEventHandler;
-
-  /**
    * Add a class name. Optional.
    */
   className?: string;
-}
+} & AllHTMLAttributes<HTMLInputElement>;
+
 
 /**
  * An input element.
  */
 const Input: FC<InputPropsType> = ({
-  onChange,
-  disabled = false,
   type = 'text',
   size = 'normal',
-  className
+  className,
+  ...rest
 }) => {
   const classes = classNames(
     styles.input,
@@ -52,8 +42,7 @@ const Input: FC<InputPropsType> = ({
     <input
       className={classes}
       type={type}
-      onChange={onChange}
-      disabled={disabled}
+      {...rest}
     />
   );
 };
