@@ -6,7 +6,7 @@ A React component library implementing Neumorphic design concepts.
 ![Neumorphic UI Kit by Tatsiana Charnysh](./cover.jpg)
 
 ## Authors
-- Tatsiana Charnysh (design)
+- [Tatsiana Charnysh](https://github.com/TatsianaCharnysh) (design)
 - [Konstantin Komelin](https://github.com/kkomelin) (development)
 
 ## License & Copyright
