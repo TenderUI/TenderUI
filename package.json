@@ -2,6 +2,16 @@
   "name": "nia",
   "description": "A React component library implementing Neumorphic design concepts.",
   "version": "0.1.0",
+  "license": "MIT",
+  "keywords": [
+    "nia",
+    "react-components",
+    "react",
+    "reactjs",
+    "uikit",
+    "ui-components",
+    "ui-library"
+  ],
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",
@@ -77,6 +87,5 @@
   "bugs": {
     "url": "https://github.com/kkomelin/nia/issues"
   },
-  "homepage": "https://github.com/kkomelin/nia#readme",
-  "license": "MIT"
+  "homepage": "https://github.com/kkomelin/nia#readme"
 }
