@@ -1,10 +1,13 @@
 {
-  "name": "nia",
+  "name": "soft-touch-ui",
   "description": "A React component library implementing Neumorphic design concepts.",
   "version": "0.1.0",
   "license": "MIT",
   "keywords": [
-    "nia",
+    "soft-touch-ui",
+    "soft-ui",
+    "neumorphic-ui",
+    "neumorphism",
     "react-components",
     "react",
     "reactjs",
@@ -44,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kkomelin/nia.git"
+    "url": "git+ssh://git@github.com/kkomelin/soft-touch-ui.git"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -85,7 +88,7 @@
     "typed-scss-modules": "^1.3.0"
   },
   "bugs": {
-    "url": "https://github.com/kkomelin/nia/issues"
+    "url": "https://github.com/kkomelin/soft-touch-ui/issues"
   },
-  "homepage": "https://github.com/kkomelin/nia#readme"
+  "homepage": "https://github.com/kkomelin/soft-touch-ui#readme"
 }
