@@ -16,7 +16,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.sizes = undefined;
+  exports.disabled = exports.sizes = undefined;
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -44,7 +44,21 @@
     }
   }, /*#__PURE__*/_react2.default.createElement(_Input2.default, {
     onChange: (0, _addonActions.action)('change'),
-    size: size
-  }, `Button ${size}`))));
+    size: size,
+    placeholder: `Button ${size}`,
+    "aria-label": `Button ${size}`
+  }))));
+
+  const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement("div", {
+    style: {
+      marginBottom: '2rem',
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/_react2.default.createElement(_Input2.default, {
+    placeholder: "Disabled text input",
+    "aria-label": "Disabled text input",
+    disabled: true
+  }));
 });
 //# sourceMappingURL=Input.stories.js.map

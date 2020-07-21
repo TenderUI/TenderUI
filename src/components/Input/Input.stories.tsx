@@ -18,24 +18,21 @@ export const sizes = () => (
       <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
         <Input 
           onChange={action('change')} 
-          size={size}
-          placeholder={`Input ${size}`}
+          size={size} 
+          placeholder={`Button ${size}`} 
+          aria-label={`Button ${size}`} 
         />
       </div>
     ))}
   </>
 );
 
-export const withIcon = () => (
-  <>
-    {sizeVariants.map((size: any) => (
-      <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
-        <Input 
-          onChange={action('change')} 
-          size={size}
-          placeholder={`Input ${size}`}
-        />
-      </div>
-    ))}
-  </>
+export const disabled = () => (
+  <div style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
+    <Input 
+      placeholder="Disabled text input" 
+      aria-label="Disabled text input" 
+      disabled={true} 
+    />
+  </div>
 );

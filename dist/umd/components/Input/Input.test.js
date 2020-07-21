@@ -25,11 +25,40 @@
 
   describe('Input', () => {
     afterEach(_react.cleanup);
-    it('displays the label', () => {
+    it('displays the input', () => {
       const {
         container
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_Input2.default, null));
-      expect(container.firstChild).toBeInTheDocument();
+      expect(container.firstChild).toContainHTML('<input');
+    });
+    it('renders a placeholder', () => {
+      const placeholder = 'A placeholder';
+      const {
+        getByPlaceholderText
+      } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_Input2.default, {
+        placeholder: placeholder
+      }));
+      const inputNode = getByPlaceholderText(placeholder);
+      expect(inputNode).toBeInTheDocument();
+    });
+    it('has tabindex attribute', () => {
+      const tabindex = 2;
+      const {
+        container
+      } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_Input2.default, {
+        tabIndex: tabindex
+      }));
+      expect(container.firstChild).toHaveAttribute('tabindex', `${tabindex}`);
+    });
+    it('renders a placeholder', () => {
+      const placeholder = 'A placeholder';
+      const {
+        getByPlaceholderText
+      } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_Input2.default, {
+        placeholder: placeholder
+      }));
+      const inputNode = getByPlaceholderText(placeholder);
+      expect(inputNode).toBeInTheDocument();
     });
   });
 });

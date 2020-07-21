@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sizes = exports.default = void 0;
+exports.disabled = exports.sizes = exports.default = void 0;
 
 var _addonA11y = require("@storybook/addon-a11y");
 
@@ -36,10 +36,28 @@ var sizes = function sizes() {
       }
     }, /*#__PURE__*/_react.default.createElement(_Input.default, {
       onChange: (0, _addonActions.action)('change'),
-      size: size
-    }, "Button ".concat(size)));
+      size: size,
+      placeholder: "Button ".concat(size),
+      "aria-label": "Button ".concat(size)
+    }));
   }));
 };
 
 exports.sizes = sizes;
+
+var disabled = function disabled() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    style: {
+      marginBottom: '2rem',
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/_react.default.createElement(_Input.default, {
+    placeholder: "Disabled text input",
+    "aria-label": "Disabled text input",
+    disabled: true
+  }));
+};
+
+exports.disabled = disabled;
 //# sourceMappingURL=Input.stories.js.map

@@ -33,4 +33,135 @@ export const withIcon = () => /*#__PURE__*/React.createElement(React.Fragment, n
   onClick: action('clicked'),
   size: size
 }, /*#__PURE__*/React.createElement(ShareIcon, a11yIconHiddenProps), " ", `Button ${size}`))));
+export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: '2rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Default + Hover 1"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default hover1"
+}, "Button")), /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: '2rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Default + Hover 2"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default hover2"
+}, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
+  style: {
+    margin: '2rem 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Disabled 1"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default disabled1",
+  disabled: true
+}, "Button")), /*#__PURE__*/React.createElement("div", {
+  style: {
+    margin: '2rem 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Disabled 2"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default disabled2",
+  disabled: true
+}, "Button")), /*#__PURE__*/React.createElement("div", {
+  style: {
+    margin: '2rem 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Disabled 3"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default disabled3",
+  disabled: true
+}, "Button")), /*#__PURE__*/React.createElement("div", {
+  style: {
+    margin: '2rem 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Disabled 4"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default disabled4",
+  disabled: true
+}, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
+  style: {
+    margin: '2rem 0',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '2rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Outlined on Hover (buggy)"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default outlined"
+}, "Button")));
 //# sourceMappingURL=Button.stories.js.map

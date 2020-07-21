@@ -1,7 +1,6 @@
 import { addons } from '@storybook/addons';
-import niaTheme from './niaTheme';
+import theme from './theme';
 
 addons.setConfig({
-  theme: niaTheme,
+  theme,
 });
-
