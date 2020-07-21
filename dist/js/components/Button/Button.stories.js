@@ -34,7 +34,7 @@ var sizes = function sizes() {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: size,
       style: {
-        marginBottom: '2rem',
+        marginBottom: '1.5rem',
         display: 'flex',
         justifyContent: 'center'
       }
@@ -52,7 +52,7 @@ var withIcon = function withIcon() {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: size,
       style: {
-        marginBottom: '2rem',
+        marginBottom: '1.5rem',
         display: 'flex',
         justifyContent: 'center'
       }
@@ -68,14 +68,14 @@ exports.withIcon = withIcon;
 var newStates = function newStates() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginBottom: '2rem',
+      marginBottom: '1.5rem',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -86,14 +86,14 @@ var newStates = function newStates() {
     className: "default hover1"
   }, "Button")), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginBottom: '2rem',
+      marginBottom: '1.5rem',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -104,14 +104,14 @@ var newStates = function newStates() {
     className: "default hover2"
   }, "Button")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -123,14 +123,14 @@ var newStates = function newStates() {
     disabled: true
   }, "Button")), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -142,14 +142,14 @@ var newStates = function newStates() {
     disabled: true
   }, "Button")), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -161,14 +161,14 @@ var newStates = function newStates() {
     disabled: true
   }, "Button")), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -180,14 +180,14 @@ var newStates = function newStates() {
     disabled: true
   }, "Button")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'

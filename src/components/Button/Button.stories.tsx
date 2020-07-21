@@ -17,7 +17,7 @@ const sizeVariants = ['small', 'normal', 'large'];
 export const sizes = () => (
   <>
     {sizeVariants.map((size: any) => (
-      <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
+      <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
         <Button onClick={action('clicked')} size={size}>
           {`Button ${size}`}
         </Button>
@@ -29,7 +29,7 @@ export const sizes = () => (
 export const withIcon = () => (
   <>
     {sizeVariants.map((size: any) => (
-      <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
+      <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
         <Button onClick={action('clicked')} size={size}>
           <ShareIcon {...a11yIconHiddenProps} /> {`Button ${size}`}
         </Button>
@@ -40,46 +40,46 @@ export const withIcon = () => (
 
 export const newStates = () => (
   <>
-    <div style={{marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Default + Hover 1</div>
+    <div style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Default + Hover 1</div>
       <Button onClick={action('clicked')} size="large" className="default hover1">
         Button
       </Button>
     </div>
-    <div style={{marginBottom: '2rem', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Default + Hover 2</div>
+    <div style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Default + Hover 2</div>
       <Button onClick={action('clicked')} size="large" className="default hover2">
         Button
       </Button>
     </div>
     <hr />
-    <div style={{margin: '2rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 1</div>
+    <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 1</div>
       <Button onClick={action('clicked')} size="large" className="default disabled1" disabled={true}>
         Button
       </Button>
     </div>
-    <div style={{margin: '2rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 2</div>
+    <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 2</div>
       <Button onClick={action('clicked')} size="large" className="default disabled2" disabled={true}>
         Button
       </Button>
     </div>
-    <div style={{margin: '2rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 3</div>
+    <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 3</div>
       <Button onClick={action('clicked')} size="large" className="default disabled3" disabled={true}>
         Button
       </Button>
     </div>
-    <div style={{margin: '2rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 4</div>
+    <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 4</div>
       <Button onClick={action('clicked')} size="large" className="default disabled4" disabled={true}>
         Button
       </Button>
     </div>
     <hr />
-    <div style={{margin: '2rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Outlined on Hover (buggy)</div>
+    <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
+      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Outlined on Hover (buggy)</div>
       <Button onClick={action('clicked')} size="large" className="default outlined">
         Button
       </Button>

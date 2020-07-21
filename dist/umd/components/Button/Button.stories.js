@@ -38,7 +38,7 @@
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
     style: {
-      marginBottom: '2rem',
+      marginBottom: '1.5rem',
       display: 'flex',
       justifyContent: 'center'
     }
@@ -50,7 +50,7 @@
   const withIcon = exports.withIcon = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
     style: {
-      marginBottom: '2rem',
+      marginBottom: '1.5rem',
       display: 'flex',
       justifyContent: 'center'
     }
@@ -61,14 +61,14 @@
 
   const newStates = exports.newStates = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginBottom: '2rem',
+      marginBottom: '1.5rem',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -79,14 +79,14 @@
     className: "default hover1"
   }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginBottom: '2rem',
+      marginBottom: '1.5rem',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -97,14 +97,14 @@
     className: "default hover2"
   }, "Button")), /*#__PURE__*/_react2.default.createElement("hr", null), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -116,14 +116,14 @@
     disabled: true
   }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -135,14 +135,14 @@
     disabled: true
   }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -154,14 +154,14 @@
     disabled: true
   }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
@@ -173,14 +173,14 @@
     disabled: true
   }, "Button")), /*#__PURE__*/_react2.default.createElement("hr", null), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      margin: '2rem 0',
+      margin: '1.5rem 0',
       display: 'flex',
       justifyContent: 'space-between',
       width: '100%'
     }
   }, /*#__PURE__*/_react2.default.createElement("div", {
     style: {
-      marginRight: '2rem',
+      marginRight: '1.5rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'

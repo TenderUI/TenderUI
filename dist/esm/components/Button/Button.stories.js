@@ -14,7 +14,7 @@ const sizeVariants = ['small', 'normal', 'large'];
 export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {
-    marginBottom: '2rem',
+    marginBottom: '1.5rem',
     display: 'flex',
     justifyContent: 'center'
   }
@@ -25,7 +25,7 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
 export const withIcon = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {
-    marginBottom: '2rem',
+    marginBottom: '1.5rem',
     display: 'flex',
     justifyContent: 'center'
   }
@@ -35,14 +35,14 @@ export const withIcon = () => /*#__PURE__*/React.createElement(React.Fragment, n
 }, /*#__PURE__*/React.createElement(ShareIcon, a11yIconHiddenProps), " ", `Button ${size}`))));
 export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginBottom: '2rem',
+    marginBottom: '1.5rem',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -53,14 +53,14 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   className: "default hover1"
 }, "Button")), /*#__PURE__*/React.createElement("div", {
   style: {
-    marginBottom: '2rem',
+    marginBottom: '1.5rem',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -71,14 +71,14 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   className: "default hover2"
 }, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
   style: {
-    margin: '2rem 0',
+    margin: '1.5rem 0',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -90,14 +90,14 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   disabled: true
 }, "Button")), /*#__PURE__*/React.createElement("div", {
   style: {
-    margin: '2rem 0',
+    margin: '1.5rem 0',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -109,14 +109,14 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   disabled: true
 }, "Button")), /*#__PURE__*/React.createElement("div", {
   style: {
-    margin: '2rem 0',
+    margin: '1.5rem 0',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -128,14 +128,14 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   disabled: true
 }, "Button")), /*#__PURE__*/React.createElement("div", {
   style: {
-    margin: '2rem 0',
+    margin: '1.5rem 0',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
@@ -147,14 +147,14 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   disabled: true
 }, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
   style: {
-    margin: '2rem 0',
+    margin: '1.5rem 0',
     display: 'flex',
     justifyContent: 'space-between',
     width: '100%'
   }
 }, /*#__PURE__*/React.createElement("div", {
   style: {
-    marginRight: '2rem',
+    marginRight: '1.5rem',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
