@@ -69,6 +69,24 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   onClick: action('clicked'),
   size: "large",
   className: "default hover2"
+}, "Button")), /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: '1.5rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%'
+  }
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginRight: '1.5rem',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+}, "Default + Hover 3"), /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "default hover3"
 }, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
   style: {
     margin: '1.5rem 0',
@@ -107,61 +125,5 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   size: "large",
   className: "default disabled2",
   disabled: true
-}, "Button")), /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1.5rem 0',
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%'
-  }
-}, /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginRight: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-}, "Disabled 3"), /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  size: "large",
-  className: "default disabled3",
-  disabled: true
-}, "Button")), /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1.5rem 0',
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%'
-  }
-}, /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginRight: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-}, "Disabled 4"), /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  size: "large",
-  className: "default disabled4",
-  disabled: true
-}, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1.5rem 0',
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%'
-  }
-}, /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginRight: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-}, "Outlined on Hover (buggy)"), /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  size: "large",
-  className: "default outlined"
 }, "Button")));
 //# sourceMappingURL=Button.stories.js.map

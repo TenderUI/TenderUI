@@ -95,6 +95,24 @@
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
     className: "default hover2"
+  }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
+    style: {
+      marginBottom: '1.5rem',
+      display: 'flex',
+      justifyContent: 'space-between',
+      width: '100%'
+    }
+  }, /*#__PURE__*/_react2.default.createElement("div", {
+    style: {
+      marginRight: '1.5rem',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
+  }, "Default + Hover 3"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: "large",
+    className: "default hover3"
   }, "Button")), /*#__PURE__*/_react2.default.createElement("hr", null), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
       margin: '1.5rem 0',
@@ -133,62 +151,6 @@
     size: "large",
     className: "default disabled2",
     disabled: true
-  }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      margin: '1.5rem 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Disabled 3"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default disabled3",
-    disabled: true
-  }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      margin: '1.5rem 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Disabled 4"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default disabled4",
-    disabled: true
-  }, "Button")), /*#__PURE__*/_react2.default.createElement("hr", null), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      margin: '1.5rem 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Outlined on Hover (buggy)"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default outlined"
   }, "Button")));
 });
 //# sourceMappingURL=Button.stories.js.map
