@@ -15,3 +15,7 @@
 .large {
   @include button-sizes($font-size-large);
 }
+
+.group {
+  display: inline-block;
+}

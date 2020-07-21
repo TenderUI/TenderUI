@@ -65,9 +65,20 @@
 
 %input {
   @extend %neutralize-input;
+
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+
+  font-size: 28px;
+
+  text-align: left;
+  vertical-align: middle;
   
   background: linear-gradient(171.1deg, #EEF1F5 4.98%, #E6E9EF 94.88%);
   box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.75), inset -5px -5px 15px rgba(255, 255, 255, 0.75);
   border-radius: 40px;
-}
 
+  position: relative;
+}

@@ -16,9 +16,25 @@ export const sizes = () => (
   <>
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
-        <Input onChange={action('change')} size={size}>
-          {`Button ${size}`}
-        </Input>
+        <Input 
+          onChange={action('change')} 
+          size={size}
+          placeholder={`Input ${size}`}
+        />
+      </div>
+    ))}
+  </>
+);
+
+export const withIcon = () => (
+  <>
+    {sizeVariants.map((size: any) => (
+      <div key={size} style={{marginBottom: '2rem', display: 'flex', justifyContent: 'center'}}>
+        <Input 
+          onChange={action('change')} 
+          size={size}
+          placeholder={`Input ${size}`}
+        />
       </div>
     ))}
   </>
