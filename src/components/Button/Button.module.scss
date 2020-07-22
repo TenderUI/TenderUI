@@ -44,7 +44,8 @@
 
   &.hover1 {
     &:hover, &:focus {
-      background: linear-gradient(157.54deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
+      background: linear-gradient(157.54deg, #F2F5F7 9.97%, #F8FAFC 96.13%) !important;
+      box-shadow: none;
       color: #363F48 !important;
     }
   }
