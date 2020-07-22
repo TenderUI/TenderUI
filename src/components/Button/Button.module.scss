@@ -16,8 +16,21 @@
   @include button-sizes($font-size-large);
 }
 
+.buttonWrapper {
+  padding:1px;
+
+  background: linear-gradient(340.96deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
+  box-shadow: 4px 6px 10px rgba(179, 193, 213, 0.7), -4px -4px 12px #FFFFFF;
+  border-radius: 40px;
+
+  &:hover, &:focus {
+    background: linear-gradient(156.93deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
+    box-shadow: 4px 6px 10px rgba(179, 193, 213, 0.8), -4px -4px 12px #FFFFFF;
+  }
+}
+
 :global .default {
-  height: 48px;
+  height: 46px;
 
   padding-left: 3rem;
   padding-right: 3rem;
@@ -26,23 +39,13 @@
   line-height: 26px;
   color: #485158 !important;
 
-  background: linear-gradient(341.16deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-  box-shadow: 4px 6px 10px rgba(179, 193, 213, 0.7), -4px -4px 12px #FFFFFF;
+  background: linear-gradient(341.68deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
   border-radius: 40px;
 
   &.hover1 {
     &:hover, &:focus {
-      background: linear-gradient(156.93deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
-      box-shadow: 4px 6px 10px rgba(179, 193, 213, 0.8), -4px -4px 12px #FFFFFF;
+      background: linear-gradient(157.54deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       color: #363F48 !important;
-    }
-  }
-
-  &.hover2 {
-    &:hover, &:focus {
-      background: linear-gradient(156.93deg, #F3F6F9 9.97%, #FDFDFD 96.13%);
-      box-shadow: 4px 6px 12px rgba(179, 193, 213, 0.85), -4px -4px 14px #FFFFFF;
-      color: #34404A !important;
     }
   }
 

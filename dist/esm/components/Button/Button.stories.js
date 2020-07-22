@@ -51,24 +51,6 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
   onClick: action('clicked'),
   size: "large",
   className: "default hover1"
-}, "Button")), /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginBottom: '1.5rem',
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '100%'
-  }
-}, /*#__PURE__*/React.createElement("div", {
-  style: {
-    marginRight: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-}, "Default + Hover 2"), /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  size: "large",
-  className: "default hover2"
 }, "Button")), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
   style: {
     margin: '1.5rem 0',

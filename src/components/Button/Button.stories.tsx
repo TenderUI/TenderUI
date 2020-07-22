@@ -46,12 +46,6 @@ export const newStates = () => (
         Button
       </Button>
     </div>
-    <div style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Default + Hover 2</div>
-      <Button onClick={action('clicked')} size="large" className="default hover2">
-        Button
-      </Button>
-    </div>
     <hr />
     <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
       <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 1</div>

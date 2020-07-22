@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { FC, MouseEventHandler, PropsWithChildren } from 'react';
+import React, { FC, MouseEventHandler, PropsWithChildren, ReactElement } from 'react';
 import styles from './Button.module.scss';
 
 type ButtonPropsType = {
@@ -58,16 +58,26 @@ const Button: FC<ButtonPropsTypeWithChildren> = ({
     { "aria-label": ariaLabel } : 
     null;
 
-  return (
+  const button: ReactElement = (
     <button
-      className={classes}
-      type={type}
-      onClick={onClick}
-      disabled={disabled}
-      {... a11yProps}
-    >
-      {children}
+        className={classes}
+        type={type}
+        onClick={onClick}
+        disabled={disabled}
+        {... a11yProps}
+      >
+        {children}
     </button>
+  );
+
+  if (disabled) {
+    return button;
+  }
+
+  return (
+    <span className={styles.buttonWrapper}>
+      {button}
+    </span>
   );
 };
 

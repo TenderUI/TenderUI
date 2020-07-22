@@ -20,12 +20,20 @@ const Button = ({
   const a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  return /*#__PURE__*/React.createElement("button", _extends({
+  const button = /*#__PURE__*/React.createElement("button", _extends({
     className: classes,
     type: type,
     onClick: onClick,
     disabled: disabled
   }, a11yProps), children);
+
+  if (disabled) {
+    return button;
+  }
+
+  return /*#__PURE__*/React.createElement("span", {
+    className: styles.buttonWrapper
+  }, button);
 };
 
 export default Button;

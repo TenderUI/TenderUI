@@ -63,12 +63,21 @@
     const a11yProps = ariaLabel ? {
       "aria-label": ariaLabel
     } : null;
-    return /*#__PURE__*/_react2.default.createElement("button", _extends({
+
+    const button = /*#__PURE__*/_react2.default.createElement("button", _extends({
       className: classes,
       type: type,
       onClick: onClick,
       disabled: disabled
     }, a11yProps), children);
+
+    if (disabled) {
+      return button;
+    }
+
+    return /*#__PURE__*/_react2.default.createElement("span", {
+      className: _ButtonModule2.default.buttonWrapper
+    }, button);
   };
 
   exports.default = Button;

@@ -33,12 +33,21 @@ var Button = function Button(_ref) {
   var a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  return /*#__PURE__*/_react.default.createElement("button", _extends({
+
+  var button = /*#__PURE__*/_react.default.createElement("button", _extends({
     className: classes,
     type: type,
     onClick: onClick,
     disabled: disabled
   }, a11yProps), children);
+
+  if (disabled) {
+    return button;
+  }
+
+  return /*#__PURE__*/_react.default.createElement("span", {
+    className: _ButtonModule.default.buttonWrapper
+  }, button);
 };
 
 var _default = Button;

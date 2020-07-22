@@ -77,24 +77,6 @@
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
     className: "default hover1"
-  }, "Button")), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Default + Hover 2"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default hover2"
   }, "Button")), /*#__PURE__*/_react2.default.createElement("hr", null), /*#__PURE__*/_react2.default.createElement("div", {
     style: {
       margin: '1.5rem 0',
