@@ -24,7 +24,7 @@
 
   font-size: 22px;
   line-height: 26px;
-  color: #4B545B !important;
+  color: #485158 !important;
 
   background: linear-gradient(341.16deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
   box-shadow: 4px 6px 10px rgba(179, 193, 213, 0.7), -4px -4px 12px #FFFFFF;
@@ -46,24 +46,10 @@
     }
   }
 
-  &.hover3 {
-    &:hover, &:focus {
-      background: linear-gradient(156.93deg, #F9FBFD 9.97%, #FFFFFF 96.13%);
-      box-shadow: 4px 6px 10px rgba(179, 193, 213, 0.7), -4px -4px 12px rgba(255, 255, 255, 0.8);
-      color: #363F48 !important;
-    }
-  }
-
   &.disabled1 {
     background: linear-gradient(341.16deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
     box-shadow: 4px 4px 7px rgba(179, 193, 213, 0.4), -4px -4px 9px rgba(255, 255, 255, 0.85);
-    color: rgba(75, 84, 91, 0.45) !important;
-    cursor: not-allowed;
-  }
-  &.disabled2 {
-    background: linear-gradient(341.16deg, #F4F7FA 7.66%, #ECF1F6 95.56%);
-    box-shadow: 1px 1px 4px rgba(179, 193, 213, 0.3), -1px -1px 4px rgba(255, 255, 255, 0.85);
-    color: #ABB9C7 !important;
+    color: rgba(72, 81, 88, 0.6) !important;
     cursor: not-allowed;
   }
 }
