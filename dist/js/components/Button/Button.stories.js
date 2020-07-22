@@ -102,24 +102,6 @@ var newStates = function newStates() {
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
     className: "default hover2"
-  }, "Button")), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Default + Hover 3"), /*#__PURE__*/_react.default.createElement(_Button.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default hover3"
   }, "Button")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
     style: {
       margin: '1.5rem 0',
@@ -138,25 +120,6 @@ var newStates = function newStates() {
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
     className: "default disabled1",
-    disabled: true
-  }, "Button")), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1.5rem 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Disabled 2"), /*#__PURE__*/_react.default.createElement(_Button.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default disabled2",
     disabled: true
   }, "Button")));
 };
