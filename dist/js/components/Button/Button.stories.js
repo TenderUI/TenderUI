@@ -101,7 +101,7 @@ var newStates = function newStates() {
   }, "Disabled 1"), /*#__PURE__*/_react.default.createElement(_Button.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
-    className: "default disabled1",
+    className: "default disabled",
     disabled: true
   }, "Button")));
 };

@@ -49,7 +49,7 @@ export const newStates = () => (
     <hr />
     <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
       <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 1</div>
-      <Button onClick={action('clicked')} size="large" className="default disabled1" disabled={true}>
+      <Button onClick={action('clicked')} size="large" className="default disabled" disabled={true}>
         Button
       </Button>
     </div>

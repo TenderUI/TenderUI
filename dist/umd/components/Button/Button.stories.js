@@ -94,7 +94,7 @@
   }, "Disabled 1"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
-    className: "default disabled1",
+    className: "default disabled",
     disabled: true
   }, "Button")));
 });

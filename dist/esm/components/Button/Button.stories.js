@@ -68,7 +68,7 @@ export const newStates = () => /*#__PURE__*/React.createElement(React.Fragment, 
 }, "Disabled 1"), /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: "large",
-  className: "default disabled1",
+  className: "default disabled",
   disabled: true
 }, "Button")));
 //# sourceMappingURL=Button.stories.js.map
