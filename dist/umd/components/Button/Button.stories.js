@@ -16,7 +16,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.newStates = exports.withIcon = exports.sizes = undefined;
+  exports.withIcon = exports.disabled = exports.sizes = undefined;
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -45,7 +45,20 @@
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: size
-  }, `Button ${size}`))));
+  }, "Button"))));
+
+  const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+    key: size,
+    style: {
+      marginBottom: '1.5rem',
+      display: 'flex',
+      justifyContent: 'center'
+    }
+  }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: size,
+    disabled: true
+  }, "Button"))));
 
   const withIcon = exports.withIcon = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
@@ -57,45 +70,6 @@
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: size
-  }, /*#__PURE__*/_react2.default.createElement(_iconShare.ReactComponent, _helpers.a11yIconHiddenProps), " ", `Button ${size}`))));
-
-  const newStates = exports.newStates = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Default + Hover 1"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default hover1"
-  }, "Button")), /*#__PURE__*/_react2.default.createElement("hr", null), /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      margin: '1.5rem 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Disabled 1"), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default disabled",
-    disabled: true
-  }, "Button")));
+  }, /*#__PURE__*/_react2.default.createElement(_iconShare.ReactComponent, _helpers.a11yIconHiddenProps), " Button"))));
 });
 //# sourceMappingURL=Button.stories.js.map

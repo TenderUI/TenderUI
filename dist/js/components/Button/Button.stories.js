@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.newStates = exports.withIcon = exports.sizes = exports.default = void 0;
+exports.withIcon = exports.disabled = exports.sizes = exports.default = void 0;
 
 var _addonA11y = require("@storybook/addon-a11y");
 
@@ -41,11 +41,30 @@ var sizes = function sizes() {
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
       size: size
-    }, "Button ".concat(size)));
+    }, "Button"));
   }));
 };
 
 exports.sizes = sizes;
+
+var disabled = function disabled() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: size,
+      style: {
+        marginBottom: '1.5rem',
+        display: 'flex',
+        justifyContent: 'center'
+      }
+    }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+      onClick: (0, _addonActions.action)('clicked'),
+      size: size,
+      disabled: true
+    }, "Button"));
+  }));
+};
+
+exports.disabled = disabled;
 
 var withIcon = function withIcon() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
@@ -59,52 +78,9 @@ var withIcon = function withIcon() {
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
       size: size
-    }, /*#__PURE__*/_react.default.createElement(_iconShare.ReactComponent, _helpers.a11yIconHiddenProps), " ", "Button ".concat(size)));
+    }, /*#__PURE__*/_react.default.createElement(_iconShare.ReactComponent, _helpers.a11yIconHiddenProps), " Button"));
   }));
 };
 
 exports.withIcon = withIcon;
-
-var newStates = function newStates() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Default + Hover 1"), /*#__PURE__*/_react.default.createElement(_Button.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default hover1"
-  }, "Button")), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1.5rem 0',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '100%'
-    }
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginRight: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, "Disabled 1"), /*#__PURE__*/_react.default.createElement(_Button.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "default disabled",
-    disabled: true
-  }, "Button")));
-};
-
-exports.newStates = newStates;
 //# sourceMappingURL=Button.stories.js.map
