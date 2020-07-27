@@ -19,39 +19,33 @@ export const sizes = () => (
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
         <Button onClick={action('clicked')} size={size}>
-          {`Button ${size}`}
+          Button
         </Button>
       </div>
     ))}
   </>
 );
+
+export const disabled = () => (
+  <>
+    {sizeVariants.map((size: any) => (
+      <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
+        <Button onClick={action('clicked')} size={size} disabled={true}>
+          Button
+        </Button>
+      </div>
+    ))}
+  </>
+)
 
 export const withIcon = () => (
   <>
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
         <Button onClick={action('clicked')} size={size}>
-          <ShareIcon {...a11yIconHiddenProps} /> {`Button ${size}`}
+          <ShareIcon {...a11yIconHiddenProps} /> Button
         </Button>
       </div>
     ))}
-  </>
-);
-
-export const newStates = () => (
-  <>
-    <div style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Default + Hover 1</div>
-      <Button onClick={action('clicked')} size="large" className="default hover1">
-        Button
-      </Button>
-    </div>
-    <hr />
-    <div style={{margin: '1.5rem 0', display: 'flex', justifyContent: 'space-between', width: '100%'}}>
-      <div style={{marginRight: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Disabled 1</div>
-      <Button onClick={action('clicked')} size="large" className="default disabled" disabled={true}>
-        Button
-      </Button>
-    </div>
   </>
 )

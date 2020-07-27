@@ -1,21 +1,5 @@
 @import "../../styles/prerequisites";
 
-.button {
-  @extend %button;  
-}
-
-.normal {
-  @include button-sizes($font-size-normal);
-}
-
-.small {  
-  @include button-sizes($font-size-small);
-}
-
-.large {
-  @include button-sizes($font-size-large);
-}
-
 .buttonWrapper {
   padding:1px;
 
@@ -29,32 +13,39 @@
   }
 }
 
-:global .default {
-  height: 46px;
+.button {
+  @extend %button;  
+}
 
-  padding-left: 3rem;
-  padding-right: 3rem;
+.normal {
+  height: 38px - 2px;
 
-  font-size: 22px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  line-height: 22px;
+
+  @include button-sizes(18px);
+}
+
+.small {  
+  height: 32px - 2px;
+
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  line-height: 18px;
+
+  @include button-sizes(16px);
+}
+
+.large {
+  height: 48px - 2px;
+
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
   line-height: 26px;
-  color: #485158 !important;
 
-  background: linear-gradient(341.68deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-  box-shadow: none;
-  border-radius: 40px;
-
-  &.hover1 {
-    &:hover, &:focus {
-      background: linear-gradient(157.54deg, #F2F5F7 9.97%, #F8FAFC 96.13%) !important;
-      box-shadow: none;
-      color: #363F48 !important;
-    }
-  }
-
-  &.disabled {
-    background: linear-gradient(341.16deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-    box-shadow: 4px 4px 7px rgba(179, 193, 213, 0.4), -4px -4px 9px rgba(255, 255, 255, 0.85);
-    color: rgba(72, 81, 88, 0.6) !important;
-    cursor: not-allowed;
-  }
+  @include button-sizes(22px);
 }
