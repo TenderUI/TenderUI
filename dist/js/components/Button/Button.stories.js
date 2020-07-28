@@ -27,7 +27,7 @@ var _default = {
   decorators: [_addonA11y.withA11y]
 };
 exports.default = _default;
-var sizeVariants = ['small', 'normal', 'large'];
+var sizeVariants = ['large', 'normal', 'small'];
 
 var sizes = function sizes() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
@@ -57,7 +57,6 @@ var disabled = function disabled() {
         justifyContent: 'center'
       }
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
-      onClick: (0, _addonActions.action)('clicked'),
       size: size,
       disabled: true
     }, "Button"));

@@ -12,7 +12,7 @@ export default {
   decorators: [withA11y]
 };
 
-const sizeVariants = ['small', 'normal', 'large'];
+const sizeVariants = ['large', 'normal', 'small'];
 
 export const sizes = () => (
   <>
@@ -30,7 +30,7 @@ export const disabled = () => (
   <>
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
-        <Button onClick={action('clicked')} size={size} disabled={true}>
+        <Button size={size} disabled={true}>
           Button
         </Button>
       </div>

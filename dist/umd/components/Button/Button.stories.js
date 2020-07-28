@@ -33,7 +33,7 @@
     title: 'Button',
     decorators: [_addonA11y.withA11y]
   };
-  const sizeVariants = ['small', 'normal', 'large'];
+  const sizeVariants = ['large', 'normal', 'small'];
 
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
@@ -55,7 +55,6 @@
       justifyContent: 'center'
     }
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
     size: size,
     disabled: true
   }, "Button"))));

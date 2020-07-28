@@ -16,24 +16,20 @@ const Button = ({
   className,
   ariaLabel
 }) => {
-  const classes = classNames(styles.button, styles[size], className);
   const a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  const button = /*#__PURE__*/React.createElement("button", _extends({
-    className: classes,
+  const classes = classNames(styles.buttonWrapper, styles[size], {
+    [styles.disabled]: disabled
+  }, className);
+  return /*#__PURE__*/React.createElement("span", {
+    className: classes
+  }, /*#__PURE__*/React.createElement("button", _extends({
+    className: styles.button,
     type: type,
     onClick: onClick,
     disabled: disabled
-  }, a11yProps), children);
-
-  if (disabled) {
-    return button;
-  }
-
-  return /*#__PURE__*/React.createElement("span", {
-    className: styles.buttonWrapper
-  }, button);
+  }, a11yProps), children));
 };
 
 export default Button;

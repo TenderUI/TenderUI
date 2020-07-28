@@ -59,25 +59,20 @@
     className,
     ariaLabel
   }) => {
-    const classes = (0, _classnames2.default)(_ButtonModule2.default.button, _ButtonModule2.default[size], className);
     const a11yProps = ariaLabel ? {
       "aria-label": ariaLabel
     } : null;
-
-    const button = /*#__PURE__*/_react2.default.createElement("button", _extends({
-      className: classes,
+    const classes = (0, _classnames2.default)(_ButtonModule2.default.buttonWrapper, _ButtonModule2.default[size], {
+      [_ButtonModule2.default.disabled]: disabled
+    }, className);
+    return /*#__PURE__*/_react2.default.createElement("span", {
+      className: classes
+    }, /*#__PURE__*/_react2.default.createElement("button", _extends({
+      className: _ButtonModule2.default.button,
       type: type,
       onClick: onClick,
       disabled: disabled
-    }, a11yProps), children);
-
-    if (disabled) {
-      return button;
-    }
-
-    return /*#__PURE__*/_react2.default.createElement("span", {
-      className: _ButtonModule2.default.buttonWrapper
-    }, button);
+    }, a11yProps), children));
   };
 
   exports.default = Button;

@@ -15,6 +15,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 /**
  * A simple button.
  */
@@ -29,25 +31,18 @@ var Button = function Button(_ref) {
       children = _ref.children,
       className = _ref.className,
       ariaLabel = _ref.ariaLabel;
-  var classes = (0, _classnames.default)(_ButtonModule.default.button, _ButtonModule.default[size], className);
   var a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-
-  var button = /*#__PURE__*/_react.default.createElement("button", _extends({
-    className: classes,
+  var classes = (0, _classnames.default)(_ButtonModule.default.buttonWrapper, _ButtonModule.default[size], _defineProperty({}, _ButtonModule.default.disabled, disabled), className);
+  return /*#__PURE__*/_react.default.createElement("span", {
+    className: classes
+  }, /*#__PURE__*/_react.default.createElement("button", _extends({
+    className: _ButtonModule.default.button,
     type: type,
     onClick: onClick,
     disabled: disabled
-  }, a11yProps), children);
-
-  if (disabled) {
-    return button;
-  }
-
-  return /*#__PURE__*/_react.default.createElement("span", {
-    className: _ButtonModule.default.buttonWrapper
-  }, button);
+  }, a11yProps), children));
 };
 
 var _default = Button;
