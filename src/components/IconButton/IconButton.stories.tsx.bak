@@ -11,7 +11,8 @@ import IconButton from './IconButton';
 export default {
   component: IconButton,
   title: 'IconButton',
-  decorators: [withA11y]
+  decorators: [withA11y],
+  disable: true
 };
 
 export const sizes = () => (
