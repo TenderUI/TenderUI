@@ -4,6 +4,13 @@
   padding:1px;
   border-radius: 50rem;
 
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+
   .button {
     @extend %button;
 
