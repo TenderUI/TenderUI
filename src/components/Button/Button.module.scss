@@ -162,6 +162,9 @@
 
 :global {
   .a1 {
-    // box-shadow: 5px 4px 10px rgba(179, 193, 213, 0.7), -4px -4px 12px #FFFFFF;
+    box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.7) !important;
+    &:hover, &:focus {
+      box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.8) !important;
+    }
   }
 }
