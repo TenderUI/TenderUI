@@ -10,8 +10,18 @@ export default {
   title: 'Button',
   decorators: [withA11y]
 };
-const sizeVariants = ['large', 'normal', 'small'];
-export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
+const sizeVariants = ['large'];
+export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
+  style: {
+    marginBottom: '1.5rem',
+    display: 'flex',
+    justifyContent: 'center'
+  }
+}, /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  size: "large",
+  className: "a338"
+}, "338.00deg")), sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {
     marginBottom: '1.5rem',
@@ -21,7 +31,7 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: size
-}, "Button"))));
+}, "340.96deg"))));
 export const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {
