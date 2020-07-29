@@ -40,10 +40,13 @@ var sizes = function sizes() {
       }
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
-      size: size,
-      className: "a1"
-    }, "Button"));
-  }));
+      size: size
+    }, "Button 1"));
+  }), /*#__PURE__*/_react.default.createElement(_Button.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: "large",
+    className: "a1"
+  }, "Button 2"));
 };
 
 exports.sizes = sizes;

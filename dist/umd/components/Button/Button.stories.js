@@ -44,9 +44,12 @@
     }
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: size,
+    size: size
+  }, "Button 1"))), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: "large",
     className: "a1"
-  }, "Button"))));
+  }, "Button 2"));
 
   const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
