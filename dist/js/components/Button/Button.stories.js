@@ -30,17 +30,7 @@ exports.default = _default;
 var sizeVariants = ['large'];
 
 var sizes = function sizes() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center'
-    }
-  }, /*#__PURE__*/_react.default.createElement(_Button.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "a338"
-  }, "338.00deg")), sizeVariants.map(function (size) {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: size,
       style: {
@@ -50,8 +40,9 @@ var sizes = function sizes() {
       }
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
-      size: size
-    }, "340.96deg"));
+      size: size,
+      className: "a1"
+    }, "Button"));
   }));
 };
 

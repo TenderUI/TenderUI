@@ -35,17 +35,7 @@
   };
   const sizeVariants = ['large'];
 
-  const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, /*#__PURE__*/_react2.default.createElement("div", {
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center'
-    }
-  }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "a338"
-  }, "338.00deg")), sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+  const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
     style: {
       marginBottom: '1.5rem',
@@ -54,8 +44,9 @@
     }
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: size
-  }, "340.96deg"))));
+    size: size,
+    className: "a1"
+  }, "Button"))));
 
   const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,

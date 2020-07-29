@@ -16,15 +16,10 @@ const sizeVariants = ['large'];
 
 export const sizes = () => (
   <>
-    <div style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
-      <Button onClick={action('clicked')} size="large" className="a338">
-        338.00deg
-      </Button>
-    </div>
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
-        <Button onClick={action('clicked')} size={size}>
-          340.96deg
+        <Button onClick={action('clicked')} size={size} className="a1">
+          Button
         </Button>
       </div>
     ))}
