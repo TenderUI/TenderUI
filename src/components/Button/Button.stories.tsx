@@ -12,7 +12,7 @@ export default {
   decorators: [withA11y]
 };
 
-const sizeVariants = ['large'];
+const sizeVariants = ['large', 'normal', 'small'];
 
 export const sizes = () => (
   <>
@@ -23,9 +23,6 @@ export const sizes = () => (
         </Button>
       </div>
     ))}
-    <Button onClick={action('clicked')} size="large" className="a1">
-      Button 2
-    </Button>
   </>
 );
 

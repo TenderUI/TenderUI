@@ -33,7 +33,7 @@
     title: 'Button',
     decorators: [_addonA11y.withA11y]
   };
-  const sizeVariants = ['large'];
+  const sizeVariants = ['large', 'normal', 'small'];
 
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
@@ -45,11 +45,7 @@
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: size
-  }, "Button 1"))), /*#__PURE__*/_react2.default.createElement(_Button2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "a1"
-  }, "Button 2"));
+  }, "Button 1"))));
 
   const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,

@@ -10,7 +10,7 @@ export default {
   title: 'Button',
   decorators: [withA11y]
 };
-const sizeVariants = ['large'];
+const sizeVariants = ['large', 'normal', 'small'];
 export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {
@@ -21,11 +21,7 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: size
-}, "Button 1"))), /*#__PURE__*/React.createElement(Button, {
-  onClick: action('clicked'),
-  size: "large",
-  className: "a1"
-}, "Button 2"));
+}, "Button 1"))));
 export const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {

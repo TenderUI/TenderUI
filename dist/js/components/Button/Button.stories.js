@@ -27,7 +27,7 @@ var _default = {
   decorators: [_addonA11y.withA11y]
 };
 exports.default = _default;
-var sizeVariants = ['large'];
+var sizeVariants = ['large', 'normal', 'small'];
 
 var sizes = function sizes() {
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
@@ -42,11 +42,7 @@ var sizes = function sizes() {
       onClick: (0, _addonActions.action)('clicked'),
       size: size
     }, "Button 1"));
-  }), /*#__PURE__*/_react.default.createElement(_Button.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    className: "a1"
-  }, "Button 2"));
+  }));
 };
 
 exports.sizes = sizes;

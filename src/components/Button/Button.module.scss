@@ -30,10 +30,10 @@
 
   &.large {
     background: linear-gradient(340.96deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
-    box-shadow: 5px 4px 10px rgba(179, 193, 213, 0.7), -4px -4px 12px #FFFFFF;
+    box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.7);
     &:hover, &:focus {
       background: linear-gradient(156.93deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
-      box-shadow: 5px 4px 10px rgba(179, 193, 213, 0.8), -4px -4px 12px #FFFFFF;
+      box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.8);
     }
 
     .button {
@@ -55,10 +55,10 @@
 
   &.normal {
     background: linear-gradient(340.86deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
-    box-shadow: 4px 3px 8px rgba(179, 193, 213, 0.7), -3px -3px 9px #FFFFFF;
+    box-shadow: -3px -3px 9px #FFFFFF, 4px 3px 8px rgba(179, 193, 213, 0.7);
     &:hover, &:focus {
       background: linear-gradient(340.86deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
-      box-shadow: 4px 3px 8px rgba(179, 193, 213, 0.8), -3px -3px 9px #FFFFFF;
+      box-shadow: -3px -3px 9px #FFFFFF, 4px 3px 8px rgba(179, 193, 213, 0.8);
     }
 
     .button {
@@ -80,10 +80,10 @@
   
   &.small {
     background: linear-gradient(340.85deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
-    box-shadow: 3px 3px 7px rgba(179, 193, 213, 0.7), -3px -3px 8px #FFFFFF;
+    box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 7px rgba(179, 193, 213, 0.7);
     &:hover, &:focus {
       background: linear-gradient(340.85deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
-      box-shadow: 3px 3px 7px rgba(179, 193, 213, 0.8), -3px -3px 8px #FFFFFF;
+      box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 7px rgba(179, 193, 213, 0.8);
     }
 
     .button {  
@@ -120,10 +120,10 @@
       .button {
         height: 48px;
         background: linear-gradient(341.16deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-        box-shadow: 4px 4px 7px rgba(179, 193, 213, 0.4), -4px -4px 9px rgba(255, 255, 255, 0.85);
+        box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.85), 4px 4px 7px rgba(179, 193, 213, 0.4);
         &:hover, &:focus {
           background: linear-gradient(341.16deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-          box-shadow: 4px 4px 7px rgba(179, 193, 213, 0.4), -4px -4px 9px rgba(255, 255, 255, 0.85);
+          box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.85), 4px 4px 7px rgba(179, 193, 213, 0.4);
         }
       }
     }
@@ -135,10 +135,10 @@
       .button {
         height: 38px;
         background: linear-gradient(341.07deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-        box-shadow: 4px 4px 8px rgba(179, 193, 213, 0.4), -3px -3px 9px rgba(255, 255, 255, 0.85);
+        box-shadow: -3px -3px 9px rgba(255, 255, 255, 0.85), 4px 4px 8px rgba(179, 193, 213, 0.4);
         &:hover, &:focus {
           background: linear-gradient(341.07deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-          box-shadow: 4px 4px 8px rgba(179, 193, 213, 0.4), -3px -3px 9px rgba(255, 255, 255, 0.85);
+          box-shadow: -3px -3px 9px rgba(255, 255, 255, 0.85), 4px 4px 8px rgba(179, 193, 213, 0.4);
         }
       }
     }
@@ -150,21 +150,12 @@
       .button {  
         height: 32px;
         background: linear-gradient(341.05deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-        box-shadow: 3px 3px 7px rgba(179, 193, 213, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.85);
+        box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.85), 3px 3px 7px rgba(179, 193, 213, 0.4);
         &:hover, &:focus {
           background: linear-gradient(341.05deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
-          box-shadow: 3px 3px 7px rgba(179, 193, 213, 0.4), -3px -3px 8px rgba(255, 255, 255, 0.85);
+          box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.85), 3px 3px 7px rgba(179, 193, 213, 0.4);
         }
       }
-    }
-  }
-}
-
-:global {
-  .a1 {
-    box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.7) !important;
-    &:hover, &:focus {
-      box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.8) !important;
     }
   }
 }
