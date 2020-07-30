@@ -43,7 +43,8 @@
     "start": "yarn storybook",
     "test": "react-scripts test",
     "build": "concurrently \"yarn build:lib && yarn build:storybook\"",
-    "lint": "eslint --ext js,ts,tsx src"
+    "lint": "eslint --ext js,ts,tsx src",
+    "deploy": "yarn build && firebase deploy"
   },
   "repository": {
     "type": "git",
