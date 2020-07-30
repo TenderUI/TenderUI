@@ -45,7 +45,7 @@
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: size
-  }, "Button 1"))));
+  }, "Button"))));
 
   const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,

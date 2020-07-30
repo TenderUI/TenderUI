@@ -19,7 +19,7 @@ export const sizes = () => (
     {sizeVariants.map((size: any) => (
       <div key={size} style={{marginBottom: '1.5rem', display: 'flex', justifyContent: 'center'}}>
         <Button onClick={action('clicked')} size={size}>
-          Button 1
+          Button
         </Button>
       </div>
     ))}

@@ -21,7 +21,7 @@ export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: size
-}, "Button 1"))));
+}, "Button"))));
 export const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
   style: {

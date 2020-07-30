@@ -41,7 +41,7 @@ var sizes = function sizes() {
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
       size: size
-    }, "Button 1"));
+    }, "Button"));
   }));
 };
 
