@@ -1,16 +1,16 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "@storybook/addon-a11y", "@storybook/addon-actions", "react", "../../img/icons/icon-share.svg", "../../lib/helpers", "./Button", "../../styles/init.scss"], factory);
+    define(["exports", "@storybook/addon-actions", "react", "../../img/icons/icon-share.svg", "../../lib/helpers", "./Button", "../../styles/init.scss"], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("@storybook/addon-a11y"), require("@storybook/addon-actions"), require("react"), require("../../img/icons/icon-share.svg"), require("../../lib/helpers"), require("./Button"), require("../../styles/init.scss"));
+    factory(exports, require("@storybook/addon-actions"), require("react"), require("../../img/icons/icon-share.svg"), require("../../lib/helpers"), require("./Button"), require("../../styles/init.scss"));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.addonA11y, global.addonActions, global.react, global.iconShare, global.helpers, global.Button, global.init);
+    factory(mod.exports, global.addonActions, global.react, global.iconShare, global.helpers, global.Button, global.init);
     global.undefined = mod.exports;
   }
-})(this, function (exports, _addonA11y, _addonActions, _react, _iconShare, _helpers, _Button) {
+})(this, function (exports, _addonActions, _react, _iconShare, _helpers, _Button) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
@@ -30,8 +30,7 @@
 
   exports.default = {
     component: _Button2.default,
-    title: 'Button',
-    decorators: [_addonA11y.withA11y]
+    title: 'Button'
   };
   const sizeVariants = ['large', 'normal', 'small'];
 

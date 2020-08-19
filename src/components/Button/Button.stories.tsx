@@ -1,4 +1,3 @@
-import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import { ReactComponent as ShareIcon } from '../../img/icons/icon-share.svg';
@@ -8,8 +7,7 @@ import Button from './Button';
 
 export default {
   component: Button,
-  title: 'Button',
-  decorators: [withA11y]
+  title: 'Button'
 };
 
 const sizeVariants = ['large', 'normal', 'small'];

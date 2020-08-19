@@ -2,10 +2,10 @@ module.exports = {
   stories: ['../src/**/*.stories.@(ts|tsx|js|jsx)'],
   addons: [
     '@storybook/preset-create-react-app',
-    '@storybook/addon-viewport/register',
+    '@storybook/addon-viewport',
     '@storybook/addon-actions',
     '@storybook/addon-links',
-    '@storybook/addon-a11y/register',
+    '@storybook/addon-a11y',
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
