@@ -11,13 +11,15 @@
 }
 
 @mixin icon-button-sizes($size) {
-  font-size: $size;
-  line-height: $size;
-  border-radius: $size;
-  padding: $size $size;
-  svg {
-    width: $size * 1.5;
-    height: $size * 1.5;
+  button {
+    font-size: $size !important;
+    line-height: $size !important;
+    border-radius: $size !important;
+    padding: $size $size !important;
+    svg {
+      width: $size * 1.5 !important;
+      height: $size * 1.5 !important;
+    }
   }
 }
 

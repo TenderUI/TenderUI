@@ -1,9 +1,11 @@
 @import "../../styles/prerequisites";
 
 .icon {
-  flex-direction: column;
-  svg {
-    margin-right: 0;
+  button {
+    flex-direction: column !important;
+    svg {
+      margin-right: 0 !important;
+    }
   }
 }
 
@@ -20,10 +22,15 @@
 }
 
 .rounded {
-  // Just to keep this class for TS.
-  flex-direction: column;
+  button {
+    // Just to keep this class for TS.
+    flex-direction: column;
+  }
 }
 
 .circle {
   border-radius: 50% !important;
+  button {
+    border-radius: 50% !important;
+  }
 }
