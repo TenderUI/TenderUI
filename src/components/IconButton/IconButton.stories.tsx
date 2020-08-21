@@ -5,7 +5,6 @@ import { ReactComponent as HeartIcon } from '../../img/icons/icon-heart.svg';
 import { ReactComponent as MessageIcon } from '../../img/icons/icon-message.svg';
 import { ReactComponent as PlusIcon } from '../../img/icons/icon-plus.svg';
 import '../../styles/init.scss';
-import styles from '../../styles/stories.module.scss';
 import IconButton from './IconButton';
 
 export default {
@@ -15,8 +14,8 @@ export default {
 };
 
 export const sizes = () => (
-  <div className={styles.containerStyles}>
-    <div className={styles.itemStyles}>
+  <div className="story-container">
+    <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
         size="small"
@@ -25,7 +24,7 @@ export const sizes = () => (
         <HeartIcon color="#EC7CDA" />
       </IconButton>
     </div>
-    <div className={styles.itemStyles}>
+    <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
         size="normal"
@@ -34,7 +33,7 @@ export const sizes = () => (
         <MessageIcon color="#77BEFF" />
       </IconButton>
     </div>
-    <div className={styles.itemStyles}>
+    <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
         size="large"
@@ -47,8 +46,8 @@ export const sizes = () => (
 );
 
 export const shapes = () => (
-  <div className={styles.containerStyles}>
-    <div className={styles.itemStyles}>
+  <div className="story-container">
+    <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
         shape="rounded"
@@ -57,7 +56,7 @@ export const shapes = () => (
         <PlusIcon />
       </IconButton>
     </div>
-    <div className={styles.itemStyles}>
+    <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
         shape="circle"

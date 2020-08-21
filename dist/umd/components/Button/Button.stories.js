@@ -34,37 +34,31 @@
   };
   const sizeVariants = ['large', 'normal', 'small'];
 
-  const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+  const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: size
   }, "Button"))));
 
-  const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+  const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     size: size,
     disabled: true
   }, "Button"))));
 
-  const withIcon = exports.withIcon = () => /*#__PURE__*/_react2.default.createElement(_react2.default.Fragment, null, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+  const withIcon = exports.withIcon = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
     key: size,
-    style: {
-      marginBottom: '1.5rem',
-      display: 'flex',
-      justifyContent: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: size

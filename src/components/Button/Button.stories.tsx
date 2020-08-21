@@ -3,7 +3,6 @@ import React from 'react';
 import { ReactComponent as ShareIcon } from '../../img/icons/icon-share.svg';
 import { a11yIconHiddenProps } from '../../lib/helpers';
 import '../../styles/init.scss';
-import styles from '../../styles/stories.module.scss';
 import Button from './Button';
 
 export default {
@@ -14,9 +13,9 @@ export default {
 const sizeVariants = ['large', 'normal', 'small'];
 
 export const sizes = () => (
-  <div className={styles.containerStyles}>
+  <div className="story-container">
     {sizeVariants.map((size: any) => (
-      <div key={size} className={styles.itemStyles}>
+      <div key={size} className="story-item">
         <Button onClick={action('clicked')} size={size}>
           Button
         </Button>
@@ -26,9 +25,9 @@ export const sizes = () => (
 );
 
 export const disabled = () => (
-  <div className={styles.containerStyles}>
+  <div className="story-container">
     {sizeVariants.map((size: any) => (
-      <div key={size} className={styles.itemStyles}>
+      <div key={size} className="story-item">
         <Button size={size} disabled={true}>
           Button
         </Button>
@@ -38,9 +37,9 @@ export const disabled = () => (
 )
 
 export const withIcon = () => (
-  <div className={styles.containerStyles}>
+  <div className="story-container">
     {sizeVariants.map((size: any) => (
-      <div key={size} className={styles.itemStyles}>
+      <div key={size} className="story-item">
         <Button onClick={action('clicked')} size={size}>
           <ShareIcon {...a11yIconHiddenProps} /> Button
         </Button>

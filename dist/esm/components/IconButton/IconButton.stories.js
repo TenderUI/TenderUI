@@ -1,4 +1,3 @@
-import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import { ReactComponent as FlagIcon } from '../../img/icons/icon-flag.svg';
@@ -10,19 +9,12 @@ import IconButton from './IconButton';
 export default {
   component: IconButton,
   title: 'IconButton',
-  decorators: [withA11y]
+  disable: true
 };
 export const sizes = () => /*#__PURE__*/React.createElement("div", {
-  style: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center'
-  }
+  className: "story-container"
 }, /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1rem',
-    textAlign: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
   size: "small",
@@ -30,10 +22,7 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
 }, /*#__PURE__*/React.createElement(HeartIcon, {
   color: "#EC7CDA"
 }))), /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1rem',
-    textAlign: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
   size: "normal",
@@ -41,10 +30,7 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
 }, /*#__PURE__*/React.createElement(MessageIcon, {
   color: "#77BEFF"
 }))), /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1rem',
-    textAlign: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
   size: "large",
@@ -53,25 +39,15 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
   color: "#5081FF"
 }))));
 export const shapes = () => /*#__PURE__*/React.createElement("div", {
-  style: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center'
-  }
+  className: "story-container"
 }, /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1rem',
-    textAlign: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
   shape: "rounded",
   ariaLabel: "Add something"
 }, /*#__PURE__*/React.createElement(PlusIcon, null))), /*#__PURE__*/React.createElement("div", {
-  style: {
-    margin: '1rem',
-    textAlign: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
   shape: "circle",

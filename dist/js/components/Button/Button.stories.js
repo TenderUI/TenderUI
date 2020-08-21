@@ -27,14 +27,12 @@ exports.default = _default;
 var sizeVariants = ['large', 'normal', 'small'];
 
 var sizes = function sizes() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-container"
+  }, sizeVariants.map(function (size) {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: size,
-      style: {
-        marginBottom: '1.5rem',
-        display: 'flex',
-        justifyContent: 'center'
-      }
+      className: "story-item"
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
       size: size
@@ -45,14 +43,12 @@ var sizes = function sizes() {
 exports.sizes = sizes;
 
 var disabled = function disabled() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-container"
+  }, sizeVariants.map(function (size) {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: size,
-      style: {
-        marginBottom: '1.5rem',
-        display: 'flex',
-        justifyContent: 'center'
-      }
+      className: "story-item"
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       size: size,
       disabled: true
@@ -63,14 +59,12 @@ var disabled = function disabled() {
 exports.disabled = disabled;
 
 var withIcon = function withIcon() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, sizeVariants.map(function (size) {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-container"
+  }, sizeVariants.map(function (size) {
     return /*#__PURE__*/_react.default.createElement("div", {
       key: size,
-      style: {
-        marginBottom: '1.5rem',
-        display: 'flex',
-        justifyContent: 'center'
-      }
+      className: "story-item"
     }, /*#__PURE__*/_react.default.createElement(_Button.default, {
       onClick: (0, _addonActions.action)('clicked'),
       size: size

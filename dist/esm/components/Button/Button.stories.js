@@ -9,35 +9,29 @@ export default {
   title: 'Button'
 };
 const sizeVariants = ['large', 'normal', 'small'];
-export const sizes = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
+export const sizes = () => /*#__PURE__*/React.createElement("div", {
+  className: "story-container"
+}, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
-  style: {
-    marginBottom: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: size
 }, "Button"))));
-export const disabled = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
+export const disabled = () => /*#__PURE__*/React.createElement("div", {
+  className: "story-container"
+}, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
-  style: {
-    marginBottom: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(Button, {
   size: size,
   disabled: true
 }, "Button"))));
-export const withIcon = () => /*#__PURE__*/React.createElement(React.Fragment, null, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
+export const withIcon = () => /*#__PURE__*/React.createElement("div", {
+  className: "story-container"
+}, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
   key: size,
-  style: {
-    marginBottom: '1.5rem',
-    display: 'flex',
-    justifyContent: 'center'
-  }
+  className: "story-item"
 }, /*#__PURE__*/React.createElement(Button, {
   onClick: action('clicked'),
   size: size

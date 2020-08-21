@@ -6,13 +6,25 @@ html {
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+
+  body {
+    background-color: #ECF1F6;
+    display:flex;
+    flex:column;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+  }
 }
 
-body {
-  background-color: #ECF1F6;
-  display:flex;
-  flex:column;
-  justify-content:center;
-  align-items:center;
-  height: 100vh;
+.story-container {
+  display: flex; 
+  flex-direction: row; 
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  .story-item {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
 }

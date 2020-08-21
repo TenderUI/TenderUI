@@ -5,8 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.shapes = exports.sizes = exports.default = void 0;
 
-var _addonA11y = require("@storybook/addon-a11y");
-
 var _addonActions = require("@storybook/addon-actions");
 
 var _react = _interopRequireDefault(require("react"));
@@ -28,22 +26,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = {
   component: _IconButton.default,
   title: 'IconButton',
-  decorators: [_addonA11y.withA11y]
+  disable: true
 };
 exports.default = _default;
 
 var sizes = function sizes() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center'
-    }
+    className: "story-container"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1rem',
-      textAlign: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: "small",
@@ -51,10 +42,7 @@ var sizes = function sizes() {
   }, /*#__PURE__*/_react.default.createElement(_iconHeart.ReactComponent, {
     color: "#EC7CDA"
   }))), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1rem',
-      textAlign: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: "normal",
@@ -62,10 +50,7 @@ var sizes = function sizes() {
   }, /*#__PURE__*/_react.default.createElement(_iconMessage.ReactComponent, {
     color: "#77BEFF"
   }))), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1rem',
-      textAlign: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
     size: "large",
@@ -79,25 +64,15 @@ exports.sizes = sizes;
 
 var shapes = function shapes() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center'
-    }
+    className: "story-container"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1rem',
-      textAlign: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
     shape: "rounded",
     ariaLabel: "Add something"
   }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, null))), /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      margin: '1rem',
-      textAlign: 'center'
-    }
+    className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
     shape: "circle",
