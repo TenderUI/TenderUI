@@ -38,10 +38,8 @@
 
     .button {
       height: 48px - 2px;
-    
       padding-left: 2.5rem;
       padding-right: 2.5rem;
-    
       line-height: 26px;
     
       @include button-sizes(22px);
@@ -63,10 +61,8 @@
 
     .button {
       height: 38px - 2px;
-    
       padding-left: 2rem;
       padding-right: 2rem;
-    
       line-height: 22px;
     
       @include button-sizes(18px);
@@ -88,10 +84,8 @@
 
     .button {  
       height: 32px - 2px;
-    
       padding-left: 1.5rem;
       padding-right: 1.5rem;
-    
       line-height: 18px;
     
       @include button-sizes(16px);

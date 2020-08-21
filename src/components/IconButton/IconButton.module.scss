@@ -9,16 +9,37 @@
   }
 }
 
+.large {
+  border-radius: 12px;
+  button {
+    border-radius: 12px !important;;
+    // height: 48px - 2px;
+    width: 48px - 2px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 .normal {
-  @include icon-button-sizes($font-size-normal);
+  border-radius: 10px;
+  button {
+    border-radius: 10px !important;;
+    // height: 38px - 2px;
+    width: 38px - 2px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 .small {
-  @include icon-button-sizes($font-size-small);
-}
-
-.large {
-  @include icon-button-sizes($font-size-large);
+  border-radius: 8px;
+  button {
+    border-radius: 8px !important;
+    // height: 32px - 2px;
+    width: 32px - 2px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 .rounded {
@@ -29,8 +50,8 @@
 }
 
 .circle {
-  border-radius: 50% !important;
+  border-radius: 50rem !important;
   button {
-    border-radius: 50% !important;
+    border-radius: 50rem !important;
   }
 }
