@@ -17,14 +17,24 @@
     box-shadow: none;
     color: #485158;
 
+    svg {
+      opacity: 0.8;
+    }
+
     &:hover, &:focus {
       box-shadow: none;
       color: #363F48;
+      svg {
+        opacity: 1;
+      }
     }
 
     &:disabled,
     &[disabled]{
       cursor: not-allowed;
+      svg {
+        opacity: 0.4;
+      }
     }
   }
 
