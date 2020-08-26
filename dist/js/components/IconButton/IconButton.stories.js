@@ -29,6 +29,7 @@ var _default = {
   disable: true
 };
 exports.default = _default;
+var shapeVariants = ['circle', 'rounded'];
 
 var sizes = function sizes() {
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -100,19 +101,16 @@ exports.disabled = disabled;
 var shapes = function shapes() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "story-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "story-item"
-  }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    shape: "rounded",
-    ariaLabel: "Add something"
-  }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, null))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "story-item"
-  }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    shape: "circle",
-    ariaLabel: "Add something"
-  }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, null))));
+  }, shapeVariants.map(function (shape) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: shape,
+      className: "story-item"
+    }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
+      onClick: (0, _addonActions.action)('clicked'),
+      shape: shape,
+      ariaLabel: "Add something"
+    }, /*#__PURE__*/_react.default.createElement(_iconPlus.ReactComponent, null)));
+  }));
 };
 
 exports.shapes = shapes;

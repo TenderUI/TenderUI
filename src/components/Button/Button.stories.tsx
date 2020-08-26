@@ -59,4 +59,4 @@ export const shapes = () => (
       </div>
     ))}
   </div>
-);
+)

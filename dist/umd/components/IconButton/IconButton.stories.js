@@ -33,6 +33,7 @@
     title: 'IconButton',
     disable: true
   };
+  const shapeVariants = ['circle', 'rounded'];
 
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement("div", {
     className: "story-container"
@@ -95,18 +96,13 @@
 
   const shapes = exports.shapes = () => /*#__PURE__*/_react2.default.createElement("div", {
     className: "story-container"
-  }, /*#__PURE__*/_react2.default.createElement("div", {
+  }, shapeVariants.map(shape => /*#__PURE__*/_react2.default.createElement("div", {
+    key: shape,
     className: "story-item"
   }, /*#__PURE__*/_react2.default.createElement(_IconButton2.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    shape: "rounded",
+    shape: shape,
     ariaLabel: "Add something"
-  }, /*#__PURE__*/_react2.default.createElement(_iconPlus.ReactComponent, null))), /*#__PURE__*/_react2.default.createElement("div", {
-    className: "story-item"
-  }, /*#__PURE__*/_react2.default.createElement(_IconButton2.default, {
-    onClick: (0, _addonActions.action)('clicked'),
-    shape: "circle",
-    ariaLabel: "Add something"
-  }, /*#__PURE__*/_react2.default.createElement(_iconPlus.ReactComponent, null))));
+  }, /*#__PURE__*/_react2.default.createElement(_iconPlus.ReactComponent, null)))));
 });
 //# sourceMappingURL=IconButton.stories.js.map

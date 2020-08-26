@@ -13,6 +13,8 @@ export default {
   disable: true
 };
 
+const shapeVariants = ['circle', 'rounded'];
+
 export const sizes = () => (
   <div className="story-container">
     <div className="story-item">
@@ -78,27 +80,20 @@ export const disabled = () => (
       </IconButton>
     </div>
   </div>
-);
+)
 
 export const shapes = () => (
   <div className="story-container">
-    <div className="story-item">
-      <IconButton 
-        onClick={action('clicked')} 
-        shape="rounded"
-        ariaLabel="Add something"
-      >
-        <PlusIcon />
-      </IconButton>
-    </div>
-    <div className="story-item">
-      <IconButton 
-        onClick={action('clicked')} 
-        shape="circle"
-        ariaLabel="Add something"
-      >
-        <PlusIcon />
-      </IconButton>
-    </div>
+    {shapeVariants.map((shape: any) => (
+      <div key={shape} className="story-item">
+        <IconButton 
+          onClick={action('clicked')} 
+          shape={shape}
+          ariaLabel="Add something"
+        >
+          <PlusIcon />
+        </IconButton>
+      </div>
+    ))}
   </div>
-);
+)

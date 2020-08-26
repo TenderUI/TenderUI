@@ -11,6 +11,7 @@ export default {
   title: 'IconButton',
   disable: true
 };
+const shapeVariants = ['circle', 'rounded'];
 export const sizes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-container"
 }, /*#__PURE__*/React.createElement("div", {
@@ -70,17 +71,12 @@ export const disabled = () => /*#__PURE__*/React.createElement("div", {
 }))));
 export const shapes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-container"
-}, /*#__PURE__*/React.createElement("div", {
+}, shapeVariants.map(shape => /*#__PURE__*/React.createElement("div", {
+  key: shape,
   className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
-  shape: "rounded",
+  shape: shape,
   ariaLabel: "Add something"
-}, /*#__PURE__*/React.createElement(PlusIcon, null))), /*#__PURE__*/React.createElement("div", {
-  className: "story-item"
-}, /*#__PURE__*/React.createElement(IconButton, {
-  onClick: action('clicked'),
-  shape: "circle",
-  ariaLabel: "Add something"
-}, /*#__PURE__*/React.createElement(PlusIcon, null))));
+}, /*#__PURE__*/React.createElement(PlusIcon, null)))));
 //# sourceMappingURL=IconButton.stories.js.map
