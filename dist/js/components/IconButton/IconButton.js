@@ -11,11 +11,11 @@ var _classnames = _interopRequireDefault(require("classnames"));
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _helpers = require("../../lib/helpers");
+
 var _Button = _interopRequireDefault(require("../Button/Button"));
 
 var _IconButtonModule = _interopRequireDefault(require("./IconButton.module.scss"));
-
-var _helpers = require("../../lib/helpers");
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
 
@@ -37,13 +37,14 @@ var IconButton = function IconButton(_ref) {
       _ref$size = _ref.size,
       size = _ref$size === void 0 ? 'normal' : _ref$size,
       _ref$shape = _ref.shape,
-      shape = _ref$shape === void 0 ? 'rounded' : _ref$shape,
+      shape = _ref$shape === void 0 ? 'circle' : _ref$shape,
       ariaLabel = _ref.ariaLabel,
       children = _ref.children;
-  var classes = (0, _classnames.default)(_IconButtonModule.default.icon, _IconButtonModule.default[size], _IconButtonModule.default[shape]);
+  var classes = (0, _classnames.default)(_IconButtonModule.default.icon, _IconButtonModule.default[size]);
   var icon = /*#__PURE__*/(0, _react.isValidElement)(children) ? /*#__PURE__*/(0, _react.cloneElement)(children, _helpers.a11yIconHiddenProps) : null;
   return /*#__PURE__*/_react.default.createElement(_Button.default, {
     size: size,
+    shape: shape,
     type: type,
     className: classes,
     onClick: onClick,

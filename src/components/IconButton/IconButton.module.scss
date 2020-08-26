@@ -11,9 +11,7 @@
 }
 
 .large {
-  border-radius: 10px;
   button {
-    border-radius: 10px !important;;
     // height: 48px - 2px;
     width: 48px - 2px;
     padding-left: 0 !important;
@@ -25,9 +23,7 @@
 }
 
 .normal {
-  border-radius: 8px;
   button {
-    border-radius: 8px !important;;
     // height: 38px - 2px;
     width: 38px - 2px;
     padding-left: 0 !important;
@@ -39,9 +35,7 @@
 }
 
 .small {
-  border-radius: 6px;
   button {
-    border-radius: 6px !important;
     // height: 32px - 2px;
     width: 32px - 2px;
     padding-left: 0 !important;
@@ -49,19 +43,5 @@
     svg {
       width:14px !important;
     }
-  }
-}
-
-.rounded {
-  button {
-    // Just to keep this class for TS.
-    flex-direction: column;
-  }
-}
-
-.circle {
-  border-radius: 50rem !important;
-  button {
-    border-radius: 50rem !important;
   }
 }

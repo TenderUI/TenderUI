@@ -55,6 +55,7 @@
     disabled = false,
     type = 'button',
     size = 'normal',
+    shape = 'circle',
     children,
     className,
     ariaLabel
@@ -62,7 +63,7 @@
     const a11yProps = ariaLabel ? {
       "aria-label": ariaLabel
     } : null;
-    const classes = (0, _classnames2.default)(_ButtonModule2.default.buttonWrapper, _ButtonModule2.default[size], {
+    const classes = (0, _classnames2.default)(_ButtonModule2.default.buttonWrapper, _ButtonModule2.default[size], _ButtonModule2.default[shape], {
       [_ButtonModule2.default.disabled]: disabled
     }, className);
     return /*#__PURE__*/_react2.default.createElement("span", {

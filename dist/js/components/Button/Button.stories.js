@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.withIcon = exports.disabled = exports.sizes = exports.default = void 0;
+exports.shapes = exports.withIcon = exports.disabled = exports.sizes = exports.default = void 0;
 
 var _addonActions = require("@storybook/addon-actions");
 
@@ -25,6 +25,7 @@ var _default = {
 };
 exports.default = _default;
 var sizeVariants = ['large', 'normal', 'small'];
+var shapeVariants = ['circle', 'rounded'];
 
 var sizes = function sizes() {
   return /*#__PURE__*/_react.default.createElement("div", {
@@ -73,4 +74,20 @@ var withIcon = function withIcon() {
 };
 
 exports.withIcon = withIcon;
+
+var shapes = function shapes() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-container"
+  }, shapeVariants.map(function (shape) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: shape,
+      className: "story-item"
+    }, /*#__PURE__*/_react.default.createElement(_Button.default, {
+      onClick: (0, _addonActions.action)('clicked'),
+      shape: shape
+    }, "Button"));
+  }));
+};
+
+exports.shapes = shapes;
 //# sourceMappingURL=Button.stories.js.map

@@ -28,13 +28,15 @@ var Button = function Button(_ref) {
       type = _ref$type === void 0 ? 'button' : _ref$type,
       _ref$size = _ref.size,
       size = _ref$size === void 0 ? 'normal' : _ref$size,
+      _ref$shape = _ref.shape,
+      shape = _ref$shape === void 0 ? 'circle' : _ref$shape,
       children = _ref.children,
       className = _ref.className,
       ariaLabel = _ref.ariaLabel;
   var a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  var classes = (0, _classnames.default)(_ButtonModule.default.buttonWrapper, _ButtonModule.default[size], _defineProperty({}, _ButtonModule.default.disabled, disabled), className);
+  var classes = (0, _classnames.default)(_ButtonModule.default.buttonWrapper, _ButtonModule.default[size], _ButtonModule.default[shape], _defineProperty({}, _ButtonModule.default.disabled, disabled), className);
   return /*#__PURE__*/_react.default.createElement("span", {
     className: classes
   }, /*#__PURE__*/_react.default.createElement("button", _extends({

@@ -2,7 +2,6 @@
 
 .buttonWrapper {
   padding:1px;
-  border-radius: 50rem;
 
   display: inline-flex;
   flex-direction: row;
@@ -45,6 +44,7 @@
       background: linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
       box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.8);
     }
+    border-radius: 10px;
 
     .button {
       height: 48px - 2px;
@@ -58,6 +58,7 @@
       &:hover, &:focus {
         background: linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       }
+      border-radius: 10px;
     }
   }
 
@@ -68,6 +69,7 @@
       background: linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
       box-shadow: -3px -3px 9px #FFFFFF, 4px 3px 8px rgba(179, 193, 213, 0.8);
     }
+    border-radius: 8px;
 
     .button {
       height: 38px - 2px;
@@ -81,6 +83,7 @@
       &:hover, &:focus {
         background: linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       }
+      border-radius: 8px;
     }
   }
   
@@ -91,6 +94,7 @@
       background: linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
       box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 7px rgba(179, 193, 213, 0.8);
     }
+    border-radius: 6px;
 
     .button {  
       height: 32px - 2px;
@@ -104,6 +108,7 @@
       &:hover, &:focus {
         background: linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       }
+      border-radius: 6px;
     }
   }
 
@@ -142,5 +147,19 @@
         box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.85), 3px 3px 7px rgba(179, 193, 213, 0.4);
       }
     }
+  }
+}
+
+.rounded {
+  button {
+    // Just to keep this class for TS.
+    flex-direction: column;
+  }
+}
+
+.circle {
+  border-radius: 50rem !important;
+  button {
+    border-radius: 50rem !important;
   }
 }

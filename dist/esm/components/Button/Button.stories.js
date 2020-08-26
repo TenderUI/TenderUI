@@ -9,6 +9,7 @@ export default {
   title: 'Button'
 };
 const sizeVariants = ['large', 'normal', 'small'];
+const shapeVariants = ['circle', 'rounded'];
 export const sizes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-container"
 }, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
@@ -36,4 +37,13 @@ export const withIcon = () => /*#__PURE__*/React.createElement("div", {
   onClick: action('clicked'),
   size: size
 }, /*#__PURE__*/React.createElement(ShareIcon, a11yIconHiddenProps), " Button"))));
+export const shapes = () => /*#__PURE__*/React.createElement("div", {
+  className: "story-container"
+}, shapeVariants.map(shape => /*#__PURE__*/React.createElement("div", {
+  key: shape,
+  className: "story-item"
+}, /*#__PURE__*/React.createElement(Button, {
+  onClick: action('clicked'),
+  shape: shape
+}, "Button"))));
 //# sourceMappingURL=Button.stories.js.map

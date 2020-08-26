@@ -9,6 +9,10 @@ declare type ButtonPropsType = {
      */
     size?: 'normal' | 'small' | 'large';
     /**
+     * Define the shape of the button (border radius). Default: rounded.
+     */
+    shape?: 'rounded' | 'circle';
+    /**
      * Disable button. Default: false
      */
     disabled?: boolean;

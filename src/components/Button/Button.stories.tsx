@@ -11,6 +11,7 @@ export default {
 };
 
 const sizeVariants = ['large', 'normal', 'small'];
+const shapeVariants = ['circle', 'rounded'];
 
 export const sizes = () => (
   <div className="story-container">
@@ -47,3 +48,15 @@ export const withIcon = () => (
     ))}
    </div>
 )
+
+export const shapes = () => (
+  <div className="story-container">
+    {shapeVariants.map((shape: any) => (
+      <div key={shape} className="story-item">
+        <Button onClick={action('clicked')} shape={shape}>
+          Button
+        </Button>
+      </div>
+    ))}
+  </div>
+);

@@ -12,6 +12,7 @@ const Button = ({
   disabled = false,
   type = 'button',
   size = 'normal',
+  shape = 'circle',
   children,
   className,
   ariaLabel
@@ -19,7 +20,7 @@ const Button = ({
   const a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  const classes = classNames(styles.buttonWrapper, styles[size], {
+  const classes = classNames(styles.buttonWrapper, styles[size], styles[shape], {
     [styles.disabled]: disabled
   }, className);
   return /*#__PURE__*/React.createElement("span", {

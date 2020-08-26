@@ -1,8 +1,8 @@
 import classNames from 'classnames';
-import React, { FC, MouseEventHandler, PropsWithChildren, cloneElement, isValidElement } from 'react';
+import React, { cloneElement, FC, isValidElement, MouseEventHandler, PropsWithChildren } from 'react';
+import { a11yIconHiddenProps } from '../../lib/helpers';
 import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
-import { a11yIconHiddenProps } from '../../lib/helpers';
 
 type IconButtonPropsType = {
   /**
@@ -49,14 +49,13 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
   disabled = false,
   type = 'button',
   size = 'normal',
-  shape = 'rounded',
+  shape = 'circle',
   ariaLabel,
   children
 }) => {
   const classes = classNames(
     styles.icon,
     styles[size],
-    styles[shape]
   );
 
   const icon = isValidElement(children) ? 
@@ -66,6 +65,7 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
   return (
     <Button 
       size={size} 
+      shape={shape}
       type={type}
       className={classes}
       onClick={onClick}

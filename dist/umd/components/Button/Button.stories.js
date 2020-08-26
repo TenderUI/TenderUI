@@ -16,7 +16,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.withIcon = exports.disabled = exports.sizes = undefined;
+  exports.shapes = exports.withIcon = exports.disabled = exports.sizes = undefined;
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -33,6 +33,7 @@
     title: 'Button'
   };
   const sizeVariants = ['large', 'normal', 'small'];
+  const shapeVariants = ['circle', 'rounded'];
 
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement("div", {
     className: "story-container"
@@ -63,5 +64,15 @@
     onClick: (0, _addonActions.action)('clicked'),
     size: size
   }, /*#__PURE__*/_react2.default.createElement(_iconShare.ReactComponent, _helpers.a11yIconHiddenProps), " Button"))));
+
+  const shapes = exports.shapes = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, shapeVariants.map(shape => /*#__PURE__*/_react2.default.createElement("div", {
+    key: shape,
+    className: "story-item"
+  }, /*#__PURE__*/_react2.default.createElement(_Button2.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    shape: shape
+  }, "Button"))));
 });
 //# sourceMappingURL=Button.stories.js.map
