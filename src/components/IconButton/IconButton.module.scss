@@ -5,40 +5,50 @@
     flex-direction: column !important;
     svg {
       margin-right: 0 !important;
+      width:22px;
     }
   }
 }
 
 .large {
-  border-radius: 12px;
+  border-radius: 10px;
   button {
-    border-radius: 12px !important;;
+    border-radius: 10px !important;;
     // height: 48px - 2px;
     width: 48px - 2px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    svg {
+      width:22px !important;
+    }
   }
 }
 
 .normal {
-  border-radius: 10px;
+  border-radius: 8px;
   button {
-    border-radius: 10px !important;;
+    border-radius: 8px !important;;
     // height: 38px - 2px;
     width: 38px - 2px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    svg {
+      width:18px !important;
+    }
   }
 }
 
 .small {
-  border-radius: 8px;
+  border-radius: 6px;
   button {
-    border-radius: 8px !important;
+    border-radius: 6px !important;
     // height: 32px - 2px;
     width: 32px - 2px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    svg {
+      width:14px !important;
+    }
   }
 }
 

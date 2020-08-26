@@ -18,10 +18,10 @@ export const sizes = () => (
     <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
-        size="small"
-        ariaLabel="Like it"
+        size="large"
+        ariaLabel="Mark as favorite"
       >
-        <HeartIcon color="#EC7CDA" />
+        <FlagIcon color="#5081FF" />
       </IconButton>
     </div>
     <div className="story-item">
@@ -36,10 +36,45 @@ export const sizes = () => (
     <div className="story-item">
       <IconButton 
         onClick={action('clicked')} 
+        size="small"
+        ariaLabel="Like it"
+      >
+        <HeartIcon color="#EC7CDA" />
+      </IconButton>
+    </div>
+  </div>
+);
+
+export const disabled = () => (
+  <div className="story-container">
+    <div className="story-item">
+      <IconButton 
+        onClick={action('clicked')} 
         size="large"
         ariaLabel="Mark as favorite"
+        disabled={true}
       >
         <FlagIcon color="#5081FF" />
+      </IconButton>
+    </div>
+    <div className="story-item">
+      <IconButton 
+        onClick={action('clicked')} 
+        size="normal"
+        ariaLabel="Send a message"
+        disabled={true}
+      >
+        <MessageIcon color="#77BEFF" />
+      </IconButton>
+    </div>
+    <div className="story-item">
+      <IconButton 
+        onClick={action('clicked')} 
+        size="small"
+        ariaLabel="Like it"
+        disabled={true}
+      >
+        <HeartIcon color="#EC7CDA" />
       </IconButton>
     </div>
   </div>

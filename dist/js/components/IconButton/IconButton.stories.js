@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.shapes = exports.sizes = exports.default = void 0;
+exports.shapes = exports.disabled = exports.sizes = exports.default = void 0;
 
 var _addonActions = require("@storybook/addon-actions");
 
@@ -37,10 +37,10 @@ var sizes = function sizes() {
     className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "small",
-    ariaLabel: "Like it"
-  }, /*#__PURE__*/_react.default.createElement(_iconHeart.ReactComponent, {
-    color: "#EC7CDA"
+    size: "large",
+    ariaLabel: "Mark as favorite"
+  }, /*#__PURE__*/_react.default.createElement(_iconFlag.ReactComponent, {
+    color: "#5081FF"
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
@@ -53,14 +53,49 @@ var sizes = function sizes() {
     className: "story-item"
   }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
     onClick: (0, _addonActions.action)('clicked'),
-    size: "large",
-    ariaLabel: "Mark as favorite"
-  }, /*#__PURE__*/_react.default.createElement(_iconFlag.ReactComponent, {
-    color: "#5081FF"
+    size: "small",
+    ariaLabel: "Like it"
+  }, /*#__PURE__*/_react.default.createElement(_iconHeart.ReactComponent, {
+    color: "#EC7CDA"
   }))));
 };
 
 exports.sizes = sizes;
+
+var disabled = function disabled() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-container"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-item"
+  }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: "large",
+    ariaLabel: "Mark as favorite",
+    disabled: true
+  }, /*#__PURE__*/_react.default.createElement(_iconFlag.ReactComponent, {
+    color: "#5081FF"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-item"
+  }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: "normal",
+    ariaLabel: "Send a message",
+    disabled: true
+  }, /*#__PURE__*/_react.default.createElement(_iconMessage.ReactComponent, {
+    color: "#77BEFF"
+  }))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-item"
+  }, /*#__PURE__*/_react.default.createElement(_IconButton.default, {
+    onClick: (0, _addonActions.action)('clicked'),
+    size: "small",
+    ariaLabel: "Like it",
+    disabled: true
+  }, /*#__PURE__*/_react.default.createElement(_iconHeart.ReactComponent, {
+    color: "#EC7CDA"
+  }))));
+};
+
+exports.disabled = disabled;
 
 var shapes = function shapes() {
   return /*#__PURE__*/_react.default.createElement("div", {

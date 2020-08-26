@@ -17,10 +17,10 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
-  size: "small",
-  ariaLabel: "Like it"
-}, /*#__PURE__*/React.createElement(HeartIcon, {
-  color: "#EC7CDA"
+  size: "large",
+  ariaLabel: "Mark as favorite"
+}, /*#__PURE__*/React.createElement(FlagIcon, {
+  color: "#5081FF"
 }))), /*#__PURE__*/React.createElement("div", {
   className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
@@ -33,10 +33,40 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-item"
 }, /*#__PURE__*/React.createElement(IconButton, {
   onClick: action('clicked'),
+  size: "small",
+  ariaLabel: "Like it"
+}, /*#__PURE__*/React.createElement(HeartIcon, {
+  color: "#EC7CDA"
+}))));
+export const disabled = () => /*#__PURE__*/React.createElement("div", {
+  className: "story-container"
+}, /*#__PURE__*/React.createElement("div", {
+  className: "story-item"
+}, /*#__PURE__*/React.createElement(IconButton, {
+  onClick: action('clicked'),
   size: "large",
-  ariaLabel: "Mark as favorite"
+  ariaLabel: "Mark as favorite",
+  disabled: true
 }, /*#__PURE__*/React.createElement(FlagIcon, {
   color: "#5081FF"
+}))), /*#__PURE__*/React.createElement("div", {
+  className: "story-item"
+}, /*#__PURE__*/React.createElement(IconButton, {
+  onClick: action('clicked'),
+  size: "normal",
+  ariaLabel: "Send a message",
+  disabled: true
+}, /*#__PURE__*/React.createElement(MessageIcon, {
+  color: "#77BEFF"
+}))), /*#__PURE__*/React.createElement("div", {
+  className: "story-item"
+}, /*#__PURE__*/React.createElement(IconButton, {
+  onClick: action('clicked'),
+  size: "small",
+  ariaLabel: "Like it",
+  disabled: true
+}, /*#__PURE__*/React.createElement(HeartIcon, {
+  color: "#EC7CDA"
 }))));
 export const shapes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-container"
