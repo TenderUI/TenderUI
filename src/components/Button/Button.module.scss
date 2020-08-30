@@ -38,7 +38,7 @@
   }
 
   &.large {
-    background: linear-gradient(311deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
+    background: linear-gradient(340deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
     box-shadow: -4px -4px 12px #FFFFFF, 5px 4px 10px rgba(179, 193, 213, 0.7);
     &:hover, &:focus {
       background: linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
@@ -54,7 +54,7 @@
     
       @include button-sizes(22px);
 
-      background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+      background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
       &:hover, &:focus {
         background: linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       }
@@ -63,7 +63,7 @@
   }
 
   &.normal {
-    background: linear-gradient(311deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
+    background: linear-gradient(340deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
     box-shadow: -3px -3px 9px #FFFFFF, 4px 3px 8px rgba(179, 193, 213, 0.7);
     &:hover, &:focus {
       background: linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
@@ -76,10 +76,9 @@
       padding-left: 2rem;
       padding-right: 2rem;
       line-height: 22px;
-    
       @include button-sizes(18px);
 
-      background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+      background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
       &:hover, &:focus {
         background: linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       }
@@ -88,7 +87,7 @@
   }
   
   &.small {
-    background: linear-gradient(311deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
+    background: linear-gradient(340deg, #DAE2ED 4.11%, #FFFFFF 87.12%);
     box-shadow: -3px -3px 8px #FFFFFF, 3px 3px 7px rgba(179, 193, 213, 0.7);
     &:hover, &:focus {
       background: linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);
@@ -104,7 +103,7 @@
     
       @include button-sizes(16px);
 
-      background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+      background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
       &:hover, &:focus {
         background: linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%);
       }
@@ -124,26 +123,26 @@
     }
 
     &.large {
-      background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+      background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
       box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.85), 4px 4px 7px rgba(179, 193, 213, 0.4);
       &:hover, &:focus {
-        background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+        background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
         box-shadow: -4px -4px 9px rgba(255, 255, 255, 0.85), 4px 4px 7px rgba(179, 193, 213, 0.4);
       }
     }
     &.normal {
-      background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+      background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
       box-shadow: -3px -3px 9px rgba(255, 255, 255, 0.85), 4px 4px 8px rgba(179, 193, 213, 0.4);
       &:hover, &:focus {
-        background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+        background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
         box-shadow: -3px -3px 9px rgba(255, 255, 255, 0.85), 4px 4px 8px rgba(179, 193, 213, 0.4);
       }
     }
     &.small {
-      background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+      background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
       box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.85), 3px 3px 7px rgba(179, 193, 213, 0.4);
       &:hover, &:focus {
-        background: linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
+        background: linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);
         box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.85), 3px 3px 7px rgba(179, 193, 213, 0.4);
       }
     }
@@ -151,7 +150,7 @@
 }
 
 .rounded {
-  button {
+  .button {
     // Just to keep this class for TS.
     flex-direction: column;
   }
@@ -159,7 +158,7 @@
 
 .circle {
   border-radius: 50rem !important;
-  button {
+  .button {
     border-radius: 50rem !important;
   }
 }

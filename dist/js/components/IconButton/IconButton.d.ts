@@ -21,6 +21,10 @@ declare type IconButtonPropsType = {
      */
     shape?: 'rounded' | 'circle';
     /**
+     * Add a class name. Optional.
+     */
+    className?: string;
+    /**
      * Define 'aria-label' attribute for screen readers.
      * Required for icon buttons because they don't have any other descriptive text.
      */

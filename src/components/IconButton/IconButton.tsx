@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import React, { cloneElement, FC, isValidElement, MouseEventHandler, PropsWithChildren } from 'react';
 import { a11yIconHiddenProps } from '../../lib/helpers';
-import Button from '../Button/Button';
 import styles from './IconButton.module.scss';
 
 type IconButtonPropsType = {
@@ -31,6 +30,11 @@ type IconButtonPropsType = {
   shape?: 'rounded' | 'circle';
 
   /**
+   * Add a class name. Optional.
+   */
+  className?: string;
+
+  /**
    * Define 'aria-label' attribute for screen readers. 
    * Required for icon buttons because they don't have any other descriptive text.
    */
@@ -50,12 +54,20 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
   type = 'button',
   size = 'normal',
   shape = 'circle',
-  ariaLabel,
-  children
+  children,
+  className,
+  ariaLabel
 }) => {
+  const a11yProps = ariaLabel ? 
+    { "aria-label": ariaLabel } : 
+    null;
+
   const classes = classNames(
-    styles.icon,
+    styles.buttonWrapper,
     styles[size],
+    styles[shape],
+    {[styles.disabled]: disabled},
+    className
   );
 
   const icon = isValidElement(children) ? 
@@ -63,17 +75,17 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
     null
 
   return (
-    <Button 
-      size={size} 
-      shape={shape}
-      type={type}
-      className={classes}
-      onClick={onClick}
-      disabled={disabled}
-      ariaLabel={ariaLabel}
-    >
-      {icon}
-    </Button>
+    <span className={classes}>
+      <button
+        className={styles.button}
+        type={type}
+        onClick={onClick}
+        disabled={disabled}
+        {... a11yProps}
+      >
+        {icon}
+      </button>
+    </span>
   );
 };
 
