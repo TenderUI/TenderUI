@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import classNames from 'clsx';
 import React, { FC, MouseEventHandler, PropsWithChildren } from 'react';
 import styles from './Button.module.scss';
 

@@ -1,23 +1,23 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "classnames", "react", "./Button.module.scss"], factory);
+    define(["exports", "clsx", "react", "./Button.module.scss"], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("classnames"), require("react"), require("./Button.module.scss"));
+    factory(exports, require("clsx"), require("react"), require("./Button.module.scss"));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.classnames, global.react, global.ButtonModule);
+    factory(mod.exports, global.clsx, global.react, global.ButtonModule);
     global.undefined = mod.exports;
   }
-})(this, function (exports, _classnames, _react, _ButtonModule) {
+})(this, function (exports, _clsx, _react, _ButtonModule) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
 
-  var _classnames2 = _interopRequireDefault(_classnames);
+  var _clsx2 = _interopRequireDefault(_clsx);
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -63,7 +63,7 @@
     const a11yProps = ariaLabel ? {
       "aria-label": ariaLabel
     } : null;
-    const classes = (0, _classnames2.default)(_ButtonModule2.default.buttonWrapper, _ButtonModule2.default[size], _ButtonModule2.default[shape], {
+    const classes = (0, _clsx2.default)(_ButtonModule2.default.buttonWrapper, _ButtonModule2.default[size], _ButtonModule2.default[shape], {
       [_ButtonModule2.default.disabled]: disabled
     }, className);
     return /*#__PURE__*/_react2.default.createElement("span", {

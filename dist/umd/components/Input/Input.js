@@ -1,16 +1,16 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "prop-types", "classnames", "react", "./Input.module.scss"], factory);
+    define(["exports", "prop-types", "clsx", "react", "./Input.module.scss"], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("prop-types"), require("classnames"), require("react"), require("./Input.module.scss"));
+    factory(exports, require("prop-types"), require("clsx"), require("react"), require("./Input.module.scss"));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.propTypes, global.classnames, global.react, global.InputModule);
+    factory(mod.exports, global.propTypes, global.clsx, global.react, global.InputModule);
     global.undefined = mod.exports;
   }
-})(this, function (exports, _propTypes, _classnames, _react, _InputModule) {
+})(this, function (exports, _propTypes, _clsx, _react, _InputModule) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
@@ -19,7 +19,7 @@
 
   var _propTypes2 = _interopRequireDefault(_propTypes);
 
-  var _classnames2 = _interopRequireDefault(_classnames);
+  var _clsx2 = _interopRequireDefault(_clsx);
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -97,7 +97,7 @@
     } = _ref,
         rest = _objectWithoutProperties(_ref, ["type", "value", "size", "className"]);
 
-    const classes = (0, _classnames2.default)(_InputModule2.default.input, _InputModule2.default[size], className);
+    const classes = (0, _clsx2.default)(_InputModule2.default.input, _InputModule2.default[size], className);
     return /*#__PURE__*/_react2.default.createElement("input", _extends({
       className: classes,
       type: type

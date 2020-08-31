@@ -7,7 +7,7 @@ exports.default = void 0;
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-var _classnames = _interopRequireDefault(require("classnames"));
+var _clsx = _interopRequireDefault(require("clsx"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -33,7 +33,7 @@ var Input = function Input(_ref) {
       className = _ref.className,
       rest = _objectWithoutProperties(_ref, ["type", "value", "size", "className"]);
 
-  var classes = (0, _classnames.default)(_InputModule.default.input, _InputModule.default[size], className);
+  var classes = (0, _clsx.default)(_InputModule.default.input, _InputModule.default[size], className);
   return /*#__PURE__*/_react.default.createElement("input", _extends({
     className: classes,
     type: type

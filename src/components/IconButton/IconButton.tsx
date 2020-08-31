@@ -1,4 +1,4 @@
-import classNames from 'classnames';
+import classNames from 'clsx';
 import React, { cloneElement, FC, isValidElement, MouseEventHandler, PropsWithChildren } from 'react';
 import { a11yIconHiddenProps } from '../../lib/helpers';
 import styles from './IconButton.module.scss';
