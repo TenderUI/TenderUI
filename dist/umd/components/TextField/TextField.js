@@ -103,6 +103,7 @@
     const classes = (0, _clsx2.default)(_TextFieldModule2.default.wrapper, _TextFieldModule2.default[size], _TextFieldModule2.default[shape], {
       [_TextFieldModule2.default.disabled]: disabled
     }, className);
+    console.log(classes);
     return /*#__PURE__*/_react2.default.createElement("span", {
       className: classes
     }, /*#__PURE__*/_react2.default.createElement("input", _extends({

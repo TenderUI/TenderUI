@@ -7,6 +7,8 @@ exports.sizes = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _config = require("../../config");
+
 require("../../styles/init.scss");
 
 var _TextField = _interopRequireDefault(require("./TextField"));
@@ -14,7 +16,6 @@ var _TextField = _interopRequireDefault(require("./TextField"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // import { action } from '@storybook/addon-actions';
-// import { shapeVariants, sizeVariants } from '../../lib/config';
 var _default = {
   component: _TextField.default,
   title: 'TextField'
@@ -24,22 +25,16 @@ exports.default = _default;
 var sizes = function sizes() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "story-container"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "story-item"
-  }, /*#__PURE__*/_react.default.createElement(_TextField.default, {
-    size: "large",
-    placeholder: "Text field"
-  })));
-}; // export const sizes = () => (
-//   <div className="story-container">
-//     {sizeVariants.map((size: any) => (
-//       <div key={size} className="story-item">
-//         <TextField onClick={action('clicked')} size={size} placeholder="Text field" />
-//       </div>
-//     ))}
-//   </div>
-// );
-// export const disabled = () => (
+  }, _config.sizeVariants.map(function (size) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: size,
+      className: "story-item"
+    }, /*#__PURE__*/_react.default.createElement(_TextField.default, {
+      size: size,
+      placeholder: "Text field"
+    }));
+  }));
+}; // export const disabled = () => (
 //   <div className="story-container">
 //     {sizeVariants.map((size: any) => (
 //       <div key={size} className="story-item">

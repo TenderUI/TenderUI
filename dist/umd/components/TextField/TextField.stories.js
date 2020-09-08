@@ -1,16 +1,16 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "react", "./TextField", "../../styles/init.scss"], factory);
+    define(["exports", "react", "../../config", "./TextField", "../../styles/init.scss"], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("react"), require("./TextField"), require("../../styles/init.scss"));
+    factory(exports, require("react"), require("../../config"), require("./TextField"), require("../../styles/init.scss"));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.react, global.TextField, global.init);
+    factory(mod.exports, global.react, global.config, global.TextField, global.init);
     global.undefined = mod.exports;
   }
-})(this, function (exports, _react, _TextField) {
+})(this, function (exports, _react, _config, _TextField) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
@@ -35,21 +35,13 @@
 
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement("div", {
     className: "story-container"
-  }, /*#__PURE__*/_react2.default.createElement("div", {
+  }, _config.sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+    key: size,
     className: "story-item"
   }, /*#__PURE__*/_react2.default.createElement(_TextField2.default, {
-    size: "large",
+    size: size,
     placeholder: "Text field"
-  }))); // export const sizes = () => (
-  //   <div className="story-container">
-  //     {sizeVariants.map((size: any) => (
-  //       <div key={size} className="story-item">
-  //         <TextField onClick={action('clicked')} size={size} placeholder="Text field" />
-  //       </div>
-  //     ))}
-  //   </div>
-  // );
-  // export const disabled = () => (
+  })))); // export const disabled = () => (
   //   <div className="story-container">
   //     {sizeVariants.map((size: any) => (
   //       <div key={size} className="story-item">

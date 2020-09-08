@@ -28,6 +28,7 @@ const TextField = (_ref) => {
   const classes = classNames(styles.wrapper, styles[size], styles[shape], {
     [styles.disabled]: disabled
   }, className);
+  console.log(classes);
   return /*#__PURE__*/React.createElement("span", {
     className: classes
   }, /*#__PURE__*/React.createElement("input", _extends({

@@ -41,6 +41,7 @@ var TextField = function TextField(_ref) {
       rest = _objectWithoutProperties(_ref, ["type", "size", "shape", "disabled", "className"]);
 
   var classes = (0, _clsx.default)(_TextFieldModule.default.wrapper, _TextFieldModule.default[size], _TextFieldModule.default[shape], _defineProperty({}, _TextFieldModule.default.disabled, disabled), className);
+  console.log(classes);
   return /*#__PURE__*/_react.default.createElement("span", {
     className: classes
   }, /*#__PURE__*/_react.default.createElement("input", _extends({

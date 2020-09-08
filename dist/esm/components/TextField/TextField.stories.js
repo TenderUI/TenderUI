@@ -1,6 +1,6 @@
 // import { action } from '@storybook/addon-actions';
-import React from 'react'; // import { shapeVariants, sizeVariants } from '../../lib/config';
-
+import React from 'react';
+import { sizeVariants } from '../../config';
 import '../../styles/init.scss';
 import TextField from './TextField';
 export default {
@@ -9,21 +9,13 @@ export default {
 };
 export const sizes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-container"
-}, /*#__PURE__*/React.createElement("div", {
+}, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
+  key: size,
   className: "story-item"
 }, /*#__PURE__*/React.createElement(TextField, {
-  size: "large",
+  size: size,
   placeholder: "Text field"
-}))); // export const sizes = () => (
-//   <div className="story-container">
-//     {sizeVariants.map((size: any) => (
-//       <div key={size} className="story-item">
-//         <TextField onClick={action('clicked')} size={size} placeholder="Text field" />
-//       </div>
-//     ))}
-//   </div>
-// );
-// export const disabled = () => (
+})))); // export const disabled = () => (
 //   <div className="story-container">
 //     {sizeVariants.map((size: any) => (
 //       <div key={size} className="story-item">

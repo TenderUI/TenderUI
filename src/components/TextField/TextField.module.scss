@@ -14,8 +14,8 @@
 
   &.large {
     background: linear-gradient(308.05deg, #F4F7FA 11.58%, #EBF0F5 92.09%);
-    &:hover, &:focus {
-      
+    &:focus-within {
+      background: linear-gradient(308.05deg, #AAA3FF 11.58%, #29B3FF 92.09%);
     }
     border-radius: 10px;
 
@@ -31,10 +31,48 @@
 
       background: linear-gradient(130.01deg, #ECF1F6 4.46%, #F5F8FA 94.9%);
       box-shadow: inset -5px -5px 12px #FFFFFF, inset 3px 4px 8px rgba(179, 193, 213, 0.7);
-      border-radius: 9.5px;
-      &:hover, &:focus {
-        
-      }
+      border-radius: 10px;
+    }
+  }
+  &.normal {
+    background: linear-gradient(308.05deg, #F4F7FA 11.58%, #EBF0F5 92.09%);
+    &:focus-within {
+      background: linear-gradient(308.05deg, #AAA3FF 11.58%, #29B3FF 92.09%);
+    }
+    border-radius: 8px;
+
+    .input {
+      height: 38px - 2px;
+      padding-left: 0.7rem;
+      padding-right: 0.7rem;
+      line-height: 38px - 2px;
+      font-size: 15px;
+
+      background: linear-gradient(130.01deg, #ECF1F6 4.46%, #F5F8FA 94.9%);
+      box-shadow: inset -4px -3px 10px rgba(255, 255, 255, 0.9), inset 2px 3px 6px rgba(179, 193, 213, 0.7);
+      border-radius: 8px;
+    }
+  }
+  &.small {
+    background: linear-gradient(308.05deg, #F4F7FA 11.58%, #EBF0F5 92.09%);
+    &:focus-within {
+      background: linear-gradient(308.05deg, #AAA3FF 11.58%, #29B3FF 92.09%);
+    }
+    border-radius: 6px;
+
+    .input {
+      height: 32px - 2px;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+      line-height: 32px - 2px;
+
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+
+      background: linear-gradient(130.01deg, #ECF1F6 4.46%, #F5F8FA 94.9%);
+      box-shadow: inset -3px -2px 8px rgba(255, 255, 255, 0.9), inset 2px 2px 5px rgba(179, 193, 213, 0.7);
+      border-radius: 6px;
     }
   }
 }
