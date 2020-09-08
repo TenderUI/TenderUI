@@ -2,7 +2,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 import classNames from 'clsx';
 import React, { cloneElement, isValidElement } from 'react';
-import { a11yIconHiddenProps } from '../../lib/helpers';
+import { a11yIconHiddenProps } from '../../config';
 import styles from './IconButton.module.scss';
 
 /**
@@ -23,7 +23,7 @@ const IconButton = ({
   const a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  const classes = classNames(styles.buttonWrapper, styles[size], styles[shape], {
+  const classes = classNames(styles.wrapper, styles[size], styles[shape], {
     [styles.disabled]: disabled
   }, className);
   const icon = /*#__PURE__*/isValidElement(children) ? /*#__PURE__*/cloneElement(children, a11yIconHiddenProps) : null;

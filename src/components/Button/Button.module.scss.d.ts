@@ -1,4 +1,4 @@
-export const buttonWrapper: string;
+export const wrapper: string;
 export const button: string;
 export const large: string;
 export const normal: string;

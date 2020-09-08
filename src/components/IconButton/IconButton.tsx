@@ -1,6 +1,6 @@
 import classNames from 'clsx';
 import React, { cloneElement, FC, isValidElement, MouseEventHandler, PropsWithChildren } from 'react';
-import { a11yIconHiddenProps } from '../../lib/helpers';
+import { a11yIconHiddenProps } from '../../config';
 import styles from './IconButton.module.scss';
 
 type IconButtonPropsType = {
@@ -63,7 +63,7 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
     null;
 
   const classes = classNames(
-    styles.buttonWrapper,
+    styles.wrapper,
     styles[size],
     styles[shape],
     {[styles.disabled]: disabled},

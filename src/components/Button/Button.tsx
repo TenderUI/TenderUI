@@ -60,7 +60,7 @@ const Button: FC<ButtonPropsTypeWithChildren> = ({
     null;
 
   const classes = classNames(
-    styles.buttonWrapper,
+    styles.wrapper,
     styles[size],
     styles[shape],
     {[styles.disabled]: disabled},

@@ -1,15 +1,13 @@
 import { action } from '@storybook/addon-actions';
 import React from 'react';
 import { ReactComponent as ShareIcon } from '../../img/icons/icon-share.svg';
-import { a11yIconHiddenProps } from '../../lib/helpers';
+import { a11yIconHiddenProps, sizeVariants, shapeVariants } from '../../config';
 import '../../styles/init.scss';
 import Button from './Button';
 export default {
   component: Button,
   title: 'Button'
 };
-const sizeVariants = ['large', 'normal', 'small'];
-const shapeVariants = ['circle', 'rounded'];
 export const sizes = () => /*#__PURE__*/React.createElement("div", {
   className: "story-container"
 }, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {

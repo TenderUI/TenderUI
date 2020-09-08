@@ -1,40 +1,23 @@
 @import "../../styles/prerequisites";
 
-.buttonWrapper {
-  padding:1px;
-
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
+.wrapper {
+  @extend %wrapper;
 
   .button {
     @extend %button;
 
     box-shadow: none;
     color: #485158;
-
-    svg {
-      opacity: 0.8;
-    }
-
     &:hover, &:focus {
       box-shadow: none;
       color: #363F48;
-      svg {
-        opacity: 1;
-      }
+    }
+    &:disabled,
+    &[disabled] {
+      cursor: not-allowed;
     }
 
-    &:disabled,
-    &[disabled]{
-      cursor: not-allowed;
-      svg {
-        opacity: 0.4;
-      }
-    }
+    @extend %icon-opacity;
   }
 
   &.large {

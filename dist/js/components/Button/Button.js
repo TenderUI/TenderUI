@@ -36,7 +36,7 @@ var Button = function Button(_ref) {
   var a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  var classes = (0, _clsx.default)(_ButtonModule.default.buttonWrapper, _ButtonModule.default[size], _ButtonModule.default[shape], _defineProperty({}, _ButtonModule.default.disabled, disabled), className);
+  var classes = (0, _clsx.default)(_ButtonModule.default.wrapper, _ButtonModule.default[size], _ButtonModule.default[shape], _defineProperty({}, _ButtonModule.default.disabled, disabled), className);
   return /*#__PURE__*/_react.default.createElement("span", {
     className: classes
   }, /*#__PURE__*/_react.default.createElement("button", _extends({

@@ -11,7 +11,7 @@ var _clsx = _interopRequireDefault(require("clsx"));
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _helpers = require("../../lib/helpers");
+var _config = require("../../config");
 
 var _IconButtonModule = _interopRequireDefault(require("./IconButton.module.scss"));
 
@@ -46,8 +46,8 @@ var IconButton = function IconButton(_ref) {
   var a11yProps = ariaLabel ? {
     "aria-label": ariaLabel
   } : null;
-  var classes = (0, _clsx.default)(_IconButtonModule.default.buttonWrapper, _IconButtonModule.default[size], _IconButtonModule.default[shape], _defineProperty({}, _IconButtonModule.default.disabled, disabled), className);
-  var icon = /*#__PURE__*/(0, _react.isValidElement)(children) ? /*#__PURE__*/(0, _react.cloneElement)(children, _helpers.a11yIconHiddenProps) : null;
+  var classes = (0, _clsx.default)(_IconButtonModule.default.wrapper, _IconButtonModule.default[size], _IconButtonModule.default[shape], _defineProperty({}, _IconButtonModule.default.disabled, disabled), className);
+  var icon = /*#__PURE__*/(0, _react.isValidElement)(children) ? /*#__PURE__*/(0, _react.cloneElement)(children, _config.a11yIconHiddenProps) : null;
   return /*#__PURE__*/_react.default.createElement("span", {
     className: classes
   }, /*#__PURE__*/_react.default.createElement("button", _extends({

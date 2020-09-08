@@ -1,24 +1,16 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports"], factory);
+    define([], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports);
+    factory();
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports);
+    factory();
     global.undefined = mod.exports;
   }
-})(this, function (exports) {
+})(this, function () {
   "use strict";
-
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  const a11yIconHiddenProps = exports.a11yIconHiddenProps = {
-    "aria-hidden": true,
-    focusable: false
-  };
 });
 //# sourceMappingURL=helpers.js.map

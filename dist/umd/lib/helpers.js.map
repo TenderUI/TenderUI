@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../../src/lib/helpers.ts"],"names":["a11yIconHiddenProps","focusable"],"mappings":";;;;;;;;;;;;;;;;;;AAAO,QAAMA,mBAAmB,WAAnBA,mBAAmB,GAAG;AACjC,mBADiC,IAAA;AAEjCC,IAAAA,SAAS,EAAE;AAFsB,GAA5B","sourcesContent":["export const a11yIconHiddenProps = {\n  \"aria-hidden\": true,\n  focusable: false,\n}\n"],"file":"helpers.js"}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"helpers.js"}
