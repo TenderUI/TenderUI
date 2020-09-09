@@ -1,6 +1,6 @@
 // import { action } from '@storybook/addon-actions';
 import React from 'react';
-import { sizeVariants } from '../../config';
+import { sizeVariants, shapeVariants } from '../../config';
 import '../../styles/init.scss';
 import TextField from './TextField';
 
@@ -41,12 +41,12 @@ export const sizes = () => (
 //    </div>
 // )
 
-// export const shapes = () => (
-//   <div className="story-container">
-//     {shapeVariants.map((shape: any) => (
-//       <div key={shape} className="story-item">
-//         <TextField onClick={action('clicked')} shape={shape} placeholder="Text field" />
-//       </div>
-//     ))}
-//   </div>
-// )
+export const shapes = () => (
+  <div className="story-container">
+    {shapeVariants.map((shape: any) => (
+      <div key={shape} className="story-item">
+        <TextField shape={shape} placeholder="Text field" />
+      </div>
+    ))}
+  </div>
+)

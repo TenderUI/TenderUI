@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.sizes = exports.default = void 0;
+exports.shapes = exports.sizes = exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -54,16 +54,23 @@ var sizes = function sizes() {
 //     ))}
 //    </div>
 // )
-// export const shapes = () => (
-//   <div className="story-container">
-//     {shapeVariants.map((shape: any) => (
-//       <div key={shape} className="story-item">
-//         <TextField onClick={action('clicked')} shape={shape} placeholder="Text field" />
-//       </div>
-//     ))}
-//   </div>
-// )
 
 
 exports.sizes = sizes;
+
+var shapes = function shapes() {
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "story-container"
+  }, _config.shapeVariants.map(function (shape) {
+    return /*#__PURE__*/_react.default.createElement("div", {
+      key: shape,
+      className: "story-item"
+    }, /*#__PURE__*/_react.default.createElement(_TextField.default, {
+      shape: shape,
+      placeholder: "Text field"
+    }));
+  }));
+};
+
+exports.shapes = shapes;
 //# sourceMappingURL=TextField.stories.js.map

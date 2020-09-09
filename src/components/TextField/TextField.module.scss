@@ -76,3 +76,18 @@
     }
   }
 }
+
+
+.rounded {
+  .input {
+    // Just to keep this class for TS.
+    font-style: normal;
+  }
+}
+
+.circle {
+  border-radius: 50rem !important;
+  .input {
+    border-radius: 50rem !important;
+  }
+}
