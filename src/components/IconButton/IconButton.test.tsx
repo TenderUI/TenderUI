@@ -16,40 +16,40 @@ describe('IconButton', () => {
 
   it('cannot include text', () => {
     const { container } = render(<IconButton ariaLabel={ariaLabel}>{ariaLabel}</IconButton>);
-    expect(container.firstChild.firstChild).toBeNull();
+    expect(container.firstChild.firstChild.firstChild).toBeNull();
   });
 
   it('adds accessibility attributes to the child icon', () => {
     const { container } = render(<IconButton ariaLabel={ariaLabel}>{childIcon}</IconButton>);
 
-    expect(container.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
-    expect(container.firstChild.firstChild).toHaveAttribute('focusable', 'false');
+    expect(container.firstChild.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
+    expect(container.firstChild.firstChild.firstChild).toHaveAttribute('focusable', 'false');
   });
 
   it('can be of the type submit', () => {
     const { container } = render(<IconButton type='submit' ariaLabel={ariaLabel}>{childIcon}</IconButton>);
-    expect(container.firstChild).toHaveAttribute('type', 'submit');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'submit');
   });
 
   it('can be of the type reset', () => {
     const { container } = render(<IconButton type='reset' ariaLabel={ariaLabel}>{childIcon}</IconButton>);
-    expect(container.firstChild).toHaveAttribute('type', 'reset');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'reset');
   });
 
   it('can be of the type button', () => {
     const { container } = render(<IconButton type='button' ariaLabel={ariaLabel}>{childIcon}</IconButton>);
-    expect(container.firstChild).toHaveAttribute('type', 'button');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'button');
   });
 
   it('is of the type button by default', () => {
     const { container } = render(<IconButton ariaLabel={ariaLabel}>{childIcon}</IconButton>);
-    expect(container.firstChild).toHaveAttribute('type', 'button');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'button');
   });
 
   it('handles clicks', () => {
     const handleClick = jest.fn();
     const { container } = render(<IconButton onClick={handleClick} ariaLabel={ariaLabel}>{childIcon}</IconButton>);
-    const element = container.firstChild;
+    const element = container.firstChild.firstChild;
     fireEvent.click(element);
     expect(handleClick).toHaveBeenCalled();
   });
@@ -57,7 +57,7 @@ describe('IconButton', () => {
   it('ignores clicks when disabled', () => {
     const handleClick = jest.fn();
     const { container } = render(<IconButton onClick={handleClick} ariaLabel={ariaLabel} disabled>{childIcon}</IconButton>);
-    const element = container.firstChild;
+    const element = container.firstChild.firstChild;
     fireEvent.click(element);
     expect(handleClick).not.toHaveBeenCalled();
   });
@@ -69,6 +69,6 @@ describe('IconButton', () => {
 
   it('supports aria-label attribute', () => {
     const { container } = render(<IconButton ariaLabel={ariaLabel}>{childIcon}</IconButton>);
-    expect(container.firstChild).toHaveAttribute('aria-label', ariaLabel);
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-label', ariaLabel);
   });
 });

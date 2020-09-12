@@ -56,11 +56,11 @@ describe('Button', () => {
   it('supports small size', () => {
     const { getByText } = render(<Button size='small'>{testLabel}</Button>);
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveClass('small');
+    expect(element.closest('span')).toHaveClass('small');
   });
 
   it('supports aria-label attribute', () => {
     const { container } = render(<Button ariaLabel={testLabel}></Button>);
-    expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-label', testLabel);
   });
 });

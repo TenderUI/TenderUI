@@ -1,8 +1,8 @@
-import { cleanup, fireEvent, render } from '@testing-library/react';
+import { cleanup, render } from '@testing-library/react';
 import React from 'react';
 import TextField from './TextField';
 
-describe('Input', () => {
+describe('TextField', () => {
   afterEach(cleanup);
 
   it('displays the input', () => {
@@ -24,8 +24,7 @@ describe('Input', () => {
     const tabindex = 2;
 
     const { container } = render(<TextField tabIndex={tabindex} />);
-
-    expect(container.firstChild).toHaveAttribute('tabindex', `${tabindex}`);
+    expect(container.firstChild.firstChild).toHaveAttribute('tabindex', `${tabindex}`);
   });
 
   it('renders a placeholder', () => {
