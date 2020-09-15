@@ -66,6 +66,7 @@ const TextField: FC<TextFieldPropsType> = ({
       <input
         className={styles.input}
         type={type}
+        disabled={disabled}
         {...rest}
       />
     </span>

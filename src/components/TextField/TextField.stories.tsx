@@ -19,15 +19,15 @@ export const sizes = () => (
   </div>
 );
 
-// export const disabled = () => (
-//   <div className="story-container">
-//     {sizeVariants.map((size: any) => (
-//       <div key={size} className="story-item">
-//         <TextField onClick={action('clicked')} size={size} disabled={true} placeholder="Text field"  />
-//       </div>
-//     ))}
-//   </div>
-// )
+export const disabled = () => (
+  <div className="story-container">
+    {sizeVariants.map((size: any) => (
+      <div key={size} className="story-item">
+        <TextField size={size} disabled={true} placeholder="Text field"  />
+      </div>
+    ))}
+  </div>
+)
 
 // export const withIcon = () => (
 //   <div className="story-container">

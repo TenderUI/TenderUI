@@ -21,8 +21,8 @@
 
     .input {
       height: 48px - 2px;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      padding-left: 20px;
+      padding-right: 20px;
       line-height: 48px - 2px;
 
       font-style: normal;
@@ -43,8 +43,8 @@
 
     .input {
       height: 38px - 2px;
-      padding-left: 0.7rem;
-      padding-right: 0.7rem;
+      padding-left: 18px;
+      padding-right: 18px;
       line-height: 38px - 2px;
       font-size: 15px;
 
@@ -62,8 +62,8 @@
 
     .input {
       height: 32px - 2px;
-      padding-left: 0.6rem;
-      padding-right: 0.6rem;
+      padding-left: 15px;
+      padding-right: 15px;
       line-height: 32px - 2px;
 
       font-style: normal;
@@ -75,16 +75,67 @@
       border-radius: 6px;
     }
   }
-}
 
+  &.disabled {
+    .input {
+      color: rgba(54, 63, 72, 0.5);
+      background: none;
+      box-shadow: none;
+      &:hover, &:focus {
+        background: none;
+        box-shadow: none;
+      }
+    }
 
-.rounded {
-  .input {
-    // Just to keep this class for TS.
-    font-style: normal;
+    &.large {
+      background: linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);
+      box-shadow: inset -3px -3px 8px rgba(255, 255, 255, 0.85), inset 3px 3px 6px rgba(179, 193, 213, 0.4);
+      &:focus-within {
+        background: linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);
+        box-shadow: inset -3px -3px 8px rgba(255, 255, 255, 0.85), inset 3px 3px 6px rgba(179, 193, 213, 0.4);
+      }
+    }
+    &.normal {
+      background: linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);
+      box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.85), inset 2px 2px 5px rgba(179, 193, 213, 0.4);
+      &:focus-within {
+        background: linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);
+        box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.85), inset 2px 2px 5px rgba(179, 193, 213, 0.4);
+      }
+    }
+    &.small {
+      background: linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);
+      box-shadow: inset -2.01099px -2.01099px 5.36263px rgba(255, 255, 255, 0.85), inset 2.01099px 2.01099px 4.02197px rgba(179, 193, 213, 0.4);
+      &:focus-within {
+        background: linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);
+        box-shadow: inset -2.01099px -2.01099px 5.36263px rgba(255, 255, 255, 0.85), inset 2.01099px 2.01099px 4.02197px rgba(179, 193, 213, 0.4);
+      }
+    }
   }
 }
 
+.rounded {
+  &.large{
+    .input {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+  &.normal{
+    .input {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &.normal{
+    .input {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+
+// Default.
 .circle {
   border-radius: 50rem !important;
   .input {
