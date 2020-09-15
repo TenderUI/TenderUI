@@ -10,8 +10,6 @@ import classNames from 'clsx';
 import React from 'react';
 import styles from './TextField.module.scss';
 
-// } & AllHTMLAttributes<HTMLInputElement>;
-
 /**
  * A text field.
  */
@@ -28,12 +26,12 @@ const TextField = (_ref) => {
   const classes = classNames(styles.wrapper, styles[size], styles[shape], {
     [styles.disabled]: disabled
   }, className);
-  console.log(classes);
   return /*#__PURE__*/React.createElement("span", {
     className: classes
   }, /*#__PURE__*/React.createElement("input", _extends({
     className: styles.input,
-    type: type
+    type: type,
+    disabled: disabled
   }, rest)));
 };
 
@@ -43,7 +41,8 @@ TextField.propTypes = {
   shape: _pt.oneOf(['rounded', 'circle']),
   disabled: _pt.bool,
   className: _pt.string,
-  placeholder: _pt.string
+  placeholder: _pt.string,
+  tabIndex: _pt.number
 };
 export default TextField;
 //# sourceMappingURL=TextField.js.map

@@ -29,7 +29,7 @@ describe('IconButton', function () {
     }, ariaLabel)),
         container = _render2.container;
 
-    expect(container.firstChild.firstChild).toBeNull();
+    expect(container.firstChild.firstChild.firstChild).toBeNull();
   });
   it('adds accessibility attributes to the child icon', function () {
     var _render3 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -37,8 +37,8 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render3.container;
 
-    expect(container.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
-    expect(container.firstChild.firstChild).toHaveAttribute('focusable', 'false');
+    expect(container.firstChild.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
+    expect(container.firstChild.firstChild.firstChild).toHaveAttribute('focusable', 'false');
   });
   it('can be of the type submit', function () {
     var _render4 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -47,7 +47,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render4.container;
 
-    expect(container.firstChild).toHaveAttribute('type', 'submit');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'submit');
   });
   it('can be of the type reset', function () {
     var _render5 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -56,7 +56,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render5.container;
 
-    expect(container.firstChild).toHaveAttribute('type', 'reset');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'reset');
   });
   it('can be of the type button', function () {
     var _render6 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -65,7 +65,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render6.container;
 
-    expect(container.firstChild).toHaveAttribute('type', 'button');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'button');
   });
   it('is of the type button by default', function () {
     var _render7 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_IconButton.default, {
@@ -73,7 +73,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render7.container;
 
-    expect(container.firstChild).toHaveAttribute('type', 'button');
+    expect(container.firstChild.firstChild).toHaveAttribute('type', 'button');
   });
   it('handles clicks', function () {
     var handleClick = jest.fn();
@@ -84,7 +84,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render8.container;
 
-    var element = container.firstChild;
+    var element = container.firstChild.firstChild;
 
     _react.fireEvent.click(element);
 
@@ -100,7 +100,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render9.container;
 
-    var element = container.firstChild;
+    var element = container.firstChild.firstChild;
 
     _react.fireEvent.click(element);
 
@@ -121,7 +121,7 @@ describe('IconButton', function () {
     }, childIcon)),
         container = _render11.container;
 
-    expect(container.firstChild).toHaveAttribute('aria-label', ariaLabel);
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-label', ariaLabel);
   });
 });
 //# sourceMappingURL=IconButton.test.js.map

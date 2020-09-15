@@ -8,7 +8,7 @@ var _TextField = _interopRequireDefault(require("./TextField"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-describe('Input', function () {
+describe('TextField', function () {
   afterEach(_react.cleanup);
   it('displays the input', function () {
     var _render = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_TextField.default, null)),
@@ -35,7 +35,7 @@ describe('Input', function () {
     })),
         container = _render3.container;
 
-    expect(container.firstChild).toHaveAttribute('tabindex', "".concat(tabindex));
+    expect(container.firstChild.firstChild).toHaveAttribute('tabindex', "".concat(tabindex));
   });
   it('renders a placeholder', function () {
     var placeholder = 'A placeholder';

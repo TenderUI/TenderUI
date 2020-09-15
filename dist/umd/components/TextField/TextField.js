@@ -85,8 +85,6 @@
     return target;
   }
 
-  // } & AllHTMLAttributes<HTMLInputElement>;
-
   /**
    * A text field.
    */
@@ -103,12 +101,12 @@
     const classes = (0, _clsx2.default)(_TextFieldModule2.default.wrapper, _TextFieldModule2.default[size], _TextFieldModule2.default[shape], {
       [_TextFieldModule2.default.disabled]: disabled
     }, className);
-    console.log(classes);
     return /*#__PURE__*/_react2.default.createElement("span", {
       className: classes
     }, /*#__PURE__*/_react2.default.createElement("input", _extends({
       className: _TextFieldModule2.default.input,
-      type: type
+      type: type,
+      disabled: disabled
     }, rest)));
   };
 
@@ -118,7 +116,8 @@
     shape: _propTypes2.default.oneOf(['rounded', 'circle']),
     disabled: _propTypes2.default.bool,
     className: _propTypes2.default.string,
-    placeholder: _propTypes2.default.string
+    placeholder: _propTypes2.default.string,
+    tabIndex: _propTypes2.default.number
   };
   exports.default = TextField;
 });

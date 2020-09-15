@@ -23,7 +23,7 @@
     };
   }
 
-  describe('Input', () => {
+  describe('TextField', () => {
     afterEach(_react.cleanup);
     it('displays the input', () => {
       const {
@@ -48,7 +48,7 @@
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_TextField2.default, {
         tabIndex: tabindex
       }));
-      expect(container.firstChild).toHaveAttribute('tabindex', `${tabindex}`);
+      expect(container.firstChild.firstChild).toHaveAttribute('tabindex', `${tabindex}`);
     });
     it('renders a placeholder', () => {
       const placeholder = 'A placeholder';

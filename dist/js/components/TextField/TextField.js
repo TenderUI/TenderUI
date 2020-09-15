@@ -23,8 +23,6 @@ function _objectWithoutProperties(source, excluded) { if (source == null) return
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-// } & AllHTMLAttributes<HTMLInputElement>;
-
 /**
  * A text field.
  */
@@ -41,12 +39,12 @@ var TextField = function TextField(_ref) {
       rest = _objectWithoutProperties(_ref, ["type", "size", "shape", "disabled", "className"]);
 
   var classes = (0, _clsx.default)(_TextFieldModule.default.wrapper, _TextFieldModule.default[size], _TextFieldModule.default[shape], _defineProperty({}, _TextFieldModule.default.disabled, disabled), className);
-  console.log(classes);
   return /*#__PURE__*/_react.default.createElement("span", {
     className: classes
   }, /*#__PURE__*/_react.default.createElement("input", _extends({
     className: _TextFieldModule.default.input,
-    type: type
+    type: type,
+    disabled: disabled
   }, rest)));
 };
 
@@ -56,7 +54,8 @@ TextField.propTypes = {
   shape: _propTypes.default.oneOf(['rounded', 'circle']),
   disabled: _propTypes.default.bool,
   className: _propTypes.default.string,
-  placeholder: _propTypes.default.string
+  placeholder: _propTypes.default.string,
+  tabIndex: _propTypes.default.number
 };
 var _default = TextField;
 exports.default = _default;

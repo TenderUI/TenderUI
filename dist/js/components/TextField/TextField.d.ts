@@ -24,6 +24,10 @@ declare type TextFieldPropsType = {
      * Add a placeholder text. Optional.
      */
     placeholder?: string;
+    /**
+     * Add a tabindex attribute. Optional.
+     */
+    tabIndex?: number;
 };
 /**
  * A text field.

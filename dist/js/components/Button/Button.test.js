@@ -88,7 +88,7 @@ describe('Button', function () {
         getByText = _render8.getByText;
 
     var element = getByText(testLabel);
-    expect(element.closest('button')).toHaveClass('small');
+    expect(element.closest('span')).toHaveClass('small');
   });
   it('supports aria-label attribute', function () {
     var _render9 = (0, _react.render)( /*#__PURE__*/_react2.default.createElement(_Button.default, {
@@ -96,7 +96,7 @@ describe('Button', function () {
     })),
         container = _render9.container;
 
-    expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-label', testLabel);
   });
 });
 //# sourceMappingURL=Button.test.js.map

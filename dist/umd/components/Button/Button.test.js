@@ -101,7 +101,7 @@
         size: "small"
       }, testLabel));
       const element = getByText(testLabel);
-      expect(element.closest('button')).toHaveClass('small');
+      expect(element.closest('span')).toHaveClass('small');
     });
     it('supports aria-label attribute', () => {
       const {
@@ -109,7 +109,7 @@
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_Button2.default, {
         ariaLabel: testLabel
       }));
-      expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+      expect(container.firstChild.firstChild).toHaveAttribute('aria-label', testLabel);
     });
   });
 });

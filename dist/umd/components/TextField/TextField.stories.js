@@ -16,7 +16,7 @@
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.shapes = exports.sizes = undefined;
+  exports.shapes = exports.disabled = exports.sizes = undefined;
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -41,16 +41,18 @@
   }, /*#__PURE__*/_react2.default.createElement(_TextField2.default, {
     size: size,
     placeholder: "Text field"
-  })))); // export const disabled = () => (
-  //   <div className="story-container">
-  //     {sizeVariants.map((size: any) => (
-  //       <div key={size} className="story-item">
-  //         <TextField onClick={action('clicked')} size={size} disabled={true} placeholder="Text field"  />
-  //       </div>
-  //     ))}
-  //   </div>
-  // )
-  // export const withIcon = () => (
+  }))));
+
+  const disabled = exports.disabled = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, _config.sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+    key: size,
+    className: "story-item"
+  }, /*#__PURE__*/_react2.default.createElement(_TextField2.default, {
+    size: size,
+    disabled: true,
+    placeholder: "Text field"
+  })))); // export const withIcon = () => (
   //   <div className="story-container">
   //     {sizeVariants.map((size: any) => (
   //       <div key={size} className="story-item">

@@ -15,10 +15,10 @@ Object.defineProperty(exports, "IconButton", {
     return _IconButton.default;
   }
 });
-Object.defineProperty(exports, "Input", {
+Object.defineProperty(exports, "TextField", {
   enumerable: true,
   get: function get() {
-    return _Input.default;
+    return _TextField.default;
   }
 });
 
@@ -26,7 +26,7 @@ var _Button = _interopRequireDefault(require("./components/Button/Button"));
 
 var _IconButton = _interopRequireDefault(require("./components/IconButton/IconButton"));
 
-var _Input = _interopRequireDefault(require("./components/Input/Input"));
+var _TextField = _interopRequireDefault(require("./components/TextField/TextField"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 //# sourceMappingURL=index.js.map

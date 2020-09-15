@@ -75,7 +75,7 @@ describe('Button', () => {
       size: "small"
     }, testLabel));
     const element = getByText(testLabel);
-    expect(element.closest('button')).toHaveClass('small');
+    expect(element.closest('span')).toHaveClass('small');
   });
   it('supports aria-label attribute', () => {
     const {
@@ -83,7 +83,7 @@ describe('Button', () => {
     } = render( /*#__PURE__*/React.createElement(Button, {
       ariaLabel: testLabel
     }));
-    expect(container.firstChild).toHaveAttribute('aria-label', testLabel);
+    expect(container.firstChild.firstChild).toHaveAttribute('aria-label', testLabel);
   });
 });
 //# sourceMappingURL=Button.test.js.map

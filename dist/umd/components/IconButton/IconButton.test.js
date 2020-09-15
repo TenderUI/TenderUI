@@ -42,7 +42,7 @@
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_IconButton2.default, {
         ariaLabel: ariaLabel
       }, ariaLabel));
-      expect(container.firstChild.firstChild).toBeNull();
+      expect(container.firstChild.firstChild.firstChild).toBeNull();
     });
     it('adds accessibility attributes to the child icon', () => {
       const {
@@ -50,8 +50,8 @@
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_IconButton2.default, {
         ariaLabel: ariaLabel
       }, childIcon));
-      expect(container.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
-      expect(container.firstChild.firstChild).toHaveAttribute('focusable', 'false');
+      expect(container.firstChild.firstChild.firstChild).toHaveAttribute('aria-hidden', 'true');
+      expect(container.firstChild.firstChild.firstChild).toHaveAttribute('focusable', 'false');
     });
     it('can be of the type submit', () => {
       const {
@@ -60,7 +60,7 @@
         type: "submit",
         ariaLabel: ariaLabel
       }, childIcon));
-      expect(container.firstChild).toHaveAttribute('type', 'submit');
+      expect(container.firstChild.firstChild).toHaveAttribute('type', 'submit');
     });
     it('can be of the type reset', () => {
       const {
@@ -69,7 +69,7 @@
         type: "reset",
         ariaLabel: ariaLabel
       }, childIcon));
-      expect(container.firstChild).toHaveAttribute('type', 'reset');
+      expect(container.firstChild.firstChild).toHaveAttribute('type', 'reset');
     });
     it('can be of the type button', () => {
       const {
@@ -78,7 +78,7 @@
         type: "button",
         ariaLabel: ariaLabel
       }, childIcon));
-      expect(container.firstChild).toHaveAttribute('type', 'button');
+      expect(container.firstChild.firstChild).toHaveAttribute('type', 'button');
     });
     it('is of the type button by default', () => {
       const {
@@ -86,7 +86,7 @@
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_IconButton2.default, {
         ariaLabel: ariaLabel
       }, childIcon));
-      expect(container.firstChild).toHaveAttribute('type', 'button');
+      expect(container.firstChild.firstChild).toHaveAttribute('type', 'button');
     });
     it('handles clicks', () => {
       const handleClick = jest.fn();
@@ -96,7 +96,7 @@
         onClick: handleClick,
         ariaLabel: ariaLabel
       }, childIcon));
-      const element = container.firstChild;
+      const element = container.firstChild.firstChild;
 
       _react.fireEvent.click(element);
 
@@ -111,7 +111,7 @@
         ariaLabel: ariaLabel,
         disabled: true
       }, childIcon));
-      const element = container.firstChild;
+      const element = container.firstChild.firstChild;
 
       _react.fireEvent.click(element);
 
@@ -132,7 +132,7 @@
       } = (0, _react.render)( /*#__PURE__*/_react3.default.createElement(_IconButton2.default, {
         ariaLabel: ariaLabel
       }, childIcon));
-      expect(container.firstChild).toHaveAttribute('aria-label', ariaLabel);
+      expect(container.firstChild.firstChild).toHaveAttribute('aria-label', ariaLabel);
     });
   });
 });

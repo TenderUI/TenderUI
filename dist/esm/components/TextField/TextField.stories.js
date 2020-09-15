@@ -15,16 +15,17 @@ export const sizes = () => /*#__PURE__*/React.createElement("div", {
 }, /*#__PURE__*/React.createElement(TextField, {
   size: size,
   placeholder: "Text field"
-})))); // export const disabled = () => (
-//   <div className="story-container">
-//     {sizeVariants.map((size: any) => (
-//       <div key={size} className="story-item">
-//         <TextField onClick={action('clicked')} size={size} disabled={true} placeholder="Text field"  />
-//       </div>
-//     ))}
-//   </div>
-// )
-// export const withIcon = () => (
+}))));
+export const disabled = () => /*#__PURE__*/React.createElement("div", {
+  className: "story-container"
+}, sizeVariants.map(size => /*#__PURE__*/React.createElement("div", {
+  key: size,
+  className: "story-item"
+}, /*#__PURE__*/React.createElement(TextField, {
+  size: size,
+  disabled: true,
+  placeholder: "Text field"
+})))); // export const withIcon = () => (
 //   <div className="story-container">
 //     {sizeVariants.map((size: any) => (
 //       <div key={size} className="story-item">
