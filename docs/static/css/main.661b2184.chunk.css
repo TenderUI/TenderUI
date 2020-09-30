@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato&display=swap);
+/* Document
+ * ========================================================================== *//**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}/* Sections
+ * ========================================================================== *//**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}/* Grouping content
+ * ========================================================================== *//**
+ * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+ */dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+  margin: 0;
+}/**
+ * Remove the margin on nested lists in Edge 18- and IE.
+ */ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0;
+}/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge 18- and IE.
+ */hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}/**
+ * Add the correct display in IE.
+ */main {
+  display: block;
+}/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}/* Text-level semantics
+ * ========================================================================== *//**
+ * Add the correct text decoration in Edge 18-, IE, and Safari.
+ */abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */b,
+strong {
+  font-weight: bolder;
+}/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}/**
+ * Add the correct font size in all browsers.
+ */small {
+  font-size: 80%;
+}/* Embedded content
+ * ========================================================================== *//**
+ * Hide the overflow in IE.
+ */svg:not(:root) {
+  overflow: hidden;
+}/* Forms
+ * ========================================================================== *//**
+ * Remove the margin on controls in Safari.
+ */button,
+input,
+select {
+  margin: 0;
+}/**
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+ */button {
+  overflow: visible; /* 1 */
+  text-transform: none; /* 2 */
+}/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}/**
+ * Correct the padding in Firefox.
+ */fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}/**
+ * Show the overflow in Edge 18- and IE.
+ */input {
+  overflow: visible;
+}/**
+ * 1. Correct the text wrapping in Edge 18- and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ */legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  white-space: normal; /* 1 */
+}/**
+ * 1. Add the correct display in Edge 18- and IE.
+ * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}/**
+ * Remove the inheritance of text transform in Firefox.
+ */select {
+  text-transform: none;
+}/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ */textarea {
+  margin: 0; /* 1 */
+  overflow: auto; /* 2 */
+}/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */::-webkit-search-decoration {
+  -webkit-appearance: none;
+}/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}/**
+ * Remove the additional :invalid styles in Firefox.
+ */:-moz-ui-invalid {
+  box-shadow: none;
+}/* Interactive
+ * ========================================================================== *//*
+ * Add the correct display in Edge 18- and IE.
+ */details {
+  display: block;
+}/*
+ * Add the correct styles in Edge 18-, IE, and Safari.
+ */dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}dialog:not([open]) {
+  display: none;
+}/*
+ * Add the correct display in all browsers.
+ */summary {
+  display: list-item;
+}/* Scripting
+ * ========================================================================== *//**
+ * Add the correct display in IE.
+ */template {
+  display: none;
+}/* User interaction
+ * ========================================================================== */html{font-family:'Lato', sans-serif;box-sizing:border-box;-webkit-font-smoothing:antialiased}html body{background-color:#ECF1F6;display:flex;flex:column 1;justify-content:center;align-items:center;height:100vh}.story-container{display:flex;flex-direction:row;justify-content:center;align-items:center;flex-wrap:wrap}.story-container .story-item{margin-right:1rem;margin-bottom:1rem}
+
+.Button_wrapper__Sjioc .Button_button__2Lf63{cursor:pointer;font-family:'Lato', sans-serif;font-style:normal;font-weight:normal;color:#686868;display:inline-flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;align-items:center;vertical-align:middle;height:36px;border-radius:50rem;padding-left:3rem;padding-right:3rem;font-size:22px;line-height:26px}.Button_wrapper__Sjioc .Button_button__2Lf63{padding:0;border:none;outline:none;font:inherit;color:inherit;background:none}.Button_wrapper__Sjioc{display:inline-flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;align-items:center;vertical-align:middle;padding:1px}.Button_wrapper__Sjioc .Button_button__2Lf63 svg{opacity:0.8}.Button_wrapper__Sjioc .Button_button__2Lf63:hover svg,.Button_wrapper__Sjioc .Button_button__2Lf63:focus svg{opacity:1}.Button_wrapper__Sjioc .Button_button__2Lf63:disabled svg,.Button_wrapper__Sjioc .Button_button__2Lf63[disabled] svg{opacity:0.4}.Button_wrapper__Sjioc .Button_button__2Lf63{box-shadow:none;color:#485158}.Button_wrapper__Sjioc .Button_button__2Lf63:hover,.Button_wrapper__Sjioc .Button_button__2Lf63:focus{box-shadow:none;color:#363F48}.Button_wrapper__Sjioc .Button_button__2Lf63:disabled,.Button_wrapper__Sjioc .Button_button__2Lf63[disabled]{cursor:not-allowed}.Button_wrapper__Sjioc.Button_large__1i_fg{background:linear-gradient(340deg, #DAE2ED 4.11%, #fff 87.12%);box-shadow:-4px -4px 12px #fff,5px 4px 10px rgba(179,193,213,0.7);border-radius:11px}.Button_wrapper__Sjioc.Button_large__1i_fg:hover,.Button_wrapper__Sjioc.Button_large__1i_fg:focus{background:linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);box-shadow:-4px -4px 12px #fff,5px 4px 10px rgba(179,193,213,0.8)}.Button_wrapper__Sjioc.Button_large__1i_fg .Button_button__2Lf63{height:46px;padding-left:2.5rem;padding-right:2.5rem;line-height:26px;font-size:22px;background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);border-radius:10px}.Button_wrapper__Sjioc.Button_large__1i_fg .Button_button__2Lf63 svg{width:22px;height:22px;margin-right:11px}.Button_wrapper__Sjioc.Button_large__1i_fg .Button_button__2Lf63:hover,.Button_wrapper__Sjioc.Button_large__1i_fg .Button_button__2Lf63:focus{background:linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%)}.Button_wrapper__Sjioc.Button_normal__1pGP4{background:linear-gradient(340deg, #DAE2ED 4.11%, #fff 87.12%);box-shadow:-3px -3px 9px #fff,4px 3px 8px rgba(179,193,213,0.7);border-radius:9px}.Button_wrapper__Sjioc.Button_normal__1pGP4:hover,.Button_wrapper__Sjioc.Button_normal__1pGP4:focus{background:linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);box-shadow:-3px -3px 9px #fff,4px 3px 8px rgba(179,193,213,0.8)}.Button_wrapper__Sjioc.Button_normal__1pGP4 .Button_button__2Lf63{height:36px;padding-left:2rem;padding-right:2rem;line-height:22px;font-size:18px;background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);border-radius:8px}.Button_wrapper__Sjioc.Button_normal__1pGP4 .Button_button__2Lf63 svg{width:18px;height:18px;margin-right:9px}.Button_wrapper__Sjioc.Button_normal__1pGP4 .Button_button__2Lf63:hover,.Button_wrapper__Sjioc.Button_normal__1pGP4 .Button_button__2Lf63:focus{background:linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%)}.Button_wrapper__Sjioc.Button_small__1WqE1{background:linear-gradient(340deg, #DAE2ED 4.11%, #fff 87.12%);box-shadow:-3px -3px 8px #fff,3px 3px 7px rgba(179,193,213,0.7);border-radius:7px}.Button_wrapper__Sjioc.Button_small__1WqE1:hover,.Button_wrapper__Sjioc.Button_small__1WqE1:focus{background:linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);box-shadow:-3px -3px 8px #fff,3px 3px 7px rgba(179,193,213,0.8)}.Button_wrapper__Sjioc.Button_small__1WqE1 .Button_button__2Lf63{height:30px;padding-left:1.5rem;padding-right:1.5rem;line-height:18px;font-size:16px;background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);border-radius:6px}.Button_wrapper__Sjioc.Button_small__1WqE1 .Button_button__2Lf63 svg{width:16px;height:16px;margin-right:8px}.Button_wrapper__Sjioc.Button_small__1WqE1 .Button_button__2Lf63:hover,.Button_wrapper__Sjioc.Button_small__1WqE1 .Button_button__2Lf63:focus{background:linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%)}.Button_wrapper__Sjioc.Button_disabled__1f6YP .Button_button__2Lf63{color:rgba(72,81,88,0.6);background:none;box-shadow:none}.Button_wrapper__Sjioc.Button_disabled__1f6YP .Button_button__2Lf63:hover,.Button_wrapper__Sjioc.Button_disabled__1f6YP .Button_button__2Lf63:focus{background:none;box-shadow:none}.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_large__1i_fg{background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-4px -4px 9px rgba(255,255,255,0.85),4px 4px 7px rgba(179,193,213,0.4)}.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_large__1i_fg:hover,.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_large__1i_fg:focus{background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-4px -4px 9px rgba(255,255,255,0.85),4px 4px 7px rgba(179,193,213,0.4)}.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_normal__1pGP4{background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 9px rgba(255,255,255,0.85),4px 4px 8px rgba(179,193,213,0.4)}.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_normal__1pGP4:hover,.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_normal__1pGP4:focus{background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 9px rgba(255,255,255,0.85),4px 4px 8px rgba(179,193,213,0.4)}.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_small__1WqE1{background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 8px rgba(255,255,255,0.85),3px 3px 7px rgba(179,193,213,0.4)}.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_small__1WqE1:hover,.Button_wrapper__Sjioc.Button_disabled__1f6YP.Button_small__1WqE1:focus{background:linear-gradient(340deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 8px rgba(255,255,255,0.85),3px 3px 7px rgba(179,193,213,0.4)}.Button_rounded__RVsVs .Button_button__2Lf63{font-style:normal}.Button_circle___BJpI{border-radius:50rem !important}.Button_circle___BJpI .Button_button__2Lf63{border-radius:50rem !important}
+
+.IconButton_wrapper__2OPAh .IconButton_button__1BPZn{cursor:pointer;font-family:'Lato', sans-serif;font-style:normal;font-weight:normal;color:#686868;display:inline-flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;align-items:center;vertical-align:middle;height:36px;border-radius:50rem;padding-left:3rem;padding-right:3rem;font-size:22px;line-height:26px}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn{padding:0;border:none;outline:none;font:inherit;color:inherit;background:none}.IconButton_wrapper__2OPAh{padding:1px;display:inline-flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;align-items:center;vertical-align:middle}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn{box-shadow:none;color:#485158;flex-direction:column !important}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn svg{opacity:0.8;margin-right:0 !important;width:22px}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn:hover,.IconButton_wrapper__2OPAh .IconButton_button__1BPZn:focus{box-shadow:none;color:#363F48}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn:hover svg,.IconButton_wrapper__2OPAh .IconButton_button__1BPZn:focus svg{opacity:1}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn:disabled,.IconButton_wrapper__2OPAh .IconButton_button__1BPZn[disabled]{cursor:not-allowed}.IconButton_wrapper__2OPAh .IconButton_button__1BPZn:disabled svg,.IconButton_wrapper__2OPAh .IconButton_button__1BPZn[disabled] svg{opacity:0.4}.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO{background:linear-gradient(311deg, #DAE2ED 4.11%, #fff 87.12%);box-shadow:-4px -4px 12px #fff,5px 4px 10px rgba(179,193,213,0.7);border-radius:11px}.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO:hover,.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO:focus{background:linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);box-shadow:-4px -4px 12px #fff,5px 4px 10px rgba(179,193,213,0.8)}.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO .IconButton_button__1BPZn{height:46px;width:46px;line-height:26px;font-size:22px;background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);border-radius:10px}.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO .IconButton_button__1BPZn svg{width:22px !important}.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO .IconButton_button__1BPZn svg{width:22px;height:22px;margin-right:11px}.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO .IconButton_button__1BPZn:hover,.IconButton_wrapper__2OPAh.IconButton_large__J0ZDO .IconButton_button__1BPZn:focus{background:linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%)}.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr{background:linear-gradient(311deg, #DAE2ED 4.11%, #fff 87.12%);box-shadow:-3px -3px 9px #fff,4px 3px 8px rgba(179,193,213,0.7);border-radius:9px}.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr:hover,.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr:focus{background:linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);box-shadow:-3px -3px 9px #fff,4px 3px 8px rgba(179,193,213,0.8)}.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr .IconButton_button__1BPZn{width:36px;height:36px;line-height:22px;font-size:18px;background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);border-radius:8px}.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr .IconButton_button__1BPZn svg{width:18px !important}.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr .IconButton_button__1BPZn svg{width:18px;height:18px;margin-right:9px}.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr .IconButton_button__1BPZn:hover,.IconButton_wrapper__2OPAh.IconButton_normal__3nIzr .IconButton_button__1BPZn:focus{background:linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%)}.IconButton_wrapper__2OPAh.IconButton_small__1alV6{background:linear-gradient(311deg, #DAE2ED 4.11%, #fff 87.12%);box-shadow:-3px -3px 8px #fff,3px 3px 7px rgba(179,193,213,0.7);border-radius:7px}.IconButton_wrapper__2OPAh.IconButton_small__1alV6:hover,.IconButton_wrapper__2OPAh.IconButton_small__1alV6:focus{background:linear-gradient(125.15deg, #F1F4F6 9.97%, #F9FAFC 96.13%);box-shadow:-3px -3px 8px #fff,3px 3px 7px rgba(179,193,213,0.8)}.IconButton_wrapper__2OPAh.IconButton_small__1alV6 .IconButton_button__1BPZn{height:30px;width:30px;line-height:18px;font-size:16px;background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);border-radius:6px}.IconButton_wrapper__2OPAh.IconButton_small__1alV6 .IconButton_button__1BPZn svg{width:14px !important}.IconButton_wrapper__2OPAh.IconButton_small__1alV6 .IconButton_button__1BPZn svg{width:16px;height:16px;margin-right:8px}.IconButton_wrapper__2OPAh.IconButton_small__1alV6 .IconButton_button__1BPZn:hover,.IconButton_wrapper__2OPAh.IconButton_small__1alV6 .IconButton_button__1BPZn:focus{background:linear-gradient(125.15deg, #F2F5F7 9.97%, #F8FAFC 96.13%)}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo .IconButton_button__1BPZn{color:rgba(72,81,88,0.6);background:none;box-shadow:none}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo .IconButton_button__1BPZn:hover,.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo .IconButton_button__1BPZn:focus{background:none;box-shadow:none}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_large__J0ZDO{background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-4px -4px 9px rgba(255,255,255,0.85),4px 4px 7px rgba(179,193,213,0.4)}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_large__J0ZDO:hover,.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_large__J0ZDO:focus{background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-4px -4px 9px rgba(255,255,255,0.85),4px 4px 7px rgba(179,193,213,0.4)}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_normal__3nIzr{background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 9px rgba(255,255,255,0.85),4px 4px 8px rgba(179,193,213,0.4)}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_normal__3nIzr:hover,.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_normal__3nIzr:focus{background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 9px rgba(255,255,255,0.85),4px 4px 8px rgba(179,193,213,0.4)}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_small__1alV6{background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 8px rgba(255,255,255,0.85),3px 3px 7px rgba(179,193,213,0.4)}.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_small__1alV6:hover,.IconButton_wrapper__2OPAh.IconButton_disabled__3a_Vo.IconButton_small__1alV6:focus{background:linear-gradient(311.33deg, #F4F7FA 7.66%, #EBF0F5 95.56%);box-shadow:-3px -3px 8px rgba(255,255,255,0.85),3px 3px 7px rgba(179,193,213,0.4)}.IconButton_rounded__2wfYa .IconButton_button__1BPZn{font-style:normal}.IconButton_circle__2finX{border-radius:50rem !important}.IconButton_circle__2finX .IconButton_button__1BPZn{border-radius:50rem !important}
+
+.TextField_wrapper__3MHJU .TextField_input__1VBGl{padding:0;border:none;outline:none;font:inherit;color:inherit;background:none}.TextField_wrapper__3MHJU .TextField_input__1VBGl{font-family:'Lato', sans-serif;font-style:normal;font-weight:normal;letter-spacing:0.02em;font-size:28px;text-align:left;vertical-align:middle;position:relative;color:#363F48}.TextField_wrapper__3MHJU .TextField_input__1VBGl:focus{color:#363F48}.TextField_wrapper__3MHJU{display:inline-flex;flex-direction:row;flex-wrap:nowrap;justify-content:center;align-items:center;vertical-align:middle;padding:1px}.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a svg,.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B svg{opacity:0.8}.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a:hover svg,.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B:hover svg,.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a:focus svg,.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B:focus svg{opacity:1}.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a:disabled svg,.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B:disabled svg,.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a[disabled] svg,.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B[disabled] svg{opacity:0.4}.TextField_wrapper__3MHJU{position:relative}.TextField_wrapper__3MHJU .TextField_input__1VBGl:disabled,.TextField_wrapper__3MHJU .TextField_input__1VBGl[disabled]{cursor:not-allowed}.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a,.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B{position:absolute;z-index:1;color:rgba(54,63,72,0.5);width:14px;height:14px;top:17px}.TextField_wrapper__3MHJU .TextField_leftIcon__fE03a{left:17px}.TextField_wrapper__3MHJU .TextField_rightIcon__1fC9B{right:17px}.TextField_wrapper__3MHJU.TextField_large__1cyvT{background:linear-gradient(308.05deg, #F4F7FA 11.58%, #EBF0F5 92.09%);border-radius:11px}.TextField_wrapper__3MHJU.TextField_large__1cyvT:focus-within{background:linear-gradient(308.05deg, #AAA3FF 11.58%, #29B3FF 92.09%)}.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_leftIcon__fE03a,.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_rightIcon__1fC9B{top:17px;width:14px;height:14px}.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_leftIcon__fE03a{left:17px}.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_rightIcon__1fC9B{right:17px}.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_input__1VBGl{height:46px;padding-left:20px;padding-right:20px;line-height:46px;font-style:normal;font-weight:normal;font-size:18px;background:linear-gradient(130.01deg, #ECF1F6 4.46%, #F5F8FA 94.9%);box-shadow:inset -5px -5px 12px #fff,inset 3px 4px 8px rgba(179,193,213,0.7);border-radius:10px}.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_input__1VBGl.TextField_hasLeftIcon__37UDL{padding-left:38px}.TextField_wrapper__3MHJU.TextField_large__1cyvT .TextField_input__1VBGl.TextField_hasRightIcon__3nVxR{padding-right:38px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK{background:linear-gradient(308.05deg, #F4F7FA 11.58%, #EBF0F5 92.09%);border-radius:9px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK:focus-within{background:linear-gradient(308.05deg, #AAA3FF 11.58%, #29B3FF 92.09%)}.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_leftIcon__fE03a,.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_rightIcon__1fC9B{top:13px;width:12px;height:12px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_leftIcon__fE03a{left:14px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_rightIcon__1fC9B{right:14px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_input__1VBGl{height:36px;padding-left:18px;padding-right:18px;line-height:36px;font-size:15px;background:linear-gradient(130.01deg, #ECF1F6 4.46%, #F5F8FA 94.9%);box-shadow:inset -4px -3px 10px rgba(255,255,255,0.9),inset 2px 3px 6px rgba(179,193,213,0.7);border-radius:8px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_input__1VBGl.TextField_hasLeftIcon__37UDL{padding-left:33px}.TextField_wrapper__3MHJU.TextField_normal__2ErYK .TextField_input__1VBGl.TextField_hasRightIcon__3nVxR{padding-right:33px}.TextField_wrapper__3MHJU.TextField_small__qkvkU{background:linear-gradient(308.05deg, #F4F7FA 11.58%, #EBF0F5 92.09%);border-radius:7px}.TextField_wrapper__3MHJU.TextField_small__qkvkU:focus-within{background:linear-gradient(308.05deg, #AAA3FF 11.58%, #29B3FF 92.09%)}.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_leftIcon__fE03a,.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_rightIcon__1fC9B{top:10px;width:12px;height:12px}.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_leftIcon__fE03a{left:11px}.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_rightIcon__1fC9B{right:11px}.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_input__1VBGl{height:30px;padding-left:15px;padding-right:15px;line-height:30px;font-style:normal;font-weight:normal;font-size:13px;background:linear-gradient(130.01deg, #ECF1F6 4.46%, #F5F8FA 94.9%);box-shadow:inset -3px -2px 8px rgba(255,255,255,0.9),inset 2px 2px 5px rgba(179,193,213,0.7);border-radius:6px}.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_input__1VBGl.TextField_hasLeftIcon__37UDL{padding-left:30px}.TextField_wrapper__3MHJU.TextField_small__qkvkU .TextField_input__1VBGl.TextField_hasRightIcon__3nVxR{padding-right:30px}.TextField_wrapper__3MHJU.TextField_disabled__1l18I .TextField_input__1VBGl{color:rgba(54,63,72,0.5);background:none;box-shadow:none}.TextField_wrapper__3MHJU.TextField_disabled__1l18I .TextField_input__1VBGl:hover,.TextField_wrapper__3MHJU.TextField_disabled__1l18I .TextField_input__1VBGl:focus{background:none;box-shadow:none}.TextField_wrapper__3MHJU.TextField_disabled__1l18I.TextField_large__1cyvT{background:linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);box-shadow:inset -3px -3px 8px rgba(255,255,255,0.85),inset 3px 3px 6px rgba(179,193,213,0.4)}.TextField_wrapper__3MHJU.TextField_disabled__1l18I.TextField_large__1cyvT:focus-within{background:linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);box-shadow:inset -3px -3px 8px rgba(255,255,255,0.85),inset 3px 3px 6px rgba(179,193,213,0.4)}.TextField_wrapper__3MHJU.TextField_disabled__1l18I.TextField_normal__2ErYK{background:linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);box-shadow:inset -3px -3px 6px rgba(255,255,255,0.85),inset 2px 2px 5px rgba(179,193,213,0.4)}.TextField_wrapper__3MHJU.TextField_disabled__1l18I.TextField_normal__2ErYK:focus-within{background:linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);box-shadow:inset -3px -3px 6px rgba(255,255,255,0.85),inset 2px 2px 5px rgba(179,193,213,0.4)}.TextField_wrapper__3MHJU.TextField_disabled__1l18I.TextField_small__qkvkU{background:linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);box-shadow:inset -2.01099px -2.01099px 5.36263px rgba(255,255,255,0.85),inset 2.01099px 2.01099px 4.02197px rgba(179,193,213,0.4)}.TextField_wrapper__3MHJU.TextField_disabled__1l18I.TextField_small__qkvkU:focus-within{background:linear-gradient(307.62deg, #ECF1F6 7.23%, #EBF0F5 93.2%);box-shadow:inset -2.01099px -2.01099px 5.36263px rgba(255,255,255,0.85),inset 2.01099px 2.01099px 4.02197px rgba(179,193,213,0.4)}.TextField_rounded__2REdc.TextField_large__1cyvT .TextField_input__1VBGl{padding-left:18px;padding-right:18px}.TextField_rounded__2REdc.TextField_normal__2ErYK .TextField_input__1VBGl{padding-left:15px;padding-right:15px}.TextField_rounded__2REdc.TextField_normal__2ErYK .TextField_input__1VBGl{padding-left:12px;padding-right:12px}.TextField_circle__2oJQ9{border-radius:50rem !important}.TextField_circle__2oJQ9 .TextField_input__1VBGl{border-radius:50rem !important}
+
+
+/*# sourceMappingURL=main.661b2184.chunk.css.map*/

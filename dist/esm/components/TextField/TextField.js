@@ -2,47 +2,74 @@ import _pt from "prop-types";
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
 function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
-import classNames from 'clsx';
-import React from 'react';
-import styles from './TextField.module.scss';
+import classNames from "clsx";
+import React, { cloneElement, isValidElement } from "react";
+import { a11yIconHiddenProps } from "../../config";
+import styles from "./TextField.module.scss";
 
 /**
  * A text field.
  */
 const TextField = (_ref) => {
   let {
-    type = 'text',
-    size = 'normal',
-    shape = 'circle',
+    type = "text",
+    size = "normal",
+    shape = "circle",
     disabled = false,
-    className
+    className,
+    leftIcon,
+    rightIcon
   } = _ref,
-      rest = _objectWithoutProperties(_ref, ["type", "size", "shape", "disabled", "className"]);
+      rest = _objectWithoutProperties(_ref, ["type", "size", "shape", "disabled", "className", "leftIcon", "rightIcon"]);
 
   const classes = classNames(styles.wrapper, styles[size], styles[shape], {
     [styles.disabled]: disabled
   }, className);
+
+  const leftIconAttributes = _objectSpread(_objectSpread({}, a11yIconHiddenProps), {}, {
+    className: classNames(styles.leftIcon)
+  });
+
+  const leftIconElement = /*#__PURE__*/isValidElement(leftIcon) ? /*#__PURE__*/cloneElement(leftIcon, leftIconAttributes) : null;
+
+  const rightIconAttributes = _objectSpread(_objectSpread({}, a11yIconHiddenProps), {}, {
+    className: classNames(styles.rightIcon)
+  });
+
+  const rightIconElement = /*#__PURE__*/isValidElement(rightIcon) ? /*#__PURE__*/cloneElement(rightIcon, rightIconAttributes) : null;
+  const inputClasses = classNames(styles.input, {
+    [styles.hasLeftIcon]: leftIconElement != null,
+    [styles.hasRightIcon]: rightIconElement != null
+  });
   return /*#__PURE__*/React.createElement("span", {
     className: classes
-  }, /*#__PURE__*/React.createElement("input", _extends({
-    className: styles.input,
+  }, leftIconElement, /*#__PURE__*/React.createElement("input", _extends({
+    className: inputClasses,
     type: type,
     disabled: disabled
-  }, rest)));
+  }, rest)), rightIconElement);
 };
 
 TextField.propTypes = {
-  type: _pt.oneOf(['text', 'password']),
-  size: _pt.oneOf(['normal', 'small', 'large']),
-  shape: _pt.oneOf(['rounded', 'circle']),
+  type: _pt.oneOf(["text", "password"]),
+  size: _pt.oneOf(["normal", "small", "large"]),
+  shape: _pt.oneOf(["rounded", "circle"]),
   disabled: _pt.bool,
   className: _pt.string,
   placeholder: _pt.string,
-  tabIndex: _pt.number
+  tabIndex: _pt.number,
+  leftIcon: _pt.element,
+  rightIcon: _pt.element
 };
 export default TextField;
 //# sourceMappingURL=TextField.js.map

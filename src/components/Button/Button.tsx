@@ -1,22 +1,22 @@
-import classNames from 'clsx';
-import React, { FC, MouseEventHandler, PropsWithChildren } from 'react';
-import styles from './Button.module.scss';
+import classNames from "clsx";
+import React, { FC, MouseEventHandler, PropsWithChildren } from "react";
+import styles from "./Button.module.scss";
 
 type ButtonPropsType = {
   /**
    * Define button behavior. Default: button
    */
-  type?: 'button' | 'submit' | 'reset';
+  type?: "button" | "submit" | "reset";
 
   /**
    * Define button size. Default: normal
    */
-  size?: 'normal' | 'small' | 'large';
+  size?: "normal" | "small" | "large";
 
   /**
    * Define the shape of the button (border radius). Default: rounded.
    */
-  shape?: 'rounded' | 'circle';
+  shape?: "rounded" | "circle";
 
   /**
    * Disable button. Default: false
@@ -37,9 +37,9 @@ type ButtonPropsType = {
    * Define 'aria-label' attribute for screen readers. Optional.
    */
   ariaLabel?: string;
-}
+};
 
-type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>
+type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>;
 
 /**
  * A simple button.
@@ -47,23 +47,20 @@ type ButtonPropsTypeWithChildren = PropsWithChildren<ButtonPropsType>
 const Button: FC<ButtonPropsTypeWithChildren> = ({
   onClick,
   disabled = false,
-  type = 'button',
-  size = 'normal',
-  shape = 'circle',
+  type = "button",
+  size = "normal",
+  shape = "circle",
   children,
   className,
-  ariaLabel
+  ariaLabel,
 }) => {
-  
-  const a11yProps = ariaLabel ? 
-    { "aria-label": ariaLabel } : 
-    null;
+  const a11yProps = ariaLabel ? { "aria-label": ariaLabel } : null;
 
   const classes = classNames(
     styles.wrapper,
     styles[size],
     styles[shape],
-    {[styles.disabled]: disabled},
+    { [styles.disabled]: disabled },
     className
   );
 
@@ -74,7 +71,7 @@ const Button: FC<ButtonPropsTypeWithChildren> = ({
         type={type}
         onClick={onClick}
         disabled={disabled}
-        {... a11yProps}
+        {...a11yProps}
       >
         {children}
       </button>

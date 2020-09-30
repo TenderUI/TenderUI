@@ -1,8 +1,8 @@
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-import classNames from 'clsx';
-import React from 'react';
-import styles from './Button.module.scss';
+import classNames from "clsx";
+import React from "react";
+import styles from "./Button.module.scss";
 
 /**
  * A simple button.
@@ -10,9 +10,9 @@ import styles from './Button.module.scss';
 const Button = ({
   onClick,
   disabled = false,
-  type = 'button',
-  size = 'normal',
-  shape = 'circle',
+  type = "button",
+  size = "normal",
+  shape = "circle",
   children,
   className,
   ariaLabel

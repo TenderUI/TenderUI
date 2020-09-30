@@ -49,15 +49,15 @@
 
   /**
    * A square button with an icon.
-   * Please note the children should be a single icon. In any other cases, 
+   * Please note the children should be a single icon. In any other cases,
    * use Button instead.
    */
   const IconButton = ({
     onClick,
     disabled = false,
-    type = 'button',
-    size = 'normal',
-    shape = 'circle',
+    type = "button",
+    size = "normal",
+    shape = "circle",
     children,
     className,
     ariaLabel

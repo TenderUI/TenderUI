@@ -1,13 +1,13 @@
-import { FC, MouseEventHandler, PropsWithChildren } from 'react';
+import { FC, MouseEventHandler, PropsWithChildren } from "react";
 declare type IconButtonPropsType = {
     /**
      * Define button behavior. Default: button
      */
-    type?: 'button' | 'submit' | 'reset';
+    type?: "button" | "submit" | "reset";
     /**
      * Define button size. Default: normal.
      */
-    size?: 'normal' | 'small' | 'large';
+    size?: "normal" | "small" | "large";
     /**
      * Disable button. Default: false.
      */
@@ -19,7 +19,7 @@ declare type IconButtonPropsType = {
     /**
      * Define the shape of the button (border radius). Default: rounded.
      */
-    shape?: 'rounded' | 'circle';
+    shape?: "rounded" | "circle";
     /**
      * Add a class name. Optional.
      */

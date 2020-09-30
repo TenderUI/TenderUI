@@ -1,18 +1,24 @@
-import classNames from 'clsx';
-import React, { cloneElement, FC, isValidElement, MouseEventHandler, PropsWithChildren } from 'react';
-import { a11yIconHiddenProps } from '../../config';
-import styles from './IconButton.module.scss';
+import classNames from "clsx";
+import React, {
+  cloneElement,
+  FC,
+  isValidElement,
+  MouseEventHandler,
+  PropsWithChildren,
+} from "react";
+import { a11yIconHiddenProps } from "../../config";
+import styles from "./IconButton.module.scss";
 
 type IconButtonPropsType = {
   /**
    * Define button behavior. Default: button
    */
-  type?: 'button' | 'submit' | 'reset';
+  type?: "button" | "submit" | "reset";
 
   /**
    * Define button size. Default: normal.
    */
-  size?: 'normal' | 'small' | 'large';
+  size?: "normal" | "small" | "large";
 
   /**
    * Disable button. Default: false.
@@ -27,7 +33,7 @@ type IconButtonPropsType = {
   /**
    * Define the shape of the button (border radius). Default: rounded.
    */
-  shape?: 'rounded' | 'circle';
+  shape?: "rounded" | "circle";
 
   /**
    * Add a class name. Optional.
@@ -35,44 +41,42 @@ type IconButtonPropsType = {
   className?: string;
 
   /**
-   * Define 'aria-label' attribute for screen readers. 
+   * Define 'aria-label' attribute for screen readers.
    * Required for icon buttons because they don't have any other descriptive text.
    */
   ariaLabel: string;
-}
+};
 
-type IconButtonPropsTypeWithChildren = PropsWithChildren<IconButtonPropsType>
+type IconButtonPropsTypeWithChildren = PropsWithChildren<IconButtonPropsType>;
 
 /**
  * A square button with an icon.
- * Please note the children should be a single icon. In any other cases, 
+ * Please note the children should be a single icon. In any other cases,
  * use Button instead.
  */
 const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
   onClick,
   disabled = false,
-  type = 'button',
-  size = 'normal',
-  shape = 'circle',
+  type = "button",
+  size = "normal",
+  shape = "circle",
   children,
   className,
-  ariaLabel
+  ariaLabel,
 }) => {
-  const a11yProps = ariaLabel ? 
-    { "aria-label": ariaLabel } : 
-    null;
+  const a11yProps = ariaLabel ? { "aria-label": ariaLabel } : null;
 
   const classes = classNames(
     styles.wrapper,
     styles[size],
     styles[shape],
-    {[styles.disabled]: disabled},
+    { [styles.disabled]: disabled },
     className
   );
 
-  const icon = isValidElement(children) ? 
-    cloneElement(children, a11yIconHiddenProps) : 
-    null
+  const icon = isValidElement(children)
+    ? cloneElement(children, a11yIconHiddenProps)
+    : null;
 
   return (
     <span className={classes}>
@@ -81,7 +85,7 @@ const IconButton: FC<IconButtonPropsTypeWithChildren> = ({
         type={type}
         onClick={onClick}
         disabled={disabled}
-        {... a11yProps}
+        {...a11yProps}
       >
         {icon}
       </button>

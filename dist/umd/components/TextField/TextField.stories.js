@@ -1,22 +1,22 @@
 (function (global, factory) {
   if (typeof define === "function" && define.amd) {
-    define(["exports", "react", "../../config", "./TextField", "../../styles/init.scss"], factory);
+    define(["exports", "react", "../../config", "./TextField", "../../img/icons/icon-search.svg", "../../img/icons/icon-eye.svg", "../../styles/init.scss"], factory);
   } else if (typeof exports !== "undefined") {
-    factory(exports, require("react"), require("../../config"), require("./TextField"), require("../../styles/init.scss"));
+    factory(exports, require("react"), require("../../config"), require("./TextField"), require("../../img/icons/icon-search.svg"), require("../../img/icons/icon-eye.svg"), require("../../styles/init.scss"));
   } else {
     var mod = {
       exports: {}
     };
-    factory(mod.exports, global.react, global.config, global.TextField, global.init);
+    factory(mod.exports, global.react, global.config, global.TextField, global.iconSearch, global.iconEye, global.init);
     global.undefined = mod.exports;
   }
-})(this, function (exports, _react, _config, _TextField) {
+})(this, function (exports, _react, _config, _TextField, _iconSearch, _iconEye) {
   "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.shapes = exports.disabled = exports.sizes = undefined;
+  exports.shapes = exports.withRightIcon = exports.withLeftIcon = exports.disabled = exports.sizes = undefined;
 
   var _react2 = _interopRequireDefault(_react);
 
@@ -30,7 +30,7 @@
 
   exports.default = {
     component: _TextField2.default,
-    title: 'TextField'
+    title: "TextField"
   };
 
   const sizes = exports.sizes = () => /*#__PURE__*/_react2.default.createElement("div", {
@@ -52,18 +52,30 @@
     size: size,
     disabled: true,
     placeholder: "Text field"
-  })))); // export const withIcon = () => (
-  //   <div className="story-container">
-  //     {sizeVariants.map((size: any) => (
-  //       <div key={size} className="story-item">
-  //         <Button onClick={action('clicked')} size={size}>
-  //           <ShareIcon {...a11yIconHiddenProps} /> Button
-  //         </Button>
-  //       </div>
-  //     ))}
-  //    </div>
-  // )
+  }))));
 
+  const withLeftIcon = exports.withLeftIcon = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, _config.sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+    key: size,
+    className: "story-item"
+  }, /*#__PURE__*/_react2.default.createElement(_TextField2.default, {
+    size: size,
+    placeholder: "Text field",
+    leftIcon: /*#__PURE__*/_react2.default.createElement(_iconSearch.ReactComponent, null)
+  }))));
+
+  const withRightIcon = exports.withRightIcon = () => /*#__PURE__*/_react2.default.createElement("div", {
+    className: "story-container"
+  }, _config.sizeVariants.map(size => /*#__PURE__*/_react2.default.createElement("div", {
+    key: size,
+    className: "story-item"
+  }, /*#__PURE__*/_react2.default.createElement(_TextField2.default, {
+    type: "password",
+    size: size,
+    placeholder: "Text field",
+    rightIcon: /*#__PURE__*/_react2.default.createElement(_iconEye.ReactComponent, null)
+  }))));
 
   const shapes = exports.shapes = () => /*#__PURE__*/_react2.default.createElement("div", {
     className: "story-container"

@@ -27,7 +27,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /**
  * A square button with an icon.
- * Please note the children should be a single icon. In any other cases, 
+ * Please note the children should be a single icon. In any other cases,
  * use Button instead.
  */
 var IconButton = function IconButton(_ref) {
@@ -35,11 +35,11 @@ var IconButton = function IconButton(_ref) {
       _ref$disabled = _ref.disabled,
       disabled = _ref$disabled === void 0 ? false : _ref$disabled,
       _ref$type = _ref.type,
-      type = _ref$type === void 0 ? 'button' : _ref$type,
+      type = _ref$type === void 0 ? "button" : _ref$type,
       _ref$size = _ref.size,
-      size = _ref$size === void 0 ? 'normal' : _ref$size,
+      size = _ref$size === void 0 ? "normal" : _ref$size,
       _ref$shape = _ref.shape,
-      shape = _ref$shape === void 0 ? 'circle' : _ref$shape,
+      shape = _ref$shape === void 0 ? "circle" : _ref$shape,
       children = _ref.children,
       className = _ref.className,
       ariaLabel = _ref.ariaLabel;

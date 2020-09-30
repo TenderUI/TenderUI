@@ -1,17 +1,17 @@
-import { FC } from 'react';
+import { FC, ReactElement } from "react";
 declare type TextFieldPropsType = {
     /**
      * Define button behavior. Default: text
      */
-    type?: 'text' | 'password';
+    type?: "text" | "password";
     /**
      * Define input size. Default: normal
      */
-    size?: 'normal' | 'small' | 'large';
+    size?: "normal" | "small" | "large";
     /**
      * Define the shape of the button (border radius). Default: rounded.
      */
-    shape?: 'rounded' | 'circle';
+    shape?: "rounded" | "circle";
     /**
      * Disable button. Default: false
      */
@@ -28,6 +28,14 @@ declare type TextFieldPropsType = {
      * Add a tabindex attribute. Optional.
      */
     tabIndex?: number;
+    /**
+     * Left icon. Optional.
+     */
+    leftIcon?: ReactElement;
+    /**
+     * Right icon. Optional.
+     */
+    rightIcon?: ReactElement;
 };
 /**
  * A text field.

@@ -53,9 +53,9 @@
   const Button = ({
     onClick,
     disabled = false,
-    type = 'button',
-    size = 'normal',
-    shape = 'circle',
+    type = "button",
+    size = "normal",
+    shape = "circle",
     children,
     className,
     ariaLabel
