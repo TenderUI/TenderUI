@@ -46,7 +46,7 @@ export const withRightIcon = () => /*#__PURE__*/React.createElement("div", {
 }, /*#__PURE__*/React.createElement(TextField, {
   type: "password",
   size: size,
-  placeholder: "Text field",
+  placeholder: "Password field",
   rightIcon: /*#__PURE__*/React.createElement(RightIcon, null)
 }))));
 export const shapes = () => /*#__PURE__*/React.createElement("div", {

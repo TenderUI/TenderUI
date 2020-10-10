@@ -73,7 +73,7 @@
   }, /*#__PURE__*/_react2.default.createElement(_TextField2.default, {
     type: "password",
     size: size,
-    placeholder: "Text field",
+    placeholder: "Password field",
     rightIcon: /*#__PURE__*/_react2.default.createElement(_iconEye.ReactComponent, null)
   }))));
 

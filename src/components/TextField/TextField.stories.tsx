@@ -52,7 +52,7 @@ export const withRightIcon = () => (
         <TextField
           type="password"
           size={size}
-          placeholder="Text field"
+          placeholder="Password field"
           rightIcon={<RightIcon />}
         />
       </div>

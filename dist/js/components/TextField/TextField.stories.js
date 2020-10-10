@@ -86,7 +86,7 @@ var withRightIcon = function withRightIcon() {
     }, /*#__PURE__*/_react.default.createElement(_TextField.default, {
       type: "password",
       size: size,
-      placeholder: "Text field",
+      placeholder: "Password field",
       rightIcon: /*#__PURE__*/_react.default.createElement(_iconEye.ReactComponent, null)
     }));
   }));
